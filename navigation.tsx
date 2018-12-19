@@ -11,107 +11,107 @@ export interface SubMenu {
 export const about: SubMenu[] = [
     {
         name: 'О нас',
-        url: 'about-us/diving-club',
+        url: 'about-us/diving-club.html',
     },
     {
         name: 'Виктор Озаренко',
-        url: 'about-us/viktor-ozarenko',
+        url: 'about-us/viktor-ozarenko.html',
     },
     {
         name: 'Отзывы',
-        url: 'about-us/feedback',
+        url: 'about-us/feedback.html',
     },
     {
         name: 'Новости',
-        url: 'about-us/news',
+        url: 'about-us/news.html',
     },
     {
         name: 'Контакты',
-        url: 'about-us/contact-us',
+        url: 'about-us/contact-us.html',
    },
 ];
 
 export const courses: SubMenu[] = [
     {
         name: 'Курсы дайвинга PADI',
-        url: 'diving-courses/padi',
+        url: 'diving-courses/padi.html',
     },
     {
         name: 'Курсы дайвинга NDL',
-        url: 'diving-courses/national-dive-leauge',
+        url: 'diving-courses/national-dive-leauge.html',
     },
     {
         name: 'Инструкторские курсы',
-        url: 'diving-courses/instructor-development',
+        url: 'diving-courses/instructor-development.html',
     },
     {
         name: 'Фридайвинг',
-        url: 'diving-courses/freediving',
+        url: 'diving-courses/freediving.html',
     }
 ];
 
 export const technicalDiving: SubMenu[] = [
     {
         name: 'Технические погружения',
-        url: 'technical-diving/techdiving-guided-by-viktor-ozarenko',
+        url: 'technical-diving/techical-diving-redsea-blacksea.html',
     },
     {
         name: 'Сайдмаунт',
-        url: 'technical-diving/sidemount',
+        url: 'technical-diving/sidemount.html',
     },
     {
         name: 'Курсы технического дайвинга IANTD',
-        url: 'technical-diving/techdiving-courses-iantd',
+        url: 'technical-diving/techdiving-courses-iantd.html',
     },
     {
         name: 'Курсы технического дайвинга NDL',
-        url: 'technical-diving/techdiving-courses-ndl',
+        url: 'technical-diving/techdiving-courses-ndl.html',
     },
     {
         name: 'Дайвинг на ребрезире',
-        url: 'technical-diving/rebreather-diving',
+        url: 'technical-diving/rebreather-diving.html',
     }
 ];
 
 export const divingInSharm: SubMenu[] = [
     {
         name: 'Цены на дайвинг в Шарме',
-        url: 'diving-sharm-el-sheikh/ceny-diving-sharm',
+        url: 'diving-sharm-el-sheikh/ceny-diving-sharm.html',
     },
     {
         name: 'Новичкам: интро-дайв, снорклинг',
-        url: 'diving-sharm-el-sheikh/diving-dlia-nachinayushih',
+        url: 'diving-sharm-el-sheikh/diving-dlia-nachinayushih.html',
     },
     {
         name: 'Детский дайвинг',
-        url: 'diving-sharm-el-sheikh/detskiy-diving',
+        url: 'diving-sharm-el-sheikh/detskiy-diving.html',
     },
     {
         name: 'Страхование дайверов',
-        url: 'diving-sharm-el-sheikh/diving-strahovka',
+        url: 'diving-sharm-el-sheikh/diving-strahovka.html',
     },
     {
         name: 'Архив акций',
-        url: 'diving-sharm-el-sheikh/arhiv-akciy',
+        url: 'diving-sharm-el-sheikh/arhiv-akciy.html',
     },
 ];
 
 export const liveaboard: SubMenu[] = [
     {
-        name: 'Дайвинг сафари в ноябре 2018',
-        url: 'liveaboard/diving-safari-november-2018-sharm-egypt',
+        name: 'Прошедшее дайвинг сафари',
+        url: 'liveaboard/last-diving-safari-sharm-egypt.html',
     },
     {
         name: 'Южные маршруты Красного моря',
-        url: 'liveaboard/red-sea-safari-south-routes',
+        url: 'liveaboard/red-sea-safari-south-routes.html',
     },
     {
         name: 'Северные маршруты Красного моря',
-        url: 'liveaboard/red-sea-safari-north-routes',
+        url: 'liveaboard/red-sea-safari-north-routes.html',
     },
     {
         name: 'Сафарийный флот',
-        url: 'liveaboard/red-sea-safari-fleet',
+        url: 'liveaboard/red-sea-safari-fleet.html',
     }
 ];
 
