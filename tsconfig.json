@@ -1,0 +1,10 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "amd",
+        "strict": true,
+        "jsx": "react",
+        "sourceMap": true,
+        "target": "es2018"
+    }
+}
