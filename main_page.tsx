@@ -1,11 +1,13 @@
 import { Menu, MenuProps } from "./menu";
 import ReactDOM = require("react-dom");
 import React = require("react");
-import { mainMenu } from "./navigation";
+import { mainMenu, about, courses, technicalDiving, divingInSharm, liveaboard } from "./navigation";
+import { Footer, FooterProps } from "./footer";
 
 
 
-let lastProps: MenuProps = {
+let lastProps:
+    MenuProps = {
     mainMenus: mainMenu,
     activeMainMenuIndex: null,
     when: concern => {
@@ -26,8 +28,11 @@ rerender(lastProps);
 
 function rerender(props: MenuProps) {
     lastProps = props;
-    ReactDOM.render(
-        <Menu {...props} />,
+    ReactDOM.render(<>
+        <Menu {...props} />
+        <Footer mainMenus={mainMenu}
+        subMenus={[{about}, {courses}, {technicalDiving}, {divingInSharm}, {liveaboard}]} />
+    </>,
         document.getElementById('root')
     );
 }
