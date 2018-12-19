@@ -25,7 +25,11 @@ export class Menu extends React.Component<MenuProps> {
                         mainMenuIndex === this.props.activeMainMenuIndex
                             ? <div className='sub-menus'>{
                                 map(mainMenu.subMenus, subMenu => {
-                                    return <div className="sub-menu">{subMenu.name}</div>;
+                                    return <div className="sub-menu">
+                                        <a href={subMenu.url}>
+                                        {subMenu.name}
+                                        </a>
+                                    </div>;
                                 })
                             }</div>
                             : null

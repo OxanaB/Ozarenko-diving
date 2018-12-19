@@ -3,6 +3,8 @@ import ReactDOM = require("react-dom");
 import React = require("react");
 import { mainMenu } from "./navigation";
 
+
+
 let lastProps: MenuProps = {
     mainMenus: mainMenu,
     activeMainMenuIndex: null,
@@ -29,3 +31,4 @@ function rerender(props: MenuProps) {
         document.getElementById('root')
     );
 }
+
