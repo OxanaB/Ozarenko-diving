@@ -98,7 +98,7 @@ export const divingInSharm: SubMenu[] = [
 
 export const liveaboard: SubMenu[] = [
     {
-        name: 'Прошедшее дайвинг сафари',
+        name: 'Прошедшие дайвинг сафари',
         url: 'liveaboard/last-diving-safari-sharm-egypt.html',
     },
     {

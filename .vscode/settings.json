@@ -13,5 +13,6 @@
         "**/.DS_Store": true,
         "*.js": true,
         "*.css": true,
-    }
+    },
+    "files.encoding": "utf8"
 }
