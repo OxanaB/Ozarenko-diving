@@ -1,12 +1,12 @@
 import React = require("react");
 import { map } from "../utils";
+import { priceListTechnicalDaily, priceListTechnicalRent } from './price-technical';
 
 interface TechnicalDivingProps {
-    pricelists: TechDivingPrice[]
 }
 
 export class TechnicalDiving extends React.Component<TechnicalDivingProps>{
-   
+
     render() {
         return <div className="page">
             <h1>Технический дайвинг</h1>
@@ -19,36 +19,37 @@ export class TechnicalDiving extends React.Component<TechnicalDivingProps>{
                      water diver, имеющему всего 10 зарегистрированных погружений. Обучение техническому дайвингу возможно в популярной,
                 легкой и удобной конфигурации сайдмаунт. Спарка - прошлый век!</p>
             </div>
-            <h2><a href="./techdiving-courses-iantd.html" target="_self">
-                Курсы технического дайвинга IANTD</a></h2>
-            <h2><a href="./techdiving-courses-ndl.html" target="_self">
-                Технический дивизион NDL</a></h2>
-
+            <div className="links-to-tech-courses">
+                <h2><a href="./techdiving-courses-iantd.html" target="_self">
+                    Курсы технического дайвинга IANTD</a></h2>
+                <h2><a href="./techdiving-courses-ndl.html" target="_self">
+                    Технический дивизион NDL</a></h2>
+            </div>
             <div className="price-technical">
                 <h2>Цены на технические погружения в Одессе</h2>
                 <p>В стоимость технических погружений включены один декомпрессионый дайв в день с персональным гидом Виктором Озаренко, воздушная спарка или баллоны на сайдмаунт,
                 грузы. Ваши газы и газы гида оплачиваются дополнительно.</p>
-                {map(this.props.pricelists, (priceListTechnicalDaily) => {
-                    <table>
-                    <tr>
-                         <td>{priceListTechnicalDaily.title}</td>
-                         <td>{priceListTechnicalDaily.subtitle}</td>
-                         <td>{priceListTechnicalDaily.price}</td>
-                    </tr>
-                </table>
+                {map(priceListTechnicalDaily, (priceListTechnicalDaily) => {
+                    return <table>
+                        <tr>
+                            <td>{priceListTechnicalDaily.title}</td>
+                            <td>{priceListTechnicalDaily.subtitle}</td>
+                            <td>{priceListTechnicalDaily.price}</td>
+                        </tr>
+                    </table>
                 })}
             </div>
             <div className="price-technical-rent">
                 <h2>Аренда снаряжения</h2>
-                {map(this.props.pricelists, (priceListTechnicalRent) => {
-                    <table>
-                    <tr>
-                         <td>{priceListTechnicalRent.title}</td>
-                         <td>{priceListTechnicalRent.subtitle}</td>
-                         <td>{priceListTechnicalRent.price}</td>
-                    </tr>
-                </table>
-                }) }
+                {map(priceListTechnicalRent, (priceListTechnicalRent) => {
+                    return <table>
+                        <tr>
+                            <td>{priceListTechnicalRent.title}</td>
+                            <td>{priceListTechnicalRent.subtitle}</td>
+                            <td>{priceListTechnicalRent.price}</td>
+                        </tr>
+                    </table>
+                })}
             </div>
             <h2>Видео с наших технических погружений</h2>
             <div className="video-links-techdive">
