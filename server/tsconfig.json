@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "strict": true,
+        "jsx": "react",
+        "sourceMap": true,
+        "outDir": "../node_modules/ozarenko",
+        "target": "es2018",
+        "types": [
+            "node"
+        ]
+    },
+    "exclude": [
+        "server"
+    ]
+}

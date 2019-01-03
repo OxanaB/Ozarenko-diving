@@ -1,10 +1,10 @@
-interface TechDivingPrice {
+export interface TechDivingPrice {
     title: string,
     subtitle: string,
     price: string
 }
 
-const priceListTechnicalDaily: TechDivingPrice[] = [
+export const priceListTechnicalDaily: TechDivingPrice[] = [
     {
         title: 'день технического дайвинга',
         subtitle: 'одно декомпрессионное погружение в день + рекреационное погружение на остатках газа',
@@ -12,7 +12,7 @@ const priceListTechnicalDaily: TechDivingPrice[] = [
     }
 ]
 
-const priceListTechnicalRent: TechDivingPrice[] = [
+export const priceListTechnicalRent: TechDivingPrice[] = [
     {
         title: 'техническое крыло',
         subtitle: ' в сборе со спинкой',
