@@ -1,6 +1,7 @@
 import { MainMenu, SubMenu } from "./navigation";
-import React = require("react");
+import * as React from "react";
 import { map } from "./utils";
+import * as d3 from 'd3';
 
 export interface FooterProps {
     mainMenus: MainMenu[];
@@ -12,8 +13,26 @@ export interface FooterProps {
 }
 
 export class Footer extends React.Component<FooterProps> {
+
+    myElement: Element | null = null;
+
+    componentDidMount() {
+        if (this.myElement === null) return;
+        // d3 starts here...
+        const data = [30, 86, 168, 281, 303, 365];
+        d3.select(this.myElement)
+            .selectAll("div")
+            .data(data)
+            .enter()
+            .append("div")
+            .style("width", function (d: any) { return d + "px"; })
+            .style("background-color", "navy")
+            .text(function (d: any) { return d; });
+    }
+
     render() {
         return <div className='footer'>
+            <div ref={element => { this.myElement = element; }}></div>
             <div className='footer-container'>
                 {map(this.props.mainMenus, mainMenu => {
                     return <div className='footer-columns-headline'>
@@ -33,16 +52,16 @@ export class Footer extends React.Component<FooterProps> {
                 })}
             </div>
             <div className='fotter-social-media-widgets'>
-                <div className="fb-page" 
-                    data-href="https://www.facebook.com/MarineTreasureHunters/" 
-                    data-tabs="timeline,messages"  
-                    data-small-header="false" 
-                    data-adapt-container-width="true" 
-                    data-hide-cover="false" 
+                <div className="fb-page"
+                    data-href="https://www.facebook.com/MarineTreasureHunters/"
+                    data-tabs="timeline,messages"
+                    data-small-header="false"
+                    data-adapt-container-width="true"
+                    data-hide-cover="false"
                     data-show-facepile="true">
                     <blockquote cite="https://www.facebook.com/MarineTreasureHunters/" className="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/MarineTreasureHunters/">
-                    Дайвинг клуб &quot;Искатели морских сокровищ&quot;</a></blockquote></div>
+                        <a href="https://www.facebook.com/MarineTreasureHunters/">
+                            Дайвинг клуб &quot;Искатели морских сокровищ&quot;</a></blockquote></div>
                 <div className="fb-like"
                     data-share="true"
                     data-width="450"
