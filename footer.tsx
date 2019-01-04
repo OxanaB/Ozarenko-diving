@@ -1,7 +1,7 @@
 import { MainMenu, SubMenu } from "./navigation";
 import * as React from "react";
 import { map } from "./utils";
-import * as d3 from 'd3';
+// import * as d3 from 'd3';
 
 export interface FooterProps {
     mainMenus: MainMenu[];
@@ -14,25 +14,25 @@ export interface FooterProps {
 
 export class Footer extends React.Component<FooterProps> {
 
-    myElement: Element | null = null;
+    // myElement: Element | null = null;
 
-    componentDidMount() {
-        if (this.myElement === null) return;
-        // d3 starts here...
-        const data = [30, 86, 168, 281, 303, 365];
-        d3.select(this.myElement)
-            .selectAll("div")
-            .data(data)
-            .enter()
-            .append("div")
-            .style("width", function (d: any) { return d + "px"; })
-            .style("background-color", "navy")
-            .text(function (d: any) { return d; });
-    }
+    // componentDidMount() {
+    //     if (this.myElement === null) return;
+    //     // d3 starts here...
+    //     const data = [30, 86, 168, 281, 303, 365];
+    //     d3.select(this.myElement)
+    //         .selectAll("div")
+    //         .data(data)
+    //         .enter()
+    //         .append("div")
+    //         .style("width", function (d: any) { return d + "px"; })
+    //         .style("background-color", "navy")
+    //         .text(function (d: any) { return d; });
+    // }
 
     render() {
         return <div className='footer'>
-            <div ref={element => { this.myElement = element; }}></div>
+        {/* <div ref={element => { this.myElement = element; }}></div> */}
             <div className='footer-container'>
                 {map(this.props.mainMenus, mainMenu => {
                     return <div className='footer-columns-headline'>

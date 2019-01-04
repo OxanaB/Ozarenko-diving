@@ -14,5 +14,7 @@
         "*.js": true,
         "*.css": true,
     },
-    "files.encoding": "utf8"
+    "files.encoding": "utf8",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never"
 }
