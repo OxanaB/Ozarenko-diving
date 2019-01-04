@@ -3,9 +3,10 @@ import { Footer } from '../footer';
 import { mainMenu } from '../navigation';
 import { Menu, MenuProps } from '../menu';
 import { map } from '../utils';
-import { metaTechnicalDivingPage } from './meta-technical-diving';
+import { metaTechnicalDivingPage, Meta } from './meta-technical-diving';
 
 export interface PageProps {
+    meta: Meta[];
     title: string;
 }
 
@@ -19,15 +20,19 @@ export class Page extends React.Component<PageProps> {
         return <html>
             <head>
                 <meta name="viewport" content="width=device-width,initial-scale=1" />
+                <meta name="fb_admins_meta_tag" content="viktor.ozarenko" />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Школа дайвинга Виктора Озаренко. Филиалы в Одессе и Шарм-эль-Шейхе" />
+                <meta property="fb:admins" content="viktor.ozarenko" />
+                {map(this.props.meta, (x) => {
+                    return <meta
+                        name={x.name}
+                        property={x.property}
+                        content={x.content}
+                    />
+                })}
                 <script src="require.js" data-main="main_page"></script>
                 <link rel="stylesheet" href="styles.css" />
-                {map(metaTechnicalDivingPage, (metaTechnicalDivingPage) => {
-            return <meta
-                name={metaTechnicalDivingPage.name}
-                property={metaTechnicalDivingPage.property}
-                content={metaTechnicalDivingPage.content}
-            />
-        })}
                 <title>{this.props.title}</title>
                 <Menu {...menu} />
             </head>
