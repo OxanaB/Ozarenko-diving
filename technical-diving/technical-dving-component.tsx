@@ -1,12 +1,9 @@
-import React = require("react");
+import * as React from 'react';
 import { map } from "../utils";
 import { priceListTechnicalDaily, priceListTechnicalRent } from './price-technical';
 
-interface TechnicalDivingProps {
-}
-
-export class TechnicalDiving extends React.Component<TechnicalDivingProps>{
-
+export class TechnicalDiving extends React.Component{
+ 
     render() {
         return <div className="page">
             <h1>Технический дайвинг</h1>
@@ -20,9 +17,9 @@ export class TechnicalDiving extends React.Component<TechnicalDivingProps>{
                 легкой и удобной конфигурации сайдмаунт. Спарка - прошлый век!</p>
             </div>
             <div className="links-to-tech-courses">
-                <h2><a href="./techdiving-courses-iantd.html" target="_self">
+                <h2><a href="./techdiving-courses-iantd.html">
                     Курсы технического дайвинга IANTD</a></h2>
-                <h2><a href="./techdiving-courses-ndl.html" target="_self">
+                <h2><a href="./techdiving-courses-ndl.html">
                     Технический дивизион NDL</a></h2>
             </div>
             <div className="price-technical">
