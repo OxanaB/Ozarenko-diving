@@ -1,8 +1,8 @@
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { Menu, MenuProps } from "./menu";
-import ReactDOM = require("react-dom");
-import React = require("react");
-import { mainMenu, about, courses, technicalDiving, divingInSharm, liveaboard } from "./navigation";
-import { Footer, FooterProps } from "./footer";
+import { mainMenu } from "./navigation";
+import { Footer } from "./footer";
 
 
 
@@ -30,8 +30,9 @@ function rerender(props: MenuProps) {
     lastProps = props;
     ReactDOM.render(<>
         <Menu {...props} />
-        <Footer mainMenus={mainMenu}
-        subMenus={[{about}, {courses}, {technicalDiving}, {divingInSharm}, {liveaboard}]} />
+        <Footer
+            mainMenus={mainMenu}
+        />
     </>,
         document.getElementById('root')
     );
