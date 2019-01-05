@@ -3,7 +3,7 @@ import { Footer } from '../footer';
 import { mainMenu } from '../navigation';
 import { Menu, MenuProps } from '../menu';
 import { map } from '../utils';
-import { metaTechnicalDivingPage, Meta } from './meta-technical-diving';
+import { Meta } from './meta-technical-diving';
 
 export interface PageProps {
     meta: Meta[];
@@ -40,7 +40,7 @@ export class Page extends React.Component<PageProps> {
                 {this.props.children}
             </body>
             <footer>
-                <Footer mainMenus={mainMenu} subMenus={[]} />
+                <Footer mainMenus={mainMenu} />
             </footer>
         </html>;
     }

@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 import { Menu, MenuProps } from "./menu";
 import { mainMenu } from "./navigation";
 import { Footer } from "./footer";
-
+import { MainPageComponent } from "./main-page-component";
 
 
 let lastProps:
@@ -30,6 +30,7 @@ function rerender(props: MenuProps) {
     lastProps = props;
     ReactDOM.render(<>
         <Menu {...props} />
+        <MainPageComponent />
         <Footer
             mainMenus={mainMenu}
         />
