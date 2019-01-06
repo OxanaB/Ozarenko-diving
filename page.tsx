@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Footer } from '../footer';
-import { mainMenu } from '../navigation';
-import { Menu, MenuProps } from '../menu';
-import { map } from '../utils';
-import { Meta } from './meta-technical-diving';
+import { Footer } from './footer';
+import { mainMenu } from './navigation';
+import { Menu, MenuProps } from './menu';
+import { map } from './utils';
+import { Meta } from './meta';
 
 export interface PageProps {
     meta: Meta[];

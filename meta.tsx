@@ -4,8 +4,100 @@ export interface Meta {
     content: string;
 }
 
+export const metaDivingClubPage: Meta[] = [
+    {
+        name: "description",
+        content:"Клуб основан легендарным специалистом водолазного дела Украины, одесситом Виктором Озаренко. Наша школа проводит обучение по самым популярным системам дайвинга"
+    },
+    {
+        name:"keywords",
+        content:"дайвинг центр Виктора Озаренко, дайвинг клуб Искатели морских сокровищ, Виктор Озаренко, Быкова Оксана, Богдан Хмельницкий"
+    },
+    {
+        property:"og:title",
+        content:"О клубе | Дайв-клуб Искатели морских сокровищ, Одесса (Украина), Шарм эль Шейх (Египет)"
+    },
+    {
+        property:"og:url",
+        content:"https://www.ozarenko-diving.com/about-us/diving-club.html"
+    },
+    {
+        property:"og:description",
+        content:"Клуб основан легендарным специалистом водолазного дела Украины, одесситом Виктором Озаренко. Наша школа проводит обучение по самым популярным системам дайвинга"
+    }
+]
+
+export const metaViktorOzarenkoPage: Meta[] = [
+    {
+        name: "description",
+        content:"Виктор Озаренко - инструктор-тренер международных дайверских организаций PADI, IANTD, NDL. Не заурядная личность, опытный подводный пловец, дайвер-легенда"
+    },
+    {
+        name:"keywords",
+        content:"Виктор Озаренко, дайвинг центр Виктора Озаренко, украинский дайвинг центр в Одессе"
+    },
+    {
+        property:"og:title",
+        content:'Виктор Озаренко, командор дайвинг клуба "Искатели морских сокровищ", Одесса (Украина)'
+    },
+    {
+        property:"og:url",
+        content:"https://www.ozarenko-diving.com/about-us/viktor-ozarenko.html"
+    },
+    {
+        property:"og:description",
+        content:"Виктор Озаренко - инструктор-тренер международных дайверских организаций PADI, IANTD, NDL. Не заурядная личность, опытный подводный пловец, дайвер-легенда"
+    }
+]
+
+export const metaFeedbackPage: Meta[] = [
+    {
+        name: "description",
+        content:"Отзывы клиентов о дайвинге с клубом Искатели морских сокровищ"
+    },
+    {
+        name:"keywords",
+        content:"дайвинг отзывы, дайвинг в Шарм-эль-Шейхе (Египет) отзывы, Виктор Озаренко отзывы"
+    },
+    {
+        property:"og:title",
+        content:"Отзывы о дайвиге с нашим клубом в Шарм-эль-Шейхе (Египет)"
+    },
+    {
+        property:"og:url",
+        content:"https://www.ozarenko-diving.com/about-us/feedback.html"
+    },
+    {
+        property:"og:description",
+        content:"Отзывы клиентов о дайвинге с клубом Искатели морских сокровищ"
+    }
+]
+
+export const metaContactUsPage: Meta[] = [
+    {
+        name: "description",
+        content:"Пришлите заявку, нипишите на почту, позвоните в скайп или по телефону - мы всегда оперативно ответим на все ваши вопросы!"
+    },
+    {
+        name:"keywords",
+        content:"дайвинг центр Виктора Озаренко, дайвинг клуб Искатели морских сокровищ, Виктор Озаренко, дайвинг в Одессе, технический дайвинг в Одессе, сайдмаунт"
+    },
+    {
+        property:"og:title",
+        content:"О клубе | Дайв-клуб Искатели морских сокровищ, Одесса (Украина), Шарм эль Шейх (Египет)"
+    },
+    {
+        property:"og:url",
+        content:"https://www.ozarenko-diving.com/about-us/contact-us.html"
+    },
+    {
+        property:"og:description",
+        content:"Пришлите заявку, нипишите на почту, позвоните в скайп или по телефону - мы всегда оперативно ответим на все ваши вопросы!"
+    }
+]
+
 export const metaTechnicalDivingPage: Meta[] = [
-        {
+    {
         name: "description",
         content:"Технические погружения на найтроксе, воздухе, тримиксе в компании подводного диверсанта самый безопасный вид технодайвинга. Всегда можно взять сайдмаунт"
     },
