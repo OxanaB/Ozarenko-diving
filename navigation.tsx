@@ -12,23 +12,23 @@ export interface SubMenu {
 export const about: SubMenu[] = [
     {
         name: 'О нас',
-        url: '../about-us/diving-club.html',
+        url: 'diving-club.html',
     },
     {
         name: 'Виктор Озаренко',
-        url: '../about-us/viktor-ozarenko.html',
+        url: 'viktor-ozarenko.html',
     },
     {
         name: 'Отзывы',
-        url: '../about-us/feedback.html',
+        url: 'feedback.html',
     },
     {
         name: 'Новости',
-        url: '../about-us/news.html',
+        url: 'news.html',
     },
     {
         name: 'Контакты',
-        url: '../about-us/contact-us.html',
+        url: 'contact-us.html',
    },
 ];
 
