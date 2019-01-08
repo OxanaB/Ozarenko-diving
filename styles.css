@@ -33,21 +33,35 @@
   cursor: pointer;
   position: relative;
 }
-.main-menu :hover {
+.main-menu a {
+  text-decoration: none;
+}
+.main-menu:hover {
   background-color: #FFF200;
+}
+.main-menu + .main-menu {
+  border-left: 1px solid #000;
 }
 .sub-menus {
   background-color: #d1d0d0;
   position: absolute;
   text-align: left;
+  text-decoration: none;
   left: 0px;
   right: 0px;
   padding: 20px;
 }
+.sub-menus a {
+  text-decoration: none;
+}
 .sub-menu + .sub-menu {
   margin-top: 20px;
 }
+.sub-menu:hover {
+  background-color: #FFF200;
+}
 .main-page-link-elements {
+  background-color: #dbeeff9d;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -69,9 +83,6 @@
   width: 200px;
   height: 200px;
 }
-a {
-  text-decoration: none;
-}
 .button-go-to-page {
   color: #000;
   background-color: #89C9CD;
@@ -84,6 +95,9 @@ a {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+.button-go-to-page a {
+  text-decoration: none;
 }
 .button-go-to-page:active {
   padding: 12px 13px 8px 17px;

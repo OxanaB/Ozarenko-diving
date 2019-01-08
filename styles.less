@@ -11,9 +11,8 @@
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: 100%;
-    
-    
 }
+
 .page {
     color: #000000;
     background-color:#ffffffd7;  
@@ -21,45 +20,60 @@
     margin: 0 auto;
     width: 900px;
  }
-.main-menus {
+
+ .main-menus {
     margin: 0 auto;
     width: 900px;
     background-color:#ffffffd7;  
     display: flex;
     justify-content: space-between;
-    
 }
 
 @menu-padding: 20px;
+@hover-color: #FFF200;
+
 .main-menu {
     padding: @menu-padding;
     background-color:  #d1d0d0;
     text-align: center;
     cursor: pointer;
     position: relative;
+    a {
+        text-decoration: none;
+    }
 }
 
-        .main-menu :hover {
-            background-color: #FFF200;
-        }
-
-    .sub-menus {
-        background-color:  #d1d0d0;
-        position: absolute;
-        text-align: left;
-        left: 0px;
-        right: 0px;
-        padding: @menu-padding;
+    .main-menu:hover {
+        background-color: @hover-color;
     }
-        .sub-menu + .sub-menu {
-            margin-top: @menu-padding;
-        }
 
+    .main-menu + .main-menu {
+        border-left: 1px solid #000;
+    }
+
+.sub-menus {
+    background-color:  #d1d0d0;
+    position: absolute;
+    text-align: left;
+    text-decoration: none;
+    left: 0px;
+    right: 0px;
+    padding: @menu-padding;
+    a {
+        text-decoration: none;
+    }
+}
+   .sub-menu + .sub-menu {
+        margin-top: @menu-padding;
+    }
+    .sub-menu:hover {
+        background-color: @hover-color;
+    }
 
         
 
 .main-page-link-elements {
-     
+    background-color: #dbeeff9d; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -70,11 +84,12 @@
     width: 440px;
     margin: 5px;
     padding: 10px;
-    
 }
+
 .main-page-link-element-text {
     text-align: left;
 }
+
 .main-page-link-element-image {
     margin-left: 5px;
     float: right;
@@ -83,9 +98,7 @@
         height: 200px;
     }
 }
-a {
-    text-decoration: none;
-}
+
 
 @button-color: #89C9CD;
 
@@ -101,17 +114,19 @@ a {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-
+    a {
+        text-decoration: none;
+    }
 }
-    .button-go-to-page:active {
-        padding: 12px 13px 8px 17px;
-        border-style: inset;
-    }
+.button-go-to-page:active {
+    padding: 12px 13px 8px 17px;
+    border-style: inset;
+}
 
-    .button-go-to-page:hover {
-        background-color: lighten(@button-color, 10%);
-        opacity: 0.8;
-    }
+.button-go-to-page:hover {
+    background-color: lighten(@button-color, 10%);
+    opacity: 0.8;
+}
 // @media screen and (min-width: 361px) and (max-width: 600px) {
 // .main-menus {
 //     max-width: 560px;
