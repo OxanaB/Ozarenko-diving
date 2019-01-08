@@ -5,6 +5,7 @@
     font-family: 'Lobster', cursive;
     font-family: 'Play', sans-serif;
   }
+  
 .entire-page {
     background-image: url(../images/ozarenko-diving-background.jpg);
     background-repeat: no-repeat;  
@@ -15,7 +16,7 @@
 
 .page {
     color: #000000;
-    background-color:#ffffffd7;  
+    background-color:#fff;
     padding: 20px 0;
     margin: 0 auto;
     width: 900px;
@@ -24,17 +25,23 @@
  .main-menus {
     margin: 0 auto;
     width: 900px;
-    background-color:#ffffffd7;  
+    background-color:#fff;  
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 @menu-padding: 20px;
-@hover-color: #FFF200;
+@hover-color: #FFF766;
+@active-color: #FFF200;
 
 .main-menu {
     padding: @menu-padding;
-    background-color:  #d1d0d0;
+    background-image: url(../Ozarenko-diving/images/button-background.jpg);
+    background-repeat: no-repeat;  
+    background-position: 50% 50%;
+    background-size: 100%;
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -52,10 +59,16 @@
     }
 
 .sub-menus {
-    background-color:  #d1d0d0;
+    background-image: url(../Ozarenko-diving/images/button-background.jpg);
+    background-repeat: no-repeat;  
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: 100%;
+
     position: absolute;
     text-align: left;
     text-decoration: none;
+    color: #000;
     left: 0px;
     right: 0px;
     padding: @menu-padding;
@@ -69,11 +82,13 @@
     .sub-menu:hover {
         background-color: @hover-color;
     }
+    .sub-menu:active {
+        background-color: @active-color;
+    }
 
         
 
 .main-page-link-elements {
-    background-color: #dbeeff9d; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -84,10 +99,18 @@
     width: 440px;
     margin: 5px;
     padding: 10px;
+
 }
 
 .main-page-link-element-text {
     text-align: left;
+    h3 span {
+        background-color: @hover-color;
+    }
+    h4 {
+        font-weight: normal;
+        font-style: italic;
+    }
 }
 
 .main-page-link-element-image {
@@ -111,6 +134,7 @@
     border-color: @button-color;
     border-style: outset;
     border-width: 2px;
+    border-radius: 5px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;

@@ -29,7 +29,7 @@ rerender(lastProps);
 function rerender(props: MenuProps) {
     lastProps = props;
     ReactDOM.render(<>
-        <Menu {...props} />
+        <Menu {...props}/>
         <MainPageComponent />
         <Footer
             mainMenus={mainMenu}
