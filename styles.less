@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lobster', cursive;
     font-family: 'Play', sans-serif;
   }
   
@@ -14,48 +13,104 @@
     background-size: 100%;
 }
 
-.page {
-    color: #000000;
-    background-color:#fff;
-    padding: 20px 0;
+@menu-padding: 10px 20px;
+@white-color: #ffffff;
+@hover-color: #FFF766;
+@active-color: #FFF200;
+
+#a-no-decoration() {
+    text-decoration: none;
+    color: #000;
+}
+
+.page, .footer {
+    padding: 10px 0px;
     margin: 0 auto;
-    width: 900px;
+    width: 970px;
  }
 
- .main-menus {
+.page {
+    background-color: fade(@white-color, 90%);
+ }
+
+.header {
+    background-color: fade(@white-color, 80%);
+    width: 100%;
+}
+.header-container {
+    width: 970px;
     margin: 0 auto;
-    width: 900px;
-    background-color:#fff;  
+    display: flex;
+    flex-direction: column;
+}
+.header-img {
+    width: 738px;
+    height: 58px;
+    margin-top: 10px;
+    margin-left: -5px;
+    background-image: url(./images/logos/ozarenko_logo-main.png);
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    cursor: pointer;
+    &:hover {
+    background-image: url(./images/logos/ozarenko_logo-hover.png);
+    }
+    &:active {
+    background-image: url(./images/logos/ozarenko_logo-active.png);
+    }
+}
+.header-text-elements {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 7px 9px -7px black;   
+    padding-top: 5px;
+    padding-bottom: 15px;
+} 
+.header-text {
+    font-family: 'Georgia', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px; 
+    margin-left: 90px;
+    padding: 3px 0px 5px 0px;
+}
+ .header-link {
+    a { 
+        color: #000;
+    }
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.main-menus {
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: @white-color;  
     border: 1px solid #e2e2e2;
     border-radius: 10px;
+    box-shadow: 2px 3px 6px 0px #000;
     display: flex;
     justify-content: space-around;
 }
 
-@menu-padding: 10px 20px;
-@hover-color: #FFF766;
-@active-color: #FFF200;
-
 .main-menu {
     padding: @menu-padding;
-    background-color: #ffffffe8;
+    background-color: @white-color;
     text-align: center;
     cursor: pointer;
     position: relative;
-    a {
-        text-decoration: none;
-    }
-}
-    .main-menu:first-child {
+    #a-no-decoration();
+    &:first-child {
         border-radius: 10px 0px 0px 10px;
     }
-    .main-menu:last-child {
+    &:last-child {
         border-radius: 0px 10px 10px 0px;
     }
-    .main-menu:hover {
+    &:hover {
         background-color: @hover-color;
     }
-
+}
     .main-menu + .main-menu {
         border-left: 1px solid #000;
     }
@@ -74,7 +129,7 @@
     }
 }
     .sub-menu {
-    background-color: #ffffffe8;
+    background-color: @white-color;
     padding: @menu-padding;
     }
     .sub-menu + .sub-menu {
@@ -103,10 +158,9 @@
 
 .main-page-link-element {
     border-bottom: 2px solid #FFF200;
-    width: 440px;
+    width: 475px;
     margin: 5px;
     padding: 10px;
-
 }
 
 .main-page-link-element-text {
@@ -123,6 +177,7 @@
 .main-page-link-element-image {
     margin-left: 5px;
     float: right;
+    box-shadow: 0 8px 10px 1px grey;
     img {
         width: 200px;
         height: 200px;
@@ -133,7 +188,6 @@
 @button-color: #89C9CD;
 
 .button-go-to-page {
-    color: #000;
     background-color: @button-color;
     padding: 10px 15px;
     margin: 5px 0px;
@@ -145,9 +199,7 @@
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    a {
-        text-decoration: none;
-    }
+    #a-no-decoration();
 }
 .button-go-to-page:active {
     padding: 12px 13px 8px 17px;
@@ -156,6 +208,30 @@
 
 .button-go-to-page:hover {
     background-color: lighten(@button-color, 10%);
+}
+
+.footer {
+    background-color: #fff;
+}
+.footer-container {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-columns-headline {
+    font-weight: bold;
+}
+.footer-columns {
+    color: #000;
+    padding-right: 5px;
+}
+.fotter-column-row {
+    
+    a {
+        font-weight: normal;
+        font-size: 14px;
+        color: #000;
+    }
 }
 
 // @media screen and (min-width: 361px) and (max-width: 600px) {

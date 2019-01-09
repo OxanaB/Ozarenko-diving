@@ -5,9 +5,9 @@ import { rebreatherPricelistCourses, rebreatherPricelistAir, rebreatherPricelist
 
 export class Rebreather extends React.Component {
     render() {
-        return <div className='page'>
+        return <>
             <h1>Дайвинг на ребризере (замкнутый цикл дыхания) CCR</h1>
-            <img src="../images/technical-diving/rebreather-diver.jpg" alt="дайвинг на ребризере, обучение ребризеру, ребризер красное море, ребризер египет" />
+            <img src="/images/technical-diving/rebreather-diver.jpg" alt="дайвинг на ребризере, обучение ребризеру, ребризер красное море, ребризер египет" />
             <div className="text-after-h1">
                 <p>Дайвинг на ребризере сильно отличается от погружений с обычным аквалангом - практически нет пузырей, рыба вас не
                     боится, по-другому происходит тонкая настройка плавучести, вы не думаете о расходе газа, но думаете о совершенно
@@ -82,6 +82,7 @@ export class Rebreather extends React.Component {
                         <td>{rebreatherDailyHypox.price}</td>
                     </tr>
                 </table>
-            })}        </div>
+            })}
+        </>
     }
 }

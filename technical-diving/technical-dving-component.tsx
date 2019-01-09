@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { map } from "../utils";
+import { map } from '../utils';
 import { priceListTechnicalDaily, priceListTechnicalRent } from './price-technical';
 
 export class TechnicalDiving extends React.Component{
  
     render() {
-        return <div className="page">
+        return <>
             <h1>Технический дайвинг</h1>
             <div className="text-after-h1">
                 <p>Технический дайвинг отличается от любительского более сложными условиями погружения, выходящими за рамки
@@ -63,6 +63,6 @@ export class TechnicalDiving extends React.Component{
                     <p>Шарм эль Шейх, Томас каньон</p>
                 </div>
             </div>
-        </div>
+        </>
     }
 }

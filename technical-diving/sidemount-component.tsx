@@ -2,11 +2,11 @@ import * as React from 'react';
 
 export class Sidemount extends React.Component {
     render() {
-        return <div className='page'>
+        return <>
             <h1>Курсы обучения дайваингу в сайдмаунте (sidemount)</h1>
-            <img src="../images/technical-diving/sidemount/sidemount-3.jpg" alt="Сайдмаунт: позволяет проникать в узкие места и пещеры" />
-            <img src="../images/technical-diving/sidemount/sidemount-1.jpg" alt="Сайдмаунт: можно использовать разного объема баллоны" />
-            <img src="../images/technical-diving/sidemount/sidemount-2.jpg" alt="Сайдмаунт: удобен для хрупких девушек" />
+            <img src="/images/technical-diving/sidemount/sidemount-3.jpg" alt="Сайдмаунт: позволяет проникать в узкие места и пещеры" />
+            <img src="/images/technical-diving/sidemount/sidemount-1.jpg" alt="Сайдмаунт: можно использовать разного объема баллоны" />
+            <img src="/images/technical-diving/sidemount/sidemount-2.jpg" alt="Сайдмаунт: удобен для хрупких девушек" />
 
             <h2>Сайдмаунт - конфигурация с боковым расположением баллонов </h2>
 
@@ -18,8 +18,8 @@ export class Sidemount extends React.Component {
     Модульность и малые габариты делают конфигурацию сайдмаунт практически универсальной для экспедиций в удаленные
     места и технических погружений, где нет возможности взять в аренду спарку с манифолдом. </p>
 
-            <img src="../images/technical-diving/sidemount/sidemount-4.jpg" alt="сайдмаунт, курсы сайдмаунта, технический дайвинг в сайдмаунте" />
-            <img src="../images/technical-diving/sidemount/sidemount-5.jpg" alt="сайдмаунт, курсы сайдмаунта, технический дайвинг в сайдмаунте" />
+            <img src="/images/technical-diving/sidemount/sidemount-4.jpg" alt="сайдмаунт, курсы сайдмаунта, технический дайвинг в сайдмаунте" />
+            <img src="/images/technical-diving/sidemount/sidemount-5.jpg" alt="сайдмаунт, курсы сайдмаунта, технический дайвинг в сайдмаунте" />
 
             <h2>Курсы обучения сайдмаунту</h2>
 
@@ -84,7 +84,7 @@ export class Sidemount extends React.Component {
         http://www.xdeep.eu/stealth-side-mount-full-set-pr-14.html">XDeep Stealth</a>». Он удовлетворит любого искушенного дайвера, главный плюс – система уже
     готова к использованию после настройки «размера» и не требует доработки.</p>
 
-<p>Командор клуба "Искатели морских сокровищ", <a href="../about-us/viktor-ozarenko.html">Виктор Озаренко</a></p>
-        </div >
+<p>Командор клуба "Искатели морских сокровищ", <a href="/about-us/viktor-ozarenko.html">Виктор Озаренко</a></p>
+        </ >
     }
 }

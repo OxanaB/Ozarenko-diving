@@ -12,23 +12,23 @@ export interface SubMenu {
 export const about: SubMenu[] = [
     {
         name: 'О нас',
-        url: 'diving-club.html',
+        url: '/about-us/diving-club.html',
     },
     {
         name: 'Виктор Озаренко',
-        url: 'viktor-ozarenko.html',
+        url: '/about-us/viktor-ozarenko.html',
     },
     {
         name: 'Отзывы',
-        url: 'feedback.html',
+        url: '/about-us/feedback.html',
     },
     {
         name: 'Новости',
-        url: 'news.html',
+        url: '/about-us/news.html',
     },
     {
         name: 'Контакты',
-        url: 'contact-us.html',
+        url: '/about-us/contact-us.html',
    },
 ];
 
@@ -58,117 +58,117 @@ export const padiCourses: SubMenu[] = [
 export const ndlCourses: SubMenu[] = [
     {
         name: 'Novice diver NDL',
-        url: '../diving-courses/ndl/kurs-novice-diver-ndl.html',
+        url: '/diving-courses/ndl/kurs-novice-diver-ndl.html',
     },
     {
         name: 'Diver NDL',
-        url: '../diving-courses/ndl/kurs-diver-ndl.html',
+        url: '/diving-courses/ndl/kurs-diver-ndl.html',
     },
     {
         name: 'Universal diver NDL',
-        url: '../diving-courses/ndl/kurs-universal-diver-ndl.html',
+        url: '/diving-courses/ndl/kurs-universal-diver-ndl.html',
     },
     {
         name: 'Advanced Universal diver NDL',
-        url: '../diving-courses/ndl/kurs-advanced-universal-diver-ndl.html',
+        url: '/diving-courses/ndl/kurs-advanced-universal-diver-ndl.html',
     },
     {
         name: 'Rescue diver NDL',
-        url: '../diving-courses/ndl/kurs-rescue-diver-and-medic-first-aid.html',
+        url: '/diving-courses/ndl/kurs-rescue-diver-and-medic-first-aid.html',
     },
     {
         name: 'Divemaster NDL',
-        url: '../diving-courses/ndl/kurs-divemaster-ndl.html',
+        url: '/diving-courses/ndl/kurs-divemaster-ndl.html',
     },
     {
         name: 'Специализированные курсы NDL',
-        url: '../diving-courses/ndl/kursy-nitrox-night-deep-dry-suit.html',
+        url: '/diving-courses/ndl/kursy-nitrox-night-deep-dry-suit.html',
     }
 ]
 
 export const courses: SubMenu[] = [
     {
         name: 'Курсы дайвинга PADI',
-        url: '../diving-courses/padi.html',
+        url: '/diving-courses/padi.html',
         subMenu: padiCourses,
     },
     {
         name: 'Курсы дайвинга NDL',
-        url: '../diving-courses/national-dive-leauge.html',
+        url: '/diving-courses/national-dive-leauge.html',
         subMenu: ndlCourses,
     },
     {
         name: 'Инструкторские курсы',
-        url: '../diving-courses/instructor-development.html',
+        url: '/diving-courses/instructor-development.html',
     },
     {
         name: 'Фридайвинг',
-        url: '../diving-courses/freediving.html',
+        url: '/diving-courses/freediving.html',
     }
 ];
 
 export const technicalDiving: SubMenu[] = [
     {
         name: 'Технические погружения',
-        url: './technical-diving.html',
+        url: '/technical-diving.html',
     },
     {
         name: 'Сайдмаунт',
-        url: './sidemount.html',
+        url: '/sidemount.html',
     },
     {
         name: 'Курсы технического дайвинга IANTD',
-        url: './techdiving-courses-iantd.html',
+        url: '/techdiving-courses-iantd.html',
     },
     {
         name: 'Курсы технического дайвинга NDL',
-        url: './techdiving-courses-ndl.html',
+        url: '/techdiving-courses-ndl.html',
     },
     {
         name: 'Дайвинг на ребрезире',
-        url: './rebreather-diving.html',
+        url: '/rebreather-diving.html',
     }
 ];
 
 export const divingInSharm: SubMenu[] = [
     {
         name: 'Цены на дайвинг в Шарме',
-        url: '../diving-sharm-el-sheikh/ceny-diving-sharm.html',
+        url: '/diving-sharm-el-sheikh/ceny-diving-sharm.html',
     },
     {
         name: 'Новичкам: интро-дайв, снорклинг',
-        url: '../diving-sharm-el-sheikh/diving-dlia-nachinayushih.html',
+        url: '/diving-sharm-el-sheikh/diving-dlia-nachinayushih.html',
     },
     {
         name: 'Детский дайвинг',
-        url: '../diving-sharm-el-sheikh/detskiy-diving.html',
+        url: '/diving-sharm-el-sheikh/detskiy-diving.html',
     },
     {
         name: 'Страхование дайверов',
-        url: '../diving-sharm-el-sheikh/diving-strahovka.html',
+        url: '/diving-sharm-el-sheikh/diving-strahovka.html',
     },
     {
         name: 'Архив акций',
-        url: '../diving-sharm-el-sheikh/arhiv-akciy.html',
+        url: '/diving-sharm-el-sheikh/arhiv-akciy.html',
     },
 ];
 
 export const liveaboard: SubMenu[] = [
     {
         name: 'Прошедшие дайвинг сафари',
-        url: '../liveaboard/last-diving-safari-sharm-egypt.html',
+        url: '/liveaboard/last-diving-safari-sharm-egypt.html',
     },
     {
         name: 'Южные маршруты Красного моря',
-        url: '../liveaboard/red-sea-safari-south-routes.html',
+        url: '/liveaboard/red-sea-safari-south-routes.html',
     },
     {
         name: 'Северные маршруты Красного моря',
-        url: '../liveaboard/red-sea-safari-north-routes.html',
+        url: '/liveaboard/red-sea-safari-north-routes.html',
     },
     {
         name: 'Сафарийный флот',
-        url: '../liveaboard/red-sea-safari-fleet.html',
+        url: '/liveaboard/red-sea-safari-fleet.html',
     }
 ];
 

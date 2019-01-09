@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export class DivingClub extends React.Component {
     render() {
-        return <div className='page'>
+        return <>
 
             <h1>Школа дайвинга Виктора Озаренко </h1>
 
@@ -31,17 +31,17 @@ export class DivingClub extends React.Component {
             </ul>
 
             <h2>Команда клуба "Искатели морских сокровищ"</h2>
-            <div className='team-member'>
-                <img alt="Оксана Быкова, русский инструктор по дайвингу в Египте, Шарм эль Шейх" src="../images/about-us/team/diving-instructor-oxana.jpg" />
+            <div className="team-member">
+                <img alt="Оксана Быкова, русский инструктор по дайвингу в Египте, Шарм эль Шейх" src="/images/about-us/team/diving-instructor-oxana.jpg" />
                 <h3>Оксана Быкова, инструктор по дайвингу,</h3>
                 <p>Оксана Быкова, инструктор по дайвингу:</p>
                 <p>PADI OWSI #420043, EFR Instructor, NDL Instructor Rank II №BO 2-6115</p>
                 <p>E-mail: <a href="mailto:ozarenko.diving@gmail.com">ozarenko.diving@gmail.com</a></p>
             </div>
 
-            <div className='team-member'>
+            <div className="team-member">
                 <img alt="Виктор Озаренко, украинский инструктор по дайвингу в Египте, Шарм эль Шейх, школа дайвинга Виктора Озаренко"
-                    src="../images/about-us/team/diving-trainer-viktor-ozarenko.jpg" />
+                    src="/images/about-us/team/diving-trainer-viktor-ozarenko.jpg" />
 
                 <h3>Виктор Озаренко, инструктор-тренер,командор клуба</h3>
                 <p>​Виктор Озаренко, курс-директор, инструктор-тренер:</p>
@@ -52,8 +52,8 @@ export class DivingClub extends React.Component {
                 <p>E-mail: <a ref="mailto:ozarenko.diving@gmail.com">ozarenko.diving@gmail.com</a></p>
             </div>
 
-            <div className='team-member'>
-                <img alt="Богдан Хмельницкий инструктор, Bogdan Khmelnitskiy diving instructor" src="../images/about-us/team/diving_instructor_bogdan.jpg" />
+            <div className="team-member">
+                <img alt="Богдан Хмельницкий инструктор, Bogdan Khmelnitskiy diving instructor" src="/images/about-us/team/diving_instructor_bogdan.jpg" />
                 <h3>Богдан Хмельницкий, инструктор по дайвингу</h3>
                 <p>Богдан Хмельницкий, инструктор по дайвингу:</p>
                 <p>NDL Instructor Rank II №KB 2-4935</p>
@@ -63,6 +63,6 @@ export class DivingClub extends React.Component {
                 <p>E-mail: <a href="mailto:akkerman@rambler.ru">akkerman@rambler.ru</a></p>
             </div>
 
-        </div>
+        </>
     }
 }

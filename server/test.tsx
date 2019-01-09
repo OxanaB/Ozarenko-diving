@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom/server';
+import { OzarenkoDivingPage } from '../ozarenko-diving-page-component';
 import { DivingClub } from '../about-us/diving-club-component';
 import { ViktorOzarenko } from '../about-us/viktor-ozarenko-component';
 import { Feedback } from '../about-us/feedback-component';
@@ -15,6 +16,11 @@ import * as Meta from '../meta';
 
 
 const pages: any = {
+    './main-page.html': ReactDom.renderToString(
+        <Page meta={Meta.metaMainPage} title={'Школа дайвинга Виктора Озаренко. Филиалы в Одессе и Шарм-эль-Шейхе'}>
+           <OzarenkoDivingPage />
+        </Page>
+    ),
     './about-us/diving-club.html': ReactDom.renderToString(
         <Page meta={Meta.metaDivingClubPage} title={'О клубе | Дайв-клуб Искатели морских сокровищ, Одесса (Украина), Шарм-эль-Шейх (Египет)'}>
            <DivingClub />

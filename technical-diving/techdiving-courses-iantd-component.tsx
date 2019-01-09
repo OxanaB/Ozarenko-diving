@@ -2,7 +2,7 @@ import * as React from 'react'
 
 export class TechdivingCoursesIantd extends React.Component {
     render() {
-        return <div className='page'>
+        return <>
             <h1>Курсы технического дайвинга IANTD</h1>
             <p>Курсы технического дайвинга по системе IANTD в проводит мастер инструктор-тренер Виктор Озаренко: IANTD Trimix
     Instructor Trainer #666 </p>
@@ -23,7 +23,7 @@ export class TechdivingCoursesIantd extends React.Component {
             <p>Стоимость каждой сертификации IANTD 60 евро. Сертификат печатается в Хургаде.</p>
 
             <h2 id="Essentials">Essentials - курс базовых навыков дайвинга 450$</h2>
-            <img src="../images/technical-diving/iantd/essentials.jpg" alt="Забронировать курс базовых навыков технического дайвинга IANTD Essentials" />
+            <img src="/images/technical-diving/iantd/essentials.jpg" alt="Забронировать курс базовых навыков технического дайвинга IANTD Essentials" />
             <p>В курс входят следующие этапы:</p>
             <p>1. Конфигурация снаряжения для дайвинга.</p>
             <p>Спинка, подвеска, регуляторы, катушки, свет, инструменты, костюмы, ласты, маски и т.д. На этом этапе
@@ -53,7 +53,7 @@ export class TechdivingCoursesIantd extends React.Component {
     безопасности погружений</p>
 
             <h2 id="AdvancedNitrox">Курс Advanced Nitrox (EANx) diver 620$</h2>
-            <img src="../images/technical-diving/iantd/advnitrox.jpg" alt="Записаться на курс Advanced Nitrox (EANx) diver " />
+            <img src="/images/technical-diving/iantd/advnitrox.jpg" alt="Записаться на курс Advanced Nitrox (EANx) diver " />
             <p>Начальный курс обучения техническому дайвингу Advanced Nitrox diver IANTD разработан для расширения знаний дайверов
                 в области использования смеси EANx для спортивного дайвинга. Также она развивает навыки и умения погружения,
                 обеспечивая более глубокое понимание концепции погружения на смесях EANx. Во время программы используются смеси
@@ -66,7 +66,7 @@ export class TechdivingCoursesIantd extends React.Component {
     EANx, трансфер из отеля. Сертификат оплачивается дополнительно и стоит 60 евро.</p>
 
             <h2 id="TechnicalDiver">Курс Technical diver 850$</h2>
-            <img src="../images/technical-diving/iantd/technical-diver.jpg" alt="Забронировать курс технического дайвера Technical diver IANTD" />
+            <img src="/images/technical-diving/iantd/technical-diver.jpg" alt="Забронировать курс технического дайвера Technical diver IANTD" />
             <p>Эта программа тренировки дайверов разработана для погружений на глубины от 30 метров и, по усмотрению инструктора,
                 до 51 метра, используя обычные смеси газов для дыхания; и обеспечивая наилучшего понимания применения этих смесей,
     знания ограничений для любой смеси EANx, а также использования смесей EANx и чистого кислорода для декомпрессии.</p>
@@ -80,7 +80,7 @@ export class TechdivingCoursesIantd extends React.Component {
     дополнительно и стоит 60 евро.</p>
 
             <h2 id="NormoxicTrimix">Курс Normoxic trimix diver 1120$</h2>
-            <img src="../images/technical-diving/iantd/normoxic-trimix.jpg" alt="Забронировать курс нормостического тримикса Normoxic trimix diver IANTD" />
+            <img src="/images/technical-diving/iantd/normoxic-trimix.jpg" alt="Забронировать курс нормостического тримикса Normoxic trimix diver IANTD" />
             <p>Эта программа продвинутого обучения техническому дайвингу разработана для тренировки тех, кто намерен проводить
                 погружения на глубинах от 39 метров и до 60 метров, и не желает использовать воздух в качестве дыхательной смеси на
     глубинах свыше 39 метров. Смеси Trimix позволяют снизить эффект наркоза на таких глубинах.</p>
@@ -93,7 +93,7 @@ export class TechdivingCoursesIantd extends React.Component {
     оплачивается дополнительно и стоит 60 евро.</p>
 
             <h2 id="TrimixDiver">Курс Trimix diver 1520$</h2>
-            <img src="../images/technical-diving/iantd/trimix-diver.jpg" alt="Забронировать курс тримикс дайвер Trimix diver IANTD" />
+            <img src="/images/technical-diving/iantd/trimix-diver.jpg" alt="Забронировать курс тримикс дайвер Trimix diver IANTD" />
             <p>Смеси Trimix позволяют использовать более безопасные методы исследования водных глубин для тех дайверов, кто осознаёт необходимость иметь чёткость мышления на глубине. Программа IANTD Trimix Diver требует от обучаемого полной самодостаточности и автономности.</p>
             <p>Данная программа продвинутого обучения техническому дайвингу готовит аквалангиста совершать тримиксные погружения до
     100 метров. Зачетное погружение осуществляется на газовой смеси Tx 14/50 до 90 метров.</p>
@@ -115,12 +115,12 @@ export class TechdivingCoursesIantd extends React.Component {
             <p>Курс <a href="#TrimixDiver">Trimix diver</a> открывает для вас всё более манящие глубины до 100 метров, во время погружений вы будете использовать гелиевую смесь и до 4х
     декомпрессионных стейджей. После курса глубины будут ограничены уже только вашим опытом.</p>
             <p>Всю линйеку курсов технического дайвинга проводит инструктор-тренер с более чем 38 летним опытом подводного плавания
-    <a href="../about-us/viktor-ozarenko.html">Виктор Озаренко</a>. Курсы можно проходить как в Шарм эль
+    <a href="/about-us/viktor-ozarenko.html">Виктор Озаренко</a>. Курсы можно проходить как в Шарм эль
     Шейхе, так и в Дахабе.</p>
             <p>Также есть возможность прохождения курсов технического дайвинга в конфигурации <a href="./sidemount.html">сайдмаунт</a>,
                 который поможет разгрузить спину и будет легче входить и выходить из воды в сложных местах для погружений с берега
                 в Дахабе. Если у вас еще нет сертификата сайдмаунт можно будет совместить любой технический курс с курсом
     сайдмаунт.</p>
-        </div>
+        </>
     }
 }
