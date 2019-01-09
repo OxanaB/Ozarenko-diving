@@ -5,7 +5,7 @@ import { rebreatherPricelistCourses, rebreatherPricelistAir, rebreatherPricelist
 
 export class Rebreather extends React.Component {
     render() {
-        return <>
+        return <div className="page-container">
             <h1>Дайвинг на ребризере (замкнутый цикл дыхания) CCR</h1>
             <img src="/images/technical-diving/rebreather-diver.jpg" alt="дайвинг на ребризере, обучение ребризеру, ребризер красное море, ребризер египет" />
             <div className="text-after-h1">
@@ -83,6 +83,6 @@ export class Rebreather extends React.Component {
                     </tr>
                 </table>
             })}
-        </>
+        </ div>
     }
 }

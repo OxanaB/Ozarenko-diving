@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export class ViktorOzarenko extends React.Component {
     render() {
-        return <>
+        return <div className="page-container">
 
             <h1>Виктор Озаренко</h1>
 
@@ -57,6 +57,6 @@ export class ViktorOzarenko extends React.Component {
             <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
                 src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo8.jpg" />
 
-        </ >
+        </ div>
     }
 }

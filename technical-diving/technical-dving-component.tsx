@@ -5,7 +5,7 @@ import { priceListTechnicalDaily, priceListTechnicalRent } from './price-technic
 export class TechnicalDiving extends React.Component{
  
     render() {
-        return <>
+        return <div className="page-container">
             <h1>Технический дайвинг</h1>
             <div className="text-after-h1">
                 <p>Технический дайвинг отличается от любительского более сложными условиями погружения, выходящими за рамки
@@ -63,6 +63,6 @@ export class TechnicalDiving extends React.Component{
                     <p>Шарм эль Шейх, Томас каньон</p>
                 </div>
             </div>
-        </>
+        </ div>
     }
 }

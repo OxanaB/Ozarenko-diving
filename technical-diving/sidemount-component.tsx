@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export class Sidemount extends React.Component {
     render() {
-        return <>
+        return <div className="page-container">
             <h1>Курсы обучения дайваингу в сайдмаунте (sidemount)</h1>
             <img src="/images/technical-diving/sidemount/sidemount-3.jpg" alt="Сайдмаунт: позволяет проникать в узкие места и пещеры" />
             <img src="/images/technical-diving/sidemount/sidemount-1.jpg" alt="Сайдмаунт: можно использовать разного объема баллоны" />
@@ -85,6 +85,6 @@ export class Sidemount extends React.Component {
     готова к использованию после настройки «размера» и не требует доработки.</p>
 
 <p>Командор клуба "Искатели морских сокровищ", <a href="/about-us/viktor-ozarenko.html">Виктор Озаренко</a></p>
-        </ >
+        </ div>
     }
 }

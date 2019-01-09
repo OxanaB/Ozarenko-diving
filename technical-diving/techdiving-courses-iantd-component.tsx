@@ -2,7 +2,7 @@ import * as React from 'react'
 
 export class TechdivingCoursesIantd extends React.Component {
     render() {
-        return <>
+        return <div className="page-container">
             <h1>Курсы технического дайвинга IANTD</h1>
             <p>Курсы технического дайвинга по системе IANTD в проводит мастер инструктор-тренер Виктор Озаренко: IANTD Trimix
     Instructor Trainer #666 </p>
@@ -121,6 +121,6 @@ export class TechdivingCoursesIantd extends React.Component {
                 который поможет разгрузить спину и будет легче входить и выходить из воды в сложных местах для погружений с берега
                 в Дахабе. Если у вас еще нет сертификата сайдмаунт можно будет совместить любой технический курс с курсом
     сайдмаунт.</p>
-        </>
+        </ div>
     }
 }

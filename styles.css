@@ -31,11 +31,10 @@
   flex-direction: column;
 }
 .header-img {
-  width: 738px;
-  height: 58px;
+  width: 702px;
+  height: 56px;
   margin-top: 10px;
-  margin-left: -5px;
-  background-image: url(./images/logos/ozarenko_logo-main.png);
+  margin-left: -14px;
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
@@ -58,8 +57,8 @@
   font-weight: bold;
   font-style: italic;
   font-size: 12px;
-  margin-left: 90px;
-  padding: 3px 0px 5px 0px;
+  margin-left: 80px;
+  padding-top: 5px;
 }
 .header-link {
   margin-right: 10px;

@@ -110,23 +110,23 @@ export const courses: SubMenu[] = [
 export const technicalDiving: SubMenu[] = [
     {
         name: 'Технические погружения',
-        url: '/technical-diving.html',
+        url: 'technical-diving/technical-diving.html',
     },
     {
         name: 'Сайдмаунт',
-        url: '/sidemount.html',
+        url: 'technical-diving/sidemount.html',
     },
     {
         name: 'Курсы технического дайвинга IANTD',
-        url: '/techdiving-courses-iantd.html',
+        url: 'technical-diving/techdiving-courses-iantd.html',
     },
     {
         name: 'Курсы технического дайвинга NDL',
-        url: '/techdiving-courses-ndl.html',
+        url: 'technical-diving/techdiving-courses-ndl.html',
     },
     {
         name: 'Дайвинг на ребрезире',
-        url: '/rebreather-diving.html',
+        url: 'technical-diving/rebreather-diving.html',
     }
 ];
 
@@ -156,19 +156,19 @@ export const divingInSharm: SubMenu[] = [
 export const liveaboard: SubMenu[] = [
     {
         name: 'Прошедшие дайвинг сафари',
-        url: '/liveaboard/last-diving-safari-sharm-egypt.html',
+        url: '/liveaboard/last-safari-egypt.html',
     },
     {
         name: 'Южные маршруты Красного моря',
-        url: '/liveaboard/red-sea-safari-south-routes.html',
+        url: '/liveaboard/redsea-south.html',
     },
     {
         name: 'Северные маршруты Красного моря',
-        url: '/liveaboard/red-sea-safari-north-routes.html',
+        url: '/liveaboard/redsea-north.html',
     },
     {
         name: 'Сафарийный флот',
-        url: '/liveaboard/red-sea-safari-fleet.html',
+        url: '/liveaboard/redsea-fleet.html',
     }
 ];
 

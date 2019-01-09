@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export class DivingClub extends React.Component {
     render() {
-        return <>
+        return <div className="page-container">
 
             <h1>Школа дайвинга Виктора Озаренко </h1>
 
@@ -63,6 +63,6 @@ export class DivingClub extends React.Component {
                 <p>E-mail: <a href="mailto:akkerman@rambler.ru">akkerman@rambler.ru</a></p>
             </div>
 
-        </>
+        </ div>
     }
 }

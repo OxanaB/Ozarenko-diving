@@ -2,7 +2,7 @@ import * as React from 'react'
 
 export class TechdivingCoursesNdl extends React.Component {
     render() {
-        return <>
+        return <div className="page-container">
             <h1>Технический дивизон National Dive League (NDL)</h1>
             <img src="/images/logos/ndl-tek-logo-red.jpg" alt="Технический дивизон NDL. Курсы технического дайвинга в Одессе" />
             <p>Технический дивизион NDL - это авторская программа обучения техническому дайвингу , созданная курс-директором NDL
@@ -111,6 +111,6 @@ export class TechdivingCoursesNdl extends React.Component {
                 <p>Курсы технического дайвинга по авторской программе проводит курс-директор NDL, Master IDC Tech Instructor
         <a href="/about-us/viktor-ozarenko">Виктор Озаренко</a> . </p>
             </div>
-        </ >
+        </ div>
     }
 }

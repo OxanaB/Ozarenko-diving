@@ -4,7 +4,7 @@ import { clientsFeedback } from './feedback_array'
 
 export class Feedback extends React.Component {
     render() {
-        return <>
+        return <div className="page-container">
             <h1>Отзывы клиентов о дайвинге в Шарм-эль-Шейхе с нашим клубом</h1>
             {map(clientsFeedback, (clientsFeedback) => {
                 return <div className="clients-feedback-feed">
@@ -16,6 +16,6 @@ export class Feedback extends React.Component {
                     </div>
                 </div>
             })}
-        </>
+        </ div>
     }
 }
