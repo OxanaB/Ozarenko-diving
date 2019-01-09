@@ -233,6 +233,30 @@ export const metaTechDivingRebreather: Meta[] = [
     }
 ]
 
+export const metaPriceSharm: Meta[] = [
+    {
+        name: "description",
+        content: "В цены на дайвинг включены: два погружения в день, 12-литровые баллоны с воздухом, груза, грузовой пояс, услуги русскоговорящего гида,  трансфер из отеля и обратно (кроме отелей в Набк)"
+    },
+    {
+        name: "keywords",
+        content: "Узнать сколько стоит дайвинг в Шарм эль Шейхе, цены на дэйли дайвинг в заповедник Рас Мухаммед, остров Тиран, поездки на Тисельгорм и в Дахаб, цены на курсы дайвинга в Египте"
+    },
+    {
+        property: "og:title",
+        content: "Цены на дайвинг в Шарм эль Шейхе, Египет"
+    },
+    {
+        property: "og:url",
+        content: "https://www.ozarenko-diving.com/diving-sharm-el-sheikh/ceny-diving-sharm.html"
+    },
+    {
+        property: "og:description",
+        content: "В цены на дайвинг включены: два погружения в день, 12-литровые баллоны с воздухом, груза, грузовой пояс, услуги русскоговорящего гида,  трансфер из отеля и обратно (кроме отелей в Набк)"
+    }
+]
+
+
 export const metaSouthRoutes: Meta[] = [
     {
         name: "description",
