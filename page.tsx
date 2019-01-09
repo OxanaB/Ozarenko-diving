@@ -42,7 +42,6 @@ export class Page extends React.Component<PageProps> {
                 <div className="entire-page" id="root" >
                     <Header />
                     <div className="page">
-                        <Menu {...menu} />
                         {this.props.children}
                     </div>
                     <Footer mainMenus={mainMenu} />
