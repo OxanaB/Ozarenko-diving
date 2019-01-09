@@ -9,6 +9,7 @@ import { Meta } from './meta';
 export interface PageProps {
     meta: Meta[];
     title: string;
+    script?: string;
 }
 
 export class Page extends React.Component<PageProps> {
@@ -33,15 +34,21 @@ export class Page extends React.Component<PageProps> {
                     />
                 })}
                 <script src="/facebook.js"></script>
-                {/* <script src="/require.js" data-main="main_page"></script> */}
+                {
+                    this.props.script !== undefined
+                    ? <>
+                        <script src="/require.js" data-main={this.props.script}></script>
+                    </>
+                    : null
+                }
                 <link rel="stylesheet" href="/styles.css" />
                 <link href="https://fonts.googleapis.com/css?family=Lobster|Play:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" />
                 <title>{this.props.title}</title>
             </head>
             <body>
-                <div className="entire-page" id="root" >
+                <div className="entire-page">
                     <Header />
-                    <div className="page">
+                    <div className="page" id="root">
                         {this.props.children}
                     </div>
                     <Footer mainMenus={mainMenu} />
