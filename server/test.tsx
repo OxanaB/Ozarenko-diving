@@ -11,6 +11,7 @@ import { TechdivingCoursesIantd } from '../technical-diving/techdiving-courses-i
 import { TechdivingCoursesNdl } from '../technical-diving/techdiving-courses-ndl-component';
 import { Rebreather } from '../technical-diving/rebreather-component';
 import { PriceSharm } from '../diving-sharm-el-sheikh/prices-sharm-component';
+import { Insurance } from '../diving-sharm-el-sheikh/insurance-component';
 import { NorthRoutes } from '../liveaboard/north-routes-component';
 import { SouthRoutes } from '../liveaboard/south-routes-component';
 import { writeFileSync } from 'fs';
@@ -70,6 +71,11 @@ const pages: any = {
     './diving-sharm-el-sheikh/ceny-diving-sharm.html': ReactDom.renderToString(
         <Page meta={Meta.metaPriceSharm} title={'Цены на дайвинг в Шарм эль Шейхе, Египет'}>
             <PriceSharm />
+        </Page>
+    ),
+    './diving-sharm-el-sheikh/diving-strahovka.html': ReactDom.renderToString(
+        <Page meta={Meta.metaInsurance} title={'Страхование дайверов | международная дайверская страховка'}>
+            <Insurance />
         </Page>
     ),
     './liveaboard/redsea-south.html': ReactDom.renderToString(

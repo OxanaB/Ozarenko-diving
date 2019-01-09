@@ -256,6 +256,29 @@ export const metaPriceSharm: Meta[] = [
     }
 ]
 
+export const metaInsurance: Meta[] = [
+    {
+        name: "description",
+        content: "Застрахуйтесь от несчастных случаев во время дайвинга. Вы сэкономите больше 3000 евро на лечение в барокамере. Наш партнер британская компания Lloyd"
+    },
+    {
+        name: "keywords",
+        content: "страхование дайверов, дайверская страховка, международная дайверская страховка, дайв страховка, страховка для дайвера"
+    },
+    {
+        property: "og:title",
+        content: "Страхование дайверов | международная дайверская страховка"
+    },
+    {
+        property: "og:url",
+        content: "https://www.ozarenko-diving.com/diving-sharm-el-sheikh/diving-strahovka.html"
+    },
+    {
+        property: "og:description",
+        content: "Застрахуйтесь от несчастных случаев во время дайвинга. Вы сэкономите больше 3000 евро на лечение в барокамере. Наш партнер британская компания Lloyd"
+    }
+]
+
 
 export const metaSouthRoutes: Meta[] = [
     {
