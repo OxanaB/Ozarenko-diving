@@ -10,6 +10,9 @@ import { Sidemount } from '../technical-diving/sidemount-component';
 import { TechdivingCoursesIantd } from '../technical-diving/techdiving-courses-iantd-component';
 import { TechdivingCoursesNdl } from '../technical-diving/techdiving-courses-ndl-component';
 import { Rebreather } from '../technical-diving/rebreather-component';
+import { PriceSharm } from '../diving-sharm-el-sheikh/prices-sharm-component';
+import { NorthRoutes } from '../liveaboard/north-routes-component';
+import { SouthRoutes } from '../liveaboard/south-routes-component';
 import { writeFileSync } from 'fs';
 import { Page } from '../page';
 import * as Meta from '../meta';
@@ -62,6 +65,20 @@ const pages: any = {
     './technical-diving/rebreather-diving.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechDivingRebreather} title={'Ребризер дайвинг на Красном море, обучение. Megaladon & Inspiration'}>
             <Rebreather />
+        </Page>
+    ),
+    './diving-sharm-el-sheikh/ceny-diving-sharm.html': ReactDom.renderToString(
+        <Page meta={Meta.metaPriceSharm} title={'Цены на дайвинг в Шарм эль Шейхе, Египет'}>
+            <PriceSharm />
+        </Page>
+    ),
+    './liveaboard/redsea-south.html': ReactDom.renderToString(
+        <Page meta={Meta.metaSouthRoutes} title={'Маршруты дайвинг сафари по югу Красного моря (Египет)'}>
+            <SouthRoutes />
+        </Page>
+    ),'./liveaboard/redsea-north.html': ReactDom.renderToString(
+        <Page meta={Meta.metaNorthRoutes} title={'Маршруты дайвинг сафари по северу Красного моря (Египет)'}>
+            <NorthRoutes />
         </Page>
     )
 };
