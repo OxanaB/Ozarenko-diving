@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { map } from '../utils';
 import { clientsFeedback } from './feedback_array'
+import { enableClient } from '../client';
 
 export class Feedback extends React.Component {
     render() {
@@ -18,4 +19,10 @@ export class Feedback extends React.Component {
             })}
         </ div>
     }
+}
+
+
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(Feedback);
 }

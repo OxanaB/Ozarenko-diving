@@ -17,74 +17,74 @@ import { SouthRoutes } from '../liveaboard/south-routes-component';
 import { writeFileSync } from 'fs';
 import { Page } from '../page';
 import * as Meta from '../meta';
-
+import { Core } from '../core';
 
 const pages: any = {
     './main-page.html': ReactDom.renderToString(
-        <Page meta={Meta.metaMainPage} title={'Школа дайвинга Виктора Озаренко. Филиалы в Одессе и Шарм-эль-Шейхе'}>
-           <OzarenkoDivingPage />
+        <Page meta={Meta.metaMainPage} script="ozarenko-diving-page-component" title={'Школа дайвинга Виктора Озаренко. Филиалы в Одессе и Шарм-эль-Шейхе'}>
+            <Core><OzarenkoDivingPage /></Core>
         </Page>
     ),
     './about-us/diving-club.html': ReactDom.renderToString(
         <Page meta={Meta.metaDivingClubPage} title={'О клубе | Дайв-клуб Искатели морских сокровищ, Одесса (Украина), Шарм-эль-Шейх (Египет)'}>
-           <DivingClub />
+            <Core><DivingClub /></Core>
         </Page>
     ),
     './about-us/viktor-ozarenko.html': ReactDom.renderToString(
         <Page meta={Meta.metaViktorOzarenkoPage} title={'Виктор Озаренко, командор дайвинг клуба "Искатели морских сокровищ", Одесса (Украина)'}>
-           <ViktorOzarenko />
+            <Core><ViktorOzarenko /></Core>
         </Page>
-    ),'./about-us/feedback.html': ReactDom.renderToString(
-        <Page meta={Meta.metaFeedbackPage} title={'Отзывы о дайвиге с нашим клубом в Шарм-эль-Шейхе (Египет)'}>
-           <Feedback />
+    ), './about-us/feedback.html': ReactDom.renderToString(
+        <Page meta={Meta.metaFeedbackPage} script="feedback-component" title={'Отзывы о дайвиге с нашим клубом в Шарм-эль-Шейхе (Египет)'}>
+            <Core><Feedback /></Core>
         </Page>
-    ),'./about-us/contact-us.html': ReactDom.renderToString(
+    ), './about-us/contact-us.html': ReactDom.renderToString(
         <Page meta={Meta.metaContactUsPage} title={'Контактная информация'}>
-           <ContactUs />
+            <Core><ContactUs /></Core>
         </Page>
     ),
     './technical-diving/technical-diving.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechnicalDivingPage} title={'Технический дайвинг с Виктором Озаренко на Черном и на Красном море'}>
-            <TechnicalDiving />
+            <Core><TechnicalDiving /></Core>
         </Page>
     ),
     './technical-diving/sidemount.html': ReactDom.renderToString(
         <Page meta={Meta.metaSidemountPage} title={'Обучение дайвингу в сайдмаунте (sidemount diving)'}>
-            <Sidemount />
+            <Core><Sidemount /></Core>
         </Page>
     ),
     './technical-diving/techdiving-courses-iantd.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechCoursesIantd} title={'Курсы технического дайвинга IANTD'}>
-            <TechdivingCoursesIantd />
+            <Core><TechdivingCoursesIantd /></Core>
         </Page>
     ),
     './technical-diving/techdiving-courses-ndl.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechCoursesNdl} title={'Курсы технического дайвинга NDL'}>
-            <TechdivingCoursesNdl />
+            <Core><TechdivingCoursesNdl /></Core>
         </Page>
     ),
     './technical-diving/rebreather-diving.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechDivingRebreather} title={'Ребризер дайвинг на Красном море, обучение. Megaladon & Inspiration'}>
-            <Rebreather />
+            <Core><Rebreather /></Core>
         </Page>
     ),
     './diving-sharm-el-sheikh/ceny-diving-sharm.html': ReactDom.renderToString(
         <Page meta={Meta.metaPriceSharm} title={'Цены на дайвинг в Шарм эль Шейхе, Египет'}>
-            <PriceSharm />
+            <Core><PriceSharm /></Core>
         </Page>
     ),
     './diving-sharm-el-sheikh/diving-strahovka.html': ReactDom.renderToString(
         <Page meta={Meta.metaInsurance} title={'Страхование дайверов | международная дайверская страховка'}>
-            <Insurance />
+            <Core><Insurance /></Core>
         </Page>
     ),
     './liveaboard/redsea-south.html': ReactDom.renderToString(
         <Page meta={Meta.metaSouthRoutes} title={'Маршруты дайвинг сафари по югу Красного моря (Египет)'}>
-            <SouthRoutes />
+            <Core><SouthRoutes /></Core>
         </Page>
-    ),'./liveaboard/redsea-north.html': ReactDom.renderToString(
+    ), './liveaboard/redsea-north.html': ReactDom.renderToString(
         <Page meta={Meta.metaNorthRoutes} title={'Маршруты дайвинг сафари по северу Красного моря (Египет)'}>
-            <NorthRoutes />
+            <Core><NorthRoutes /></Core>
         </Page>
     )
 };
