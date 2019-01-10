@@ -156,19 +156,19 @@ export const divingInSharm: SubMenu[] = [
 export const liveaboard: SubMenu[] = [
     {
         name: 'Прошедшие дайвинг сафари',
-        url: '/liveaboard/last-safari-egypt.html',
+        url: '/last-safari-egypt.html',
     },
     {
         name: 'Южные маршруты Красного моря',
-        url: '/liveaboard/redsea-south.html',
+        url: '/redsea-liveaboard-south.html',
     },
     {
         name: 'Северные маршруты Красного моря',
-        url: '/liveaboard/redsea-north.html',
+        url: '/redsea-liveaboard-north.html',
     },
     {
         name: 'Сафарийный флот',
-        url: '/liveaboard/redsea-fleet.html',
+        url: '/redsea-liveaboard-fleet.html',
     }
 ];
 

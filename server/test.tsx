@@ -12,8 +12,8 @@ import { TechdivingCoursesNdl } from '../techdiving-courses-ndl-component';
 import { Rebreather } from '../rebreather-component';
 import { PriceSharm } from '../prices-sharm-component';
 import { Insurance } from '../insurance-component';
-import { NorthRoutes } from '../liveaboard/north-routes-component';
-import { SouthRoutes } from '../liveaboard/south-routes-component';
+import { NorthRoutes } from '../north-routes-component';
+import { SouthRoutes } from '../south-routes-component';
 import { writeFileSync } from 'fs';
 import { Page } from '../page';
 import * as Meta from '../meta';
@@ -78,11 +78,11 @@ const pages: any = {
             <Core><Insurance /></Core>
         </Page>
     ),
-    './liveaboard/redsea-south.html': ReactDom.renderToString(
+    './redsea-liveaboard-south.html': ReactDom.renderToString(
         <Page meta={Meta.metaSouthRoutes}script="south-routes-component" title={'Маршруты дайвинг сафари по югу Красного моря (Египет)'}>
             <Core><SouthRoutes /></Core>
         </Page>
-    ), './liveaboard/redsea-north.html': ReactDom.renderToString(
+    ), './redsea-liveaboard-north.html': ReactDom.renderToString(
         <Page meta={Meta.metaNorthRoutes}script="north-routes-component" title={'Маршруты дайвинг сафари по северу Красного моря (Египет)'}>
             <Core><NorthRoutes /></Core>
         </Page>

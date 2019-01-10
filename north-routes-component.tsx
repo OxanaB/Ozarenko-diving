@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { enableClient } from '../client';
+import { enableClient } from './client';
 
 export class NorthRoutes extends React.Component {
     render() {

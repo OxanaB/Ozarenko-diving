@@ -295,7 +295,7 @@ export const metaSouthRoutes: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/liveaboard/redsea-south.html"
+        content: "http://www.ozarenko-diving.com/redsea-liveaboard-south.html"
     },
     {
         property: "og:description",
@@ -318,7 +318,7 @@ export const metaNorthRoutes: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/liveaboard/redsea-north.html"
+        content: "http://www.ozarenko-diving.com/redsea-liveaboard-north.html"
     },
     {
         property: "og:description",
