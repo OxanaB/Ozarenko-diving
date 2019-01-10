@@ -48,7 +48,7 @@ export const metaDivingClubPage: Meta[] = [
         content:"Клуб основан легендарным специалистом водолазного дела Украины, одесситом Виктором Озаренко. Наша школа проводит обучение по самым популярным системам дайвинга"
     }
 ]
-
+ 
 export const metaViktorOzarenkoPage: Meta[] = [
     {
         name: "description",
@@ -64,7 +64,7 @@ export const metaViktorOzarenkoPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"http://www.ozarenko-diving.com/about-us/viktor-ozarenko.html"
+        content:"http://www.ozarenko-diving.com/about-viktor-ozarenko.html"
     },
     {
         property:"og:description",

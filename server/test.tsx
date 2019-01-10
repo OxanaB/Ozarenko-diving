@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDom from 'react-dom/server';
 import { OzarenkoDivingPage } from '../ozarenko-diving-page-component';
 import { Team } from '../about-us-component';
-import { ViktorOzarenko } from '../about-us/viktor-ozarenko-component';
+import { ViktorOzarenko } from '../viktor-ozarenko-component';
 import { Feedback } from '../about-us/feedback-component';
 import { ContactUs } from '../about-us/contact-us-component';
 import { TechnicalDiving } from '../technical-diving/technical-diving-component';
@@ -30,7 +30,7 @@ const pages: any = {
             <Core><Team /></Core>
         </Page>
     ),
-    './about-us/viktor-ozarenko.html': ReactDom.renderToString(
+    './about-viktor-ozarenko.html': ReactDom.renderToString(
         <Page meta={Meta.metaViktorOzarenkoPage}script="viktor-ozarenko-component" title={'Виктор Озаренко, командор дайвинг клуба "Искатели морских сокровищ", Одесса (Украина)'}>
             <Core><ViktorOzarenko /></Core>
         </Page>

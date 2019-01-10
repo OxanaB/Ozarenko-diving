@@ -16,7 +16,7 @@ export const about: SubMenu[] = [
     },
     {
         name: 'Виктор Озаренко',
-        url: '/about-us/viktor-ozarenko.html',
+        url: '/about-viktor-ozarenko.html',
     },
     {
         name: 'Отзывы',
