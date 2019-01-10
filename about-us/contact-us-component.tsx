@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { enableClient } from '../client';
 
 export class ContactUs extends React.Component {
     render() {
@@ -10,4 +11,8 @@ export class ContactUs extends React.Component {
             <p>Тел. +38 068 498 1046 (Виктор)</p>
         </ div>
     }
+}
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(ContactUs);
 }

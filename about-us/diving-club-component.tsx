@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { enableClient } from '../client';
 
 export class DivingClub extends React.Component {
     render() {
@@ -65,4 +66,9 @@ export class DivingClub extends React.Component {
 
         </ div>
     }
+}
+
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(DivingClub);
 }

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { enableClient } from '../client';
 
 export class Insurance extends React.Component {
     render() {
@@ -31,4 +32,9 @@ export class Insurance extends React.Component {
             <a href="/about-us/contact.html" className="order-button">ЗАКАЗАТЬ СТРАХОВОЙ ПОЛИС</a>
         </div>
     }
+}
+
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(Insurance);
 }

@@ -16,7 +16,7 @@ export class Feedback extends React.Component {
                     <p>{clientsFeedback.text}</p>
                     </div>
                 </div>
-            })}
+            })} 
         </ div>
     }
 }
