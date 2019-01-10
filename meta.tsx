@@ -87,7 +87,7 @@ export const metaFeedbackPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"http://www.ozarenko-diving.com/about-us/feedback.html"
+        content:"http://www.ozarenko-diving.com/feedback.html"
     },
     {
         property:"og:description",
@@ -110,7 +110,7 @@ export const metaContactUsPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"http://www.ozarenko-diving.com/about-us/contact-us.html"
+        content:"http://www.ozarenko-diving.com/contact-us.html"
     },
     {
         property:"og:description",

@@ -3,8 +3,8 @@ import * as ReactDom from 'react-dom/server';
 import { OzarenkoDivingPage } from '../ozarenko-diving-page-component';
 import { Team } from '../about-us-component';
 import { ViktorOzarenko } from '../viktor-ozarenko-component';
-import { Feedback } from '../about-us/feedback-component';
-import { ContactUs } from '../about-us/contact-us-component';
+import { Feedback } from '../feedback-component';
+import { ContactUs } from '../contact-us-component';
 import { TechnicalDiving } from '../technical-diving/technical-diving-component';
 import { Sidemount } from '../technical-diving/sidemount-component';
 import { TechdivingCoursesIantd } from '../technical-diving/techdiving-courses-iantd-component';
@@ -34,11 +34,11 @@ const pages: any = {
         <Page meta={Meta.metaViktorOzarenkoPage}script="viktor-ozarenko-component" title={'Виктор Озаренко, командор дайвинг клуба "Искатели морских сокровищ", Одесса (Украина)'}>
             <Core><ViktorOzarenko /></Core>
         </Page>
-    ), './about-us/feedback.html': ReactDom.renderToString(
+    ), './feedback.html': ReactDom.renderToString(
         <Page meta={Meta.metaFeedbackPage} script="feedback-component" title={'Отзывы о дайвиге с нашим клубом в Шарм-эль-Шейхе (Египет)'}>
             <Core><Feedback /></Core>
         </Page>
-    ), './about-us/contact-us.html': ReactDom.renderToString(
+    ), './contact-us.html': ReactDom.renderToString(
         <Page meta={Meta.metaContactUsPage}script="contact-us-component" title={'Контактная информация'}>
             <Core><ContactUs /></Core>
         </Page>

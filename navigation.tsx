@@ -20,15 +20,15 @@ export const about: SubMenu[] = [
     },
     {
         name: 'Отзывы',
-        url: '/about-us/feedback.html',
+        url: '/feedback.html',
     },
     {
         name: 'Новости',
-        url: '/about-us/news.html',
+        url: '/news.html',
     },
     {
         name: 'Контакты',
-        url: '/about-us/contact-us.html',
+        url: '/contact-us.html',
    },
 ];
 

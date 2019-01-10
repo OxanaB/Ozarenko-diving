@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { map } from '../utils';
+import { map } from './utils';
 import { clientsFeedback } from './feedback_array'
-import { enableClient } from '../client';
+import { enableClient } from './client';
 
 export class Feedback extends React.Component {
     render() {
