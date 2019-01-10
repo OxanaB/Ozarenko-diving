@@ -19,7 +19,7 @@ export const metaMainPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"https://www.ozarenko-diving.com/"
+        content:"http://www.ozarenko-diving.com/"
     },
     {
         property:"og:description",
@@ -41,7 +41,7 @@ export const metaDivingClubPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"https://www.ozarenko-diving.com/about-us/diving-club.html"
+        content:"http://www.ozarenko-diving.com/about-us.html"
     },
     {
         property:"og:description",
@@ -64,7 +64,7 @@ export const metaViktorOzarenkoPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"https://www.ozarenko-diving.com/about-us/viktor-ozarenko.html"
+        content:"http://www.ozarenko-diving.com/about-us/viktor-ozarenko.html"
     },
     {
         property:"og:description",
@@ -87,7 +87,7 @@ export const metaFeedbackPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"https://www.ozarenko-diving.com/about-us/feedback.html"
+        content:"http://www.ozarenko-diving.com/about-us/feedback.html"
     },
     {
         property:"og:description",
@@ -110,7 +110,7 @@ export const metaContactUsPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"https://www.ozarenko-diving.com/about-us/contact-us.html"
+        content:"http://www.ozarenko-diving.com/about-us/contact-us.html"
     },
     {
         property:"og:description",
@@ -133,7 +133,7 @@ export const metaTechnicalDivingPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"https://www.ozarenko-diving.com/technical-diving/technical-diving.html"
+        content:"http://www.ozarenko-diving.com/technical-diving/technical-diving.html"
     },
     {
         property:"og:description",
@@ -156,7 +156,7 @@ export const metaSidemountPage: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/technical-diving/sidemount.html"
+        content: "http://www.ozarenko-diving.com/technical-diving/sidemount.html"
     },
     {
         property: "og:description",
@@ -179,7 +179,7 @@ export const metaTechCoursesIantd: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/technical-diving/techdiving-courses-iantd.html"
+        content: "http://www.ozarenko-diving.com/technical-diving/techdiving-courses-iantd.html"
     },
     {
         property: "og:description",
@@ -202,7 +202,7 @@ export const metaTechCoursesNdl: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/technical-diving/techdiving-courses-ndl.html"
+        content: "http://www.ozarenko-diving.com/technical-diving/techdiving-courses-ndl.html"
     },
     {
         property: "og:description",
@@ -225,7 +225,7 @@ export const metaTechDivingRebreather: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/technical-diving/rebreather-diving.html"
+        content: "http://www.ozarenko-diving.com/technical-diving/rebreather-diving.html"
     },
     {
         property: "og:description",
@@ -248,7 +248,7 @@ export const metaPriceSharm: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/diving-sharm-el-sheikh/ceny-diving-sharm.html"
+        content: "http://www.ozarenko-diving.com/diving-sharm-el-sheikh/ceny-diving-sharm.html"
     },
     {
         property: "og:description",
@@ -271,7 +271,7 @@ export const metaInsurance: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/diving-sharm-el-sheikh/diving-strahovka.html"
+        content: "http://www.ozarenko-diving.com/diving-sharm-el-sheikh/diving-strahovka.html"
     },
     {
         property: "og:description",
@@ -295,7 +295,7 @@ export const metaSouthRoutes: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/liveaboard/redsea-south.html"
+        content: "http://www.ozarenko-diving.com/liveaboard/redsea-south.html"
     },
     {
         property: "og:description",
@@ -318,7 +318,7 @@ export const metaNorthRoutes: Meta[] = [
     },
     {
         property: "og:url",
-        content: "https://www.ozarenko-diving.com/liveaboard/redsea-north.html"
+        content: "http://www.ozarenko-diving.com/liveaboard/redsea-north.html"
     },
     {
         property: "og:description",

@@ -1,6 +1,5 @@
-import { MainMenu, SubMenu, mainMenu } from "./navigation";
+import { mainMenu } from "./navigation";
 import * as React from "react";
-import { map } from "./utils";
 import { Menu, MenuProps } from "./menu";
 
 export interface CoreProps {

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { enableClient } from '../client';
+import { enableClient } from './client';
 
-export class DivingClub extends React.Component {
+export class Team extends React.Component {
     render() {
         return <div className="page-container">
 
@@ -70,5 +70,5 @@ export class DivingClub extends React.Component {
 
 declare var window: any;
 if (typeof window !== 'undefined') {
-    enableClient(DivingClub);
+    enableClient(Team);
 }

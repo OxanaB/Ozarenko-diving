@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom/server';
 import { OzarenkoDivingPage } from '../ozarenko-diving-page-component';
-import { DivingClub } from '../about-us/diving-club-component';
+import { Team } from '../about-us-component';
 import { ViktorOzarenko } from '../about-us/viktor-ozarenko-component';
 import { Feedback } from '../about-us/feedback-component';
 import { ContactUs } from '../about-us/contact-us-component';
@@ -25,9 +25,9 @@ const pages: any = {
             <Core><OzarenkoDivingPage /></Core>
         </Page>
     ),
-    './about-us/diving-club.html': ReactDom.renderToString(
-        <Page meta={Meta.metaDivingClubPage} script="diving-club-component" title={'О клубе | Дайв-клуб Искатели морских сокровищ, Одесса (Украина), Шарм-эль-Шейх (Египет)'}>
-            <Core><DivingClub /></Core>
+    './about-us.html': ReactDom.renderToString(
+        <Page meta={Meta.metaDivingClubPage} script="about-us-component" title={'О клубе | Дайв-клуб Искатели морских сокровищ, Одесса (Украина), Шарм-эль-Шейх (Египет)'}>
+            <Core><Team /></Core>
         </Page>
     ),
     './about-us/viktor-ozarenko.html': ReactDom.renderToString(

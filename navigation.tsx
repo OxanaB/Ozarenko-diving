@@ -12,7 +12,7 @@ export interface SubMenu {
 export const about: SubMenu[] = [
     {
         name: 'О нас',
-        url: '/about-us/diving-club.html',
+        url: '/about-us.html',
     },
     {
         name: 'Виктор Озаренко',

@@ -4,7 +4,7 @@ export class Header extends React.Component {
     render() {
         return <div className="header">
             <div className="header-container">
-                <a href="/main-page.html">
+                <a href="/index.html">
                 <img className="header-img" 
                     src="/images/logos/ozarenko_logo-main.png"
                     title="Главная: школа дайвинга Виктора Озаренко. Дайвинг клуб в Одессе" 
