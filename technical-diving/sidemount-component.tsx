@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { enableClient } from '../client';
 
 export class Sidemount extends React.Component {
     render() {
@@ -87,4 +88,9 @@ export class Sidemount extends React.Component {
 <p>Командор клуба "Искатели морских сокровищ", <a href="/about-us/viktor-ozarenko.html">Виктор Озаренко</a></p>
         </ div>
     }
+}
+
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(Sidemount);
 }

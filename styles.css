@@ -18,7 +18,7 @@
   width: 970px;
 }
 .page {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 .header {
   background-color: rgba(255, 255, 255, 0.8);
@@ -136,13 +136,13 @@
   justify-content: space-between;
 }
 .main-page-link-element {
-  border-bottom: 2px solid #FFF200;
+  border-bottom: 3px solid #FFF200;
   width: 475px;
   margin: 5px;
   padding: 10px;
 }
-.main-page-link-element-text {
-  text-align: left;
+.main-page-link-element-text p {
+  padding: 10px 0px;
 }
 .main-page-link-element-text h3 span {
   background-color: #FFF766;
@@ -200,4 +200,32 @@
   font-weight: normal;
   font-size: 14px;
   color: #000;
+}
+.page-container {
+  padding: 20px;
+}
+.clients-feedback-feed {
+  display: flex;
+  flex-direction: column;
+}
+.client-feedback {
+  border-bottom: 3px solid #FFF200;
+  margin-bottom: 10px;
+}
+.client-feedback img {
+  width: 160px;
+  height: 160px;
+  float: left;
+  margin: 10px 15px 10px 0px;
+}
+.client-feedback h2 {
+  padding-top: 5px;
+  font-size: 1.3em;
+}
+.client-feedback h5 {
+  font-style: italic;
+  padding-bottom: 5px;
+}
+.client-feedback p {
+  padding-bottom: 15px;
 }

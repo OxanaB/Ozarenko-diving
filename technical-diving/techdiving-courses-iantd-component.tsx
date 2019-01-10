@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { enableClient } from '../client';
 
 export class TechdivingCoursesIantd extends React.Component {
     render() {
@@ -123,4 +124,9 @@ export class TechdivingCoursesIantd extends React.Component {
     сайдмаунт.</p>
         </ div>
     }
+}
+
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(TechdivingCoursesIantd);
 }

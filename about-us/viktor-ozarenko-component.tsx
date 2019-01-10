@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { enableClient } from '../client';
 
 export class ViktorOzarenko extends React.Component {
     render() {
@@ -59,4 +60,8 @@ export class ViktorOzarenko extends React.Component {
 
         </ div>
     }
+}
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(ViktorOzarenko);
 }

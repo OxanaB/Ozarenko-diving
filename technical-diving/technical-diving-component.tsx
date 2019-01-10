@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { map } from '../utils';
 import { priceListTechnicalDaily, priceListTechnicalRent } from './price-technical';
+import { enableClient } from '../client';
 
 export class TechnicalDiving extends React.Component{
  
@@ -65,4 +66,9 @@ export class TechnicalDiving extends React.Component{
             </div>
         </ div>
     }
+}
+
+declare var window: any;
+if (typeof window !== 'undefined') {
+    enableClient(TechnicalDiving);
 }

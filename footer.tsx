@@ -30,10 +30,10 @@ export class Footer extends React.Component<FooterProps> {
             </div>
             <div className="footer-social-media-widgets">
                 <div id="fb-root"></div>
-                {/* <div id="fb-root">
+                <div id="fb-root">
                     <div className="fb-page"
                         data-href="https://www.facebook.com/MarineTreasureHunters/"
-                        data-tabs="timeline,messages"
+                      //  data-tabs="timeline,messages"
                         data-small-header="false"
                         data-adapt-container-width="true"
                         data-hide-cover="false"
@@ -46,7 +46,7 @@ export class Footer extends React.Component<FooterProps> {
                         data-width="450"
                         data-show-faces="true">
                     </div>
-                </div> */}
+                </div> 
                 <div className="dive-top-widget">
                     <a href='http://divetop.ru?SID=1629' />
                     <img src="http://divetop.ru/baner.php?SID=1629&t=1&c=1"
