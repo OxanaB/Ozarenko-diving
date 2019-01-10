@@ -5,11 +5,11 @@ import { Team } from '../about-us-component';
 import { ViktorOzarenko } from '../viktor-ozarenko-component';
 import { Feedback } from '../feedback-component';
 import { ContactUs } from '../contact-us-component';
-import { TechnicalDiving } from '../technical-diving/technical-diving-component';
-import { Sidemount } from '../technical-diving/sidemount-component';
-import { TechdivingCoursesIantd } from '../technical-diving/techdiving-courses-iantd-component';
-import { TechdivingCoursesNdl } from '../technical-diving/techdiving-courses-ndl-component';
-import { Rebreather } from '../technical-diving/rebreather-component';
+import { TechnicalDiving } from '../technical-diving-component';
+import { Sidemount } from '../sidemount-component';
+import { TechdivingCoursesIantd } from '../techdiving-courses-iantd-component';
+import { TechdivingCoursesNdl } from '../techdiving-courses-ndl-component';
+import { Rebreather } from '../rebreather-component';
 import { PriceSharm } from '../diving-sharm-el-sheikh/prices-sharm-component';
 import { Insurance } from '../diving-sharm-el-sheikh/insurance-component';
 import { NorthRoutes } from '../liveaboard/north-routes-component';
@@ -43,27 +43,27 @@ const pages: any = {
             <Core><ContactUs /></Core>
         </Page>
     ),
-    './technical-diving/technical-diving.html': ReactDom.renderToString(
+    './technical-diving.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechnicalDivingPage}script="technical-diving-component" title={'Технический дайвинг с Виктором Озаренко на Черном и на Красном море'}>
             <Core><TechnicalDiving /></Core>
         </Page>
     ),
-    './technical-diving/sidemount.html': ReactDom.renderToString(
+    './sidemount.html': ReactDom.renderToString(
         <Page meta={Meta.metaSidemountPage}script="sidemount-component" title={'Обучение дайвингу в сайдмаунте (sidemount diving)'}>
             <Core><Sidemount /></Core>
         </Page>
     ),
-    './technical-diving/techdiving-courses-iantd.html': ReactDom.renderToString(
+    './techdiving-courses-iantd.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechCoursesIantd}script="techdiving-courses-iantd-component" title={'Курсы технического дайвинга IANTD'}>
             <Core><TechdivingCoursesIantd /></Core>
         </Page>
     ),
-    './technical-diving/techdiving-courses-ndl.html': ReactDom.renderToString(
+    './techdiving-courses-ndl.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechCoursesNdl}script="techdiving-courses-ndl-component" title={'Курсы технического дайвинга NDL'}>
             <Core><TechdivingCoursesNdl /></Core>
         </Page>
     ),
-    './technical-diving/rebreather-diving.html': ReactDom.renderToString(
+    './rebreather-diving.html': ReactDom.renderToString(
         <Page meta={Meta.metaTechDivingRebreather}script="rebreather-component" title={'Ребризер дайвинг на Красном море, обучение. Megaladon & Inspiration'}>
             <Core><Rebreather /></Core>
         </Page>

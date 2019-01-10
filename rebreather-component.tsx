@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { map } from '../utils';
+import { map } from './utils';
 import { rebreatherPricelistCourses, rebreatherPricelistAir, rebreatherPricelistDecoPro, rebreatherPricelistNormoxic, rebreatherPricelistHypoxic } from './rebreather-price';
-import { enableClient } from '../client';
+import { enableClient } from './client';
 
 
 export class Rebreather extends React.Component {

@@ -133,7 +133,7 @@ export const metaTechnicalDivingPage: Meta[] = [
     },
     {
         property:"og:url",
-        content:"http://www.ozarenko-diving.com/technical-diving/technical-diving.html"
+        content:"http://www.ozarenko-diving.com/technical-diving.html"
     },
     {
         property:"og:description",
@@ -156,7 +156,7 @@ export const metaSidemountPage: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/technical-diving/sidemount.html"
+        content: "http://www.ozarenko-diving.com/sidemount.html"
     },
     {
         property: "og:description",
@@ -179,7 +179,7 @@ export const metaTechCoursesIantd: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/technical-diving/techdiving-courses-iantd.html"
+        content: "http://www.ozarenko-diving.com/techdiving-courses-iantd.html"
     },
     {
         property: "og:description",
@@ -202,7 +202,7 @@ export const metaTechCoursesNdl: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/technical-diving/techdiving-courses-ndl.html"
+        content: "http://www.ozarenko-diving.com/techdiving-courses-ndl.html"
     },
     {
         property: "og:description",
@@ -225,7 +225,7 @@ export const metaTechDivingRebreather: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/technical-diving/rebreather-diving.html"
+        content: "http://www.ozarenko-diving.com/rebreather-diving.html"
     },
     {
         property: "og:description",

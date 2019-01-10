@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { map } from '../utils';
+import { map } from './utils';
 import { priceListTechnicalDaily, priceListTechnicalRent } from './price-technical';
-import { enableClient } from '../client';
+import { enableClient } from './client';
 
 export class TechnicalDiving extends React.Component{
  
@@ -18,9 +18,9 @@ export class TechnicalDiving extends React.Component{
                 легкой и удобной конфигурации сайдмаунт. Спарка - прошлый век!</p>
             </div>
             <div className="links-to-tech-courses">
-                <h2><a href="./techdiving-courses-iantd.html">
+                <h2><a href="/techdiving-courses-iantd.html">
                     Курсы технического дайвинга IANTD</a></h2>
-                <h2><a href="./techdiving-courses-ndl.html">
+                <h2><a href="/techdiving-courses-ndl.html">
                     Технический дивизион NDL</a></h2>
             </div>
             <div className="price-technical">

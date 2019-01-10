@@ -18,7 +18,7 @@ export const mainPageLinkElements: MainPageElements[] = [
         image: '/images/main-page/sidemount.jpg',
         imageAlt: 'sidemount diver padi, курсы сайдмаунта, обучение сайдмаунту, зачем нужен сайдмаунт',
         buttonText: 'Подробнее о курсе',
-        buttonLink: '/technical-diving/sidemount.html'
+        buttonLink: '/sidemount.html'
     },
     {
         title: 'Курс Open water diver PADI',
@@ -38,7 +38,7 @@ export const mainPageLinkElements: MainPageElements[] = [
         image: '/images/main-page/technical-diving.jpg',
         imageAlt: 'технический дайвинг, технодайвинг',
         buttonText: 'Узнать все цены',
-        buttonLink: '/technical-diving/technical-diving.html'
+        buttonLink: '/technical-diving.html'
     },
     {
         title: 'Стань профессионалом',

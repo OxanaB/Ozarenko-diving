@@ -110,23 +110,23 @@ export const courses: SubMenu[] = [
 export const technicalDiving: SubMenu[] = [
     {
         name: 'Технические погружения',
-        url: 'technical-diving/technical-diving.html',
+        url: '/technical-diving.html',
     },
     {
         name: 'Сайдмаунт',
-        url: 'technical-diving/sidemount.html',
+        url: '/sidemount.html',
     },
     {
         name: 'Курсы технического дайвинга IANTD',
-        url: 'technical-diving/techdiving-courses-iantd.html',
+        url: '/techdiving-courses-iantd.html',
     },
     {
         name: 'Курсы технического дайвинга NDL',
-        url: 'technical-diving/techdiving-courses-ndl.html',
+        url: '/techdiving-courses-ndl.html',
     },
     {
         name: 'Дайвинг на ребрезире',
-        url: 'technical-diving/rebreather-diving.html',
+        url: '/rebreather-diving.html',
     }
 ];
 

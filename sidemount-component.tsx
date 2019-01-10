@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { enableClient } from '../client';
+import { enableClient } from './client';
 
 export class Sidemount extends React.Component {
     render() {
         return <div className="page-container">
-            <h1>Курсы обучения дайваингу в сайдмаунте (sidemount)</h1>
+            <h1>Курсы обучения дайвингу в сайдмаунте (sidemount)</h1>
             <img src="/images/technical-diving/sidemount/sidemount-3.jpg" alt="Сайдмаунт: позволяет проникать в узкие места и пещеры" />
             <img src="/images/technical-diving/sidemount/sidemount-1.jpg" alt="Сайдмаунт: можно использовать разного объема баллоны" />
             <img src="/images/technical-diving/sidemount/sidemount-2.jpg" alt="Сайдмаунт: удобен для хрупких девушек" />
@@ -80,12 +80,12 @@ export class Sidemount extends React.Component {
     «дирижаблем» для открытой воды – еще туда сюда, а вот для узкостей силуэт великоват.</p>
     <p>«Dive Rite» на второй позиции, удобней «Hollis’a-50», выигрывает продуманным расположением грузовой системы, очень
     удобными подвижными «Д» кольцами. Могу отметить, что лучше «Д» колец я не встречал. Можно начинать учится и потом
-    совершать погружения в рамках <a href="./techdiving-courses-iantd.html#AdvancedNitrox">Эдванс Найтрокс</a>.</p>
+    совершать погружения в рамках <a href="/techdiving-courses-iantd.html#AdvancedNitrox">Эдванс Найтрокс</a>.</p>
 <p>И, не рассматривая ценник на эти продукты, на первое место поставлю польский «<a href="
         http://www.xdeep.eu/stealth-side-mount-full-set-pr-14.html">XDeep Stealth</a>». Он удовлетворит любого искушенного дайвера, главный плюс – система уже
     готова к использованию после настройки «размера» и не требует доработки.</p>
 
-<p>Командор клуба "Искатели морских сокровищ", <a href="/about-us/viktor-ozarenko.html">Виктор Озаренко</a></p>
+<p>Командор клуба "Искатели морских сокровищ", <a href="/about-viktor-ozarenko.html">Виктор Озаренко</a></p>
         </ div>
     }
 }
