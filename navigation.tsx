@@ -133,23 +133,23 @@ export const technicalDiving: SubMenu[] = [
 export const divingInSharm: SubMenu[] = [
     {
         name: 'Цены на дайвинг в Шарме',
-        url: '/diving-sharm-el-sheikh/ceny-diving-sharm.html',
+        url: '/ceny-diving-sharm.html',
     },
     {
         name: 'Новичкам: интро-дайв, снорклинг',
-        url: '/diving-sharm-el-sheikh/diving-dlia-nachinayushih.html',
+        url: '/sharm-try-diving.html',
     },
     {
         name: 'Детский дайвинг',
-        url: '/diving-sharm-el-sheikh/detskiy-diving.html',
+        url: '/detskiy-diving.html',
     },
     {
         name: 'Страхование дайверов',
-        url: '/diving-sharm-el-sheikh/diving-strahovka.html',
+        url: '/diving-strahovka.html',
     },
     {
         name: 'Архив акций',
-        url: '/diving-sharm-el-sheikh/arhiv-akciy.html',
+        url: '/arhiv-akciy.html',
     },
 ];
 

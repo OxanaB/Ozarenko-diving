@@ -10,8 +10,8 @@ import { Sidemount } from '../sidemount-component';
 import { TechdivingCoursesIantd } from '../techdiving-courses-iantd-component';
 import { TechdivingCoursesNdl } from '../techdiving-courses-ndl-component';
 import { Rebreather } from '../rebreather-component';
-import { PriceSharm } from '../diving-sharm-el-sheikh/prices-sharm-component';
-import { Insurance } from '../diving-sharm-el-sheikh/insurance-component';
+import { PriceSharm } from '../prices-sharm-component';
+import { Insurance } from '../insurance-component';
 import { NorthRoutes } from '../liveaboard/north-routes-component';
 import { SouthRoutes } from '../liveaboard/south-routes-component';
 import { writeFileSync } from 'fs';
@@ -68,12 +68,12 @@ const pages: any = {
             <Core><Rebreather /></Core>
         </Page>
     ),
-    './diving-sharm-el-sheikh/ceny-diving-sharm.html': ReactDom.renderToString(
+    './ceny-diving-sharm.html': ReactDom.renderToString(
         <Page meta={Meta.metaPriceSharm}script="prices-sharm-component" title={'Цены на дайвинг в Шарм эль Шейхе, Египет'}>
             <Core><PriceSharm /></Core>
         </Page>
     ),
-    './diving-sharm-el-sheikh/diving-strahovka.html': ReactDom.renderToString(
+    './diving-strahovka.html': ReactDom.renderToString(
         <Page meta={Meta.metaInsurance}script="insurance-component" title={'Страхование дайверов | международная дайверская страховка'}>
             <Core><Insurance /></Core>
         </Page>

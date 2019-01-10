@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { map } from '../utils';
+import { map } from './utils';
 import { dailyDivingPrice, dailyExtrasPrise, dailyRentPrice } from './price-daily-sharm';
-import { enableClient } from '../client';
+import { enableClient } from './client';
 
 export class PriceSharm extends React.Component {
     render() {

@@ -248,7 +248,7 @@ export const metaPriceSharm: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/diving-sharm-el-sheikh/ceny-diving-sharm.html"
+        content: "http://www.ozarenko-diving.com/ceny-diving-sharm.html"
     },
     {
         property: "og:description",
@@ -271,7 +271,7 @@ export const metaInsurance: Meta[] = [
     },
     {
         property: "og:url",
-        content: "http://www.ozarenko-diving.com/diving-sharm-el-sheikh/diving-strahovka.html"
+        content: "http://www.ozarenko-diving.com/diving-strahovka.html"
     },
     {
         property: "og:description",
