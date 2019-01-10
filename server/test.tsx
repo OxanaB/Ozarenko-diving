@@ -20,7 +20,7 @@ import * as Meta from '../meta';
 import { Core } from '../core';
 
 const pages: any = {
-    './main-page.html': ReactDom.renderToString(
+    './index.html': ReactDom.renderToString(
         <Page meta={Meta.metaMainPage} script="ozarenko-diving-page-component" title={'Школа дайвинга Виктора Озаренко. Филиалы в Одессе и Шарм-эль-Шейхе'}>
             <Core><OzarenkoDivingPage /></Core>
         </Page>
