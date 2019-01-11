@@ -38,9 +38,6 @@ body {
 .page .page-container ul {
   margin-left: 20px;
 }
-.page .page-container h1 + p {
-  font-style: italic;
-}
 .header {
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;

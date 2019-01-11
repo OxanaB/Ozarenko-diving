@@ -14,11 +14,6 @@ export interface PageProps {
 
 export class Page extends React.Component<PageProps> {
     render() {
-        const menu: MenuProps = {
-            mainMenus: mainMenu,
-            activeMainMenuIndex: 0,
-            when: () => { }
-        };
         return <html>
             <head>
                 <meta name="viewport" content="width=device-width,initial-scale=1" charSet="utf-8" />
@@ -46,11 +41,9 @@ export class Page extends React.Component<PageProps> {
                 <title>{this.props.title}</title>
             </head>
             <body>
-                    <Header />
-                <div className="page" id="root">
-                    {this.props.children}
-                </div>
-                    <Footer mainMenus={mainMenu} />
+                <Header />
+                <div className="page" id="root">{this.props.children}</div>
+                <Footer mainMenus={mainMenu} />
             </body>
 
         </html>;

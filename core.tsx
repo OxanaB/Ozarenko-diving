@@ -8,7 +8,7 @@ export interface CoreProps {
 
 const defaultMenu: MenuProps = {
     mainMenus: mainMenu,
-    activeMainMenuIndex: 0,
+    activeMainMenuIndex: null,
     when: () => { }
 };
 export class Core extends React.Component<CoreProps> {
