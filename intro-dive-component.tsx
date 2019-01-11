@@ -30,17 +30,22 @@ export class IntroDiving extends React.Component {
                 <img src="" title="" alt="" />
                 <img src="" title="" alt="" />
                 <img src="" title="" alt="" />
-            <h5>Цены на дайвинг экскурсии и начальное обучение</h5>
+                <h5>Цены на дайвинг экскурсии и начальное обучение</h5>
             </div>
             <h2>Цены на дайвинг для начинающих</h2>
             <div className="price-intro">
-            {map(pricelistIntro, (priceIntro) => {
-                    return <table>
-                        <tr>
-                            <td>{priceIntro.title}</td>
-                            <td>{priceIntro.subtitle}</td>
-                            <td>{priceIntro.price}</td>
-                        </tr>
+                {map(pricelistIntro, (priceIntro, index) => {
+                    return <table className="price-with-subtitle-table" key={index}>
+                        <tbody>
+                            <tr>
+                                <td className="price-title">{priceIntro.title}</td>
+                                <td className="price-digits">{priceIntro.price}</td>
+                            </tr>
+                            <tr>
+                                <td>{priceIntro.subtitle}</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
                     </table>
                 })}
             </div>

@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: 'Play', sans-serif;
 }
-.entire-page {
+body {
   background-image: url(./images/ozarenko-diving-background.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -18,7 +18,7 @@
   width: 970px;
 }
 .page {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .header {
   background-color: rgba(255, 255, 255, 0.8);
@@ -36,7 +36,7 @@
   margin-top: 10px;
   margin-left: -14px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 101%;
   cursor: pointer;
 }
 .header-img:hover {

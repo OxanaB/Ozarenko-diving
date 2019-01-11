@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Play', sans-serif;
-  }
-  
-.entire-page {
+}
+body { 
     background-image: url(./images/ozarenko-diving-background.jpg);
     background-repeat: no-repeat;  
     background-position: 50% 50%;
@@ -14,6 +13,7 @@
 }
 
 @menu-padding: 10px 20px;
+
 @white-color: #ffffff;
 @hover-color: #FFF766;
 @active-color: #FFF200;
@@ -30,7 +30,7 @@
  }
 
 .page {
-    background-color: fade(@white-color, 95%);
+    background-color: fade(@white-color, 90%);
  }
 
 .header {
@@ -52,13 +52,16 @@
     background-repeat: no-repeat;  
     background-size: 100%;
     cursor: pointer;
+
     &:hover {
     background-image: url(./images/logos/ozarenko_logo-hover.png);
     }
+
     &:active {
     background-image: url(./images/logos/ozarenko_logo-active.png);
     }
 }
+
 .header-text-elements {
     display: flex;
     justify-content: space-between;
@@ -66,6 +69,7 @@
     padding-top: 5px;
     padding-bottom: 15px;
 } 
+
 .header-text {
     font-family: 'Georgia', cursive;
     font-weight: bold;
@@ -74,10 +78,13 @@
     margin-left: 80px;
     padding-top: 5px;
 }
- .header-link {
+
+.header-link {
+
     a { 
         color: #000;
     }
+
     margin-right: 10px;
     font-size: 20px;
 }

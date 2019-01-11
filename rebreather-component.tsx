@@ -26,66 +26,82 @@ export class Rebreather extends React.Component {
                 инструктора. Обеды на корабле, парковые сборы, доплаты за поездки к затонувшим кораблям и в окрестности Шарм эль
     Шейха оплачиваются по прайс-листу. Сертификат IANTD оплачивается дополнительно 60 евро .</p>
 
-            {map(rebreatherPricelistCourses, (rebreatherCourses) => {
-                return <table>
+            {map(rebreatherPricelistCourses, (rebreatherCourses, index) => {
+                return <table className="price-with-subtitle-table" key={index}>
+                <tbody>
                     <tr>
-                        <td>{rebreatherCourses.title}</td>
-                        <td>{rebreatherCourses.price}</td>
+                        <td className="price-title">{rebreatherCourses.title}</td>
+                        <td className="price-digits">{rebreatherCourses.price}</td>
                     </tr>
-                    <tr>{rebreatherCourses.duration}</tr>
-                    <tr>{rebreatherCourses.description}</tr>
+                    <tr>
+                        <td className="price-subtitle">{rebreatherCourses.duration}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>{rebreatherCourses.description}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
                 </table>
-            })}
-
+                    })}
+        
             <h2>Цены на погружения на ребризере в Шарм-эль-Шейхе</h2>
-            <p>В стоимость погружений на ребризере включены Diluent, кислород, баллон-Bailout, декомпрессоные стейжды и
-                декомпрессионые газы (в соотвествии с уровнем погружения и сертификации). Поглатитель sofnolime оплачивается
-                отдельно - 12 euro/кг. Bailout-баллоны с тримиксом и кислородом оплачиваются дополнительно при условии их
-                использования (для декомпрессионых погружений). Обеды на корабле, парковые сборы, доплаты за поездки к затонувшим
-                кораблям и в окрестности Шарм эль Шейха оплачиваются по прайсу. Аренда ребризера Inspiration / Megalodon
+                    <p>В стоимость погружений на ребризере включены Diluent, кислород, баллон-Bailout, декомпрессоные стейжды и
+                        декомпрессионые газы (в соотвествии с уровнем погружения и сертификации). Поглатитель sofnolime оплачивается
+                        отдельно - 12 euro/кг. Bailout-баллоны с тримиксом и кислородом оплачиваются дополнительно при условии их
+                        использования (для декомпрессионых погружений). Обеды на корабле, парковые сборы, доплаты за поездки к затонувшим
+                        кораблям и в окрестности Шарм эль Шейха оплачиваются по прайсу. Аренда ребризера Inspiration / Megalodon
                 оплачивается дополнительно 70 euro/день. </p>
 
-            <h3>Air rebreather diving, 30м, без декопроцедур</h3>
-            {map(rebreatherPricelistAir, (rebreatherDailyAir) => {
-                return <table>
-                    <tr>
-                        <td>{rebreatherDailyAir.days}</td>
-                        <td>{rebreatherDailyAir.price}</td>
-                    </tr>
-                </table>
-            })}
+                    <h3>Air rebreather diving, 30м, без декопроцедур</h3>
+                    {map(rebreatherPricelistAir, (rebreatherDailyAir, index) => {
+                        return <table className="price-simple" key={index}>
+                        <tbody>
+                            <tr>
+                                <td>{rebreatherDailyAir.days}</td>
+                                <td>{rebreatherDailyAir.price}</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    })}
 
-            <h3>Deco procedures и Adv.Rec trimix., 48м, 15 мин деко(max)</h3>
-            {map(rebreatherPricelistDecoPro, (rebreatherDailyDeco) => {
-                return <table>
-                    <tr>
-                        <td>{rebreatherDailyDeco.days}</td>
-                        <td>{rebreatherDailyDeco.price}</td>
-                    </tr>
-                </table>
-            })}
+                    <h3>Deco procedures и Adv.Rec trimix., 48м, 15 мин деко(max)</h3>
+                    {map(rebreatherPricelistDecoPro, (rebreatherDailyDeco, index) => {
+                        return <table className="price-simple" key={index}>
+                        <tbody>
+                            <tr>
+                                <td>{rebreatherDailyDeco.days}</td>
+                                <td>{rebreatherDailyDeco.price}</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    })}
 
-            <h3>Normoxic trimix, 60м max </h3>
-            {map(rebreatherPricelistNormoxic, (rebreatherDailyNormox) => {
-                return <table>
-                    <tr>
-                        <td>{rebreatherDailyNormox.days}</td>
-                        <td>{rebreatherDailyNormox.price}</td>
-                    </tr>
-                </table>
-            })}
+                    <h3>Normoxic trimix, 60м max </h3>
+                    {map(rebreatherPricelistNormoxic, (rebreatherDailyNormox, index) => {
+                        return <table className="price-simple" key={index}>
+                        <tbody>
+                            <tr>
+                                <td>{rebreatherDailyNormox.days}</td>
+                                <td>{rebreatherDailyNormox.price}</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    })}
 
-            <h3>Hypoxic trimix, 100м max </h3>
-            {map(rebreatherPricelistNormoxic, (rebreatherDailyHypox) => {
-                return <table>
-                    <tr>
-                        <td>{rebreatherDailyHypox.days}</td>
-                        <td>{rebreatherDailyHypox.price}</td>
-                    </tr>
-                </table>
-            })}
+                    <h3>Hypoxic trimix, 100м max </h3>
+                    {map(rebreatherPricelistNormoxic, (rebreatherDailyHypox, index) => {
+                        return <table className="price-simple" key={index}>
+                        <tbody>
+                            <tr>
+                                <td>{rebreatherDailyHypox.days}</td>
+                                <td>{rebreatherDailyHypox.price}</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    })}
         </ div>
-    }
+            }
 }
 
 declare var window: any;

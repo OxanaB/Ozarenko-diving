@@ -18,15 +18,15 @@ export class Menu extends React.Component<MenuProps> {
     render() {
         return <div className="main-menus">
                 {map(this.props.mainMenus, (mainMenu, mainMenuIndex) => {
-                    return <div className="main-menu" onClick={() => {
+                    return <div className="main-menu" key={mainMenuIndex} onClick={() => {
                         this.props.when({ about: 'main-menu-chosen', mainMenuIndex });
                     }}>
                         {mainMenu.name}
                         {
                             mainMenuIndex === this.props.activeMainMenuIndex
-                                ? <div className="sub-menus">{
+                                ? <div className="sub-menus" key={mainMenuIndex}>{
                                     map(mainMenu.subMenus, subMenu => {
-                                        return <div className="sub-menu">
+                                        return <div className="sub-menu" key={subMenu.url}>
                                             <a href={subMenu.url}>
                                                 {subMenu.name}
                                             </a>

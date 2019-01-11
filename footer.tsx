@@ -11,12 +11,12 @@ export class Footer extends React.Component<FooterProps> {
     render() {
         return <div className="footer">
             <div className="footer-container">
-                {map(this.props.mainMenus, mainMenu => {
-                    return <div className="footer-columns-headline">
+                {map(this.props.mainMenus, (mainMenu, index) => {
+                    return <div className="footer-columns-headline" key={index}>
                         {mainMenu.name}
                         {<div className="footer-columns">{
                             map(mainMenu.subMenus, subMenu => {
-                                return <div className="fotter-column-row">
+                                return <div className="fotter-column-row" key={subMenu.url}>
                                     <a href={subMenu.url}>
                                         {subMenu.name}
                                     </a>

@@ -11,8 +11,8 @@ export class OzarenkoDivingPage extends React.Component {
             </div>
 
             <div className="main-page-link-elements">
-                {map(mainPageLinkElements, (elements) => {
-                    return <div className="main-page-link-element">
+                {map(mainPageLinkElements, (elements, index) => {
+                    return <div className="main-page-link-element" key={index}>
                         <div className="main-page-link-element-image">
                             <a href={elements.buttonLink}>
                                 <img src={elements.image} alt={elements.imageAlt} />

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Header } from './header-component';
-import { Menu, MenuProps } from './menu';
+import { MenuProps } from './menu';
 import { Footer } from './footer';
 import { mainMenu } from './navigation';
 import { map } from './utils';
@@ -26,8 +26,8 @@ export class Page extends React.Component<PageProps> {
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Школа дайвинга Виктора Озаренко. Филиалы в Одессе и Шарм-эль-Шейхе" />
                 <meta property="fb:admins" content="viktor.ozarenko" />
-                {map(this.props.meta, (x) => {
-                    return <meta
+                {map(this.props.meta, (x, index) => {
+                    return <meta key={index}
                         name={x.name}
                         property={x.property}
                         content={x.content}
@@ -36,23 +36,21 @@ export class Page extends React.Component<PageProps> {
                 <script src="/facebook.js"></script>
                 {
                     this.props.script !== undefined
-                    ? <>
-                        <script src="/require.js" data-main={this.props.script}></script>
-                    </>
-                    : null
+                        ? <>
+                            <script src="/require.js" data-main={this.props.script}></script>
+                        </>
+                        : null
                 }
                 <link rel="stylesheet" href="/styles.css" />
                 <link href="https://fonts.googleapis.com/css?family=Lobster|Play:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" />
                 <title>{this.props.title}</title>
             </head>
             <body>
-                <div className="entire-page">
                     <Header />
-                    <div className="page" id="root">
-                        {this.props.children}
-                    </div>
-                    <Footer mainMenus={mainMenu} />
+                <div className="page" id="root">
+                    {this.props.children}
                 </div>
+                    <Footer mainMenus={mainMenu} />
             </body>
 
         </html>;
