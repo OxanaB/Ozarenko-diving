@@ -141,7 +141,7 @@ export const divingInSharm: SubMenu[] = [
     },
     {
         name: 'Детский дайвинг',
-        url: '/detskiy-diving.html',
+        url: '/kids-diving.html',
     },
     {
         name: 'Страхование дайверов',
@@ -149,7 +149,7 @@ export const divingInSharm: SubMenu[] = [
     },
     {
         name: 'Архив акций',
-        url: '/arhiv-akciy.html',
+        url: '/arhiv-akciy-sharm.html',
     },
 ];
 

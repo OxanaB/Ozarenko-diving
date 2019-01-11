@@ -11,7 +11,10 @@ import { TechdivingCoursesIantd } from '../techdiving-courses-iantd-component';
 import { TechdivingCoursesNdl } from '../techdiving-courses-ndl-component';
 import { Rebreather } from '../rebreather-component';
 import { PriceSharm } from '../prices-sharm-component';
+import { IntroDiving } from '../intro-dive-component';
+import { KidsDiving } from '../kids-component';
 import { Insurance } from '../insurance-component';
+import { ArchiveSale } from '../arhiv-akciy-component';
 import { NorthRoutes } from '../north-routes-component';
 import { SouthRoutes } from '../south-routes-component';
 import { writeFileSync } from 'fs';
@@ -73,9 +76,24 @@ const pages: any = {
             <Core><PriceSharm /></Core>
         </Page>
     ),
+    './kids-diving.html': ReactDom.renderToString(
+        <Page meta={Meta.metaKidsDiving}script="kids-component" title={'Детский дайвинг | Обучение детей дайвингу'}>
+            <Core><KidsDiving /></Core>
+        </Page>
+    ),
+    './sharm-try-diving.html': ReactDom.renderToString(
+        <Page meta={Meta.metaIntroDiving}script="intro-dive-component" title={'С чего начать занятия дайвингом или пробное погружение с аквалангом'}>
+            <Core><IntroDiving /></Core>
+        </Page>
+    ),
     './diving-strahovka.html': ReactDom.renderToString(
         <Page meta={Meta.metaInsurance}script="insurance-component" title={'Страхование дайверов | международная дайверская страховка'}>
             <Core><Insurance /></Core>
+        </Page>
+    ),
+    './arhiv-akciy-sharm.html': ReactDom.renderToString(
+        <Page meta={Meta.metaArchiveSale}script="arhiv-akciy-component" title={'Архив акций и скидок на дайвинг в Шарм эль Шейхе'}>
+            <Core><ArchiveSale /></Core>
         </Page>
     ),
     './redsea-liveaboard-south.html': ReactDom.renderToString(
