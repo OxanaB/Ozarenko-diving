@@ -18,13 +18,34 @@ body {
   width: 970px;
 }
 .page {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.93);
+}
+.page .page-container {
+  padding: 20px;
+}
+.page .page-container h1,
+.page .page-container h2,
+.page .page-container h3 {
+  font-weight: normal;
+}
+.page .page-container h2,
+.page .page-container h3,
+.page .page-container h4,
+.page .page-container h5,
+.page .page-container p {
+  margin-top: 10px;
+}
+.page .page-container ul {
+  margin-left: 20px;
+}
+.page .page-container h1 + p {
+  font-style: italic;
 }
 .header {
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
 }
-.header-container {
+.header .header-container {
   width: 970px;
   margin: 0 auto;
   display: flex;
@@ -36,7 +57,7 @@ body {
   margin-top: 10px;
   margin-left: -14px;
   background-repeat: no-repeat;
-  background-size: 101%;
+  background-size: 100%;
   cursor: pointer;
 }
 .header-img:hover {
@@ -52,7 +73,7 @@ body {
   padding-top: 5px;
   padding-bottom: 15px;
 }
-.header-text {
+.header-text-elements .header-text {
   font-family: 'Georgia', cursive;
   font-weight: bold;
   font-style: italic;
@@ -60,11 +81,11 @@ body {
   margin-left: 80px;
   padding-top: 5px;
 }
-.header-link {
+.header-text-elements .header-link {
   margin-right: 10px;
   font-size: 20px;
 }
-.header-link a {
+.header-text-elements .header-link a {
   color: #000;
 }
 .main-menus {
@@ -106,17 +127,12 @@ body {
   top: 35px;
   border: 1px solid #e2e2e2;
   border-radius: 10px;
-}
-.sub-menus a {
   text-decoration: none;
   color: #000;
 }
 .sub-menu {
   background-color: #ffffff;
   padding: 10px 20px;
-}
-.sub-menu + .sub-menu {
-  margin-top: 10px 20px;
 }
 .sub-menu:first-child {
   border-radius: 10px 10px 0px 0px;
@@ -129,6 +145,9 @@ body {
 }
 .sub-menu:active {
   background-color: #FFF200;
+}
+.sub-menu + .sub-menu {
+  margin-top: 10px 20px;
 }
 .main-page-link-elements {
   display: flex;
@@ -184,7 +203,7 @@ body {
 .footer {
   background-color: #fff;
 }
-.footer-container {
+.footer .footer-container {
   margin: 5px;
   display: flex;
   justify-content: space-around;
@@ -200,9 +219,6 @@ body {
   font-weight: normal;
   font-size: 14px;
   color: #000;
-}
-.page-container {
-  padding: 20px;
 }
 .clients-feedback-feed {
   display: flex;
