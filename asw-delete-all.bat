@@ -1,0 +1,1 @@
+aws s3 rm s3://ozarenko-diving-test/  --recursive

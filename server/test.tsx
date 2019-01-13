@@ -15,6 +15,8 @@ import { IntroDiving } from '../intro-dive-component';
 import { KidsDiving } from '../kids-component';
 import { Insurance } from '../insurance-component';
 import { ArchiveSale } from '../arhiv-akciy-component';
+import { LastSafari } from '../last-safari-component';
+import { Fleet } from '../fleet-component';
 import { NorthRoutes } from '../north-routes-component';
 import { SouthRoutes } from '../south-routes-component';
 import { writeFileSync } from 'fs';
@@ -96,11 +98,22 @@ const pages: any = {
             <Core><ArchiveSale /></Core>
         </Page>
     ),
+    './last-safari-egypt.html.html': ReactDom.renderToString(
+        <Page meta={Meta.metaFleet}script="last-safari-component" title={'Дайвинг сафари в ноябре 2018 по северу Красного моря из Шарма'}>
+            <Core><LastSafari /></Core>
+        </Page>
+    ),
+    './redsea-liveaboard-fleet.html': ReactDom.renderToString(
+        <Page meta={Meta.metaFleet}script="fleet-component" title={'Сафарийный флот, Шарм-эль-Шейх (Египет)'}>
+            <Core><Fleet /></Core>
+        </Page>
+    ),
     './redsea-liveaboard-south.html': ReactDom.renderToString(
         <Page meta={Meta.metaSouthRoutes}script="south-routes-component" title={'Маршруты дайвинг сафари по югу Красного моря (Египет)'}>
             <Core><SouthRoutes /></Core>
         </Page>
-    ), './redsea-liveaboard-north.html': ReactDom.renderToString(
+    ),
+     './redsea-liveaboard-north.html': ReactDom.renderToString(
         <Page meta={Meta.metaNorthRoutes}script="north-routes-component" title={'Маршруты дайвинг сафари по северу Красного моря (Египет)'}>
             <Core><NorthRoutes /></Core>
         </Page>
