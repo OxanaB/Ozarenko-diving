@@ -48,23 +48,23 @@ export class NdlCourses extends React.Component {
 
             <h2 className="ndl-course-title">Deep diver 250$</h2>
             <img src="" title="Курс обучения дайвингу Deep Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-            <p><a href="/kursy-nitrox-night-deep-dry-suit.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+            <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Deep" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
             
             <h2 className="ndl-course-title">Nitrox Diver 135$</h2>
             <img src="" title="Курс обучения дайвингу Nitrox Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-            <p><a href="/kursy-nitrox-night-deep-dry-suit.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+            <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Nitrox" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
             
             <h2 className="ndl-course-title">Night diver 215$</h2>
             <img src="" title="Курс обучения дайвингу Night Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-            <p><a href="/kursy-nitrox-night-deep-dry-suit.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+            <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Night" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
             
             <h2 className="ndl-course-title">Dry siut diver 180$</h2>
             <img src="" title="Курс обучения дайвингу Dry siut Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-            <p><a href="/kursy-nitrox-night-deep-dry-suit.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+            <p><a href="/kursy-nitrox-night-deep-dry-suit.html#DrySuit" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
             
             <h2 className="ndl-course-title">Professional buoyancy diver 135$</h2>
             <img src="" title="Курс обучения дайвингу Professional buoyancy NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-            <p><a href="/kursy-nitrox-night-deep-dry-suit.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+            <p><a href="/kursy-nitrox-night-deep-dry-suit.html#PPB" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
             
             <a href="/contact-us.html" className="book-button">ЗАБРОНИРОВАТЬ</a>
 
@@ -78,7 +78,7 @@ export class NdlCourses extends React.Component {
             <p>Следующей ступенью обучения дайвингу может стать так называемый технодайвинг или технический дайвинг. Во время технокурсов вы научитесь нырять в дублированном снаряжении, получите навыки качественного планирования погружений, что сможете всегда безопасно нырять даже без подводного компьютера, отработаете несколько способов гребка ластами, отточите мастерство зависания в толще воды, и самое главное - для вас откроются места недоступные в рекреационном дайвинге: глубокие каньоны, закрытые пещеры и каверны и многое другое.</p>
             <p>Технический дайвинг доступен каждому аквалангисту, достигшему начального уровня Diver NDL и их аналогов, и имеющего как минимум 10 погружений в условиях открытой воды.  </p>
             <p>Обучение техническому дайвингу начинается с теоретической подготовки и отработки навыков подводного плавания. Вам нужно будет научиться идеально контролировать свое тело на малых глубинах, рассчитывать план погружений, обращаться с новым оборудованием. На первом курсе технодайвинга максимальная глубина составляет 42 метра, следующие курсы технического дайвинга открывают более манящие глубины от 50 и до более 100 метров.</p>
-            <p>Подробности о курсах технодайвинга опубликованы в разделе <a href="/technical-diving.html">"Технический дайвинг"</a>.</p>            ЗАБРОНИРОВАТЬ
+            <p>Подробности о курсах технодайвинга опубликованы в разделе <a href="/technical-diving.html">"Технический дайвинг"</a>.</p>
 
         </ div>
     }

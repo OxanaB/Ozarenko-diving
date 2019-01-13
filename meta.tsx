@@ -211,6 +211,164 @@ export const metaFreediveCourses: Meta[] = [
     }
 ]
 
+export const metaNoviceDiver: Meta[] = [
+    {
+        name: "description",
+        content:"На данном курсе студенты осваивают основы дайвинга. Квалификация Novice Diver NDL позволяет совершать погружение под наблюдением профессионала до 12 метров"
+    },
+    {
+        name:"keywords",
+        content:"обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl"
+    },
+    {
+        property:"og:title",
+        content:"Начальный курс обучения дайвингу Novice diver NDL в Одессе"
+    },
+    {
+        property:"og:url",
+        content:"http://www.ozarenko-diving.com/kurs-novice-diver-ndl.html"
+    },
+    {
+        property:"og:description",
+        content:"На данном курсе студенты осваивают основы дайвинга. Квалификация Novice Diver NDL позволяет совершать погружение под наблюдением профессионала до 12 метров"
+    }
+]
+export const metaDiverNDL: Meta[] = [
+    {
+        name: "description",
+        content:"На данном курсе студенты осваивают основы дайвинга. Квалификация Diver NDL позволяет совершать погружение на глубины до 18 метров. Аналог курса Open water diver PADI"
+    },
+    {
+        name:"keywords",
+        content:"обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl"
+    },
+    {
+        property:"og:title",
+        content:"Начальный курс обучения дайвингу Diver NDL"
+    },
+    {
+        property:"og:url",
+        content:"http://www.ozarenko-diving.com/kurs-diver-ndl.html"
+    },
+    {
+        property:"og:description",
+        content:"На данном курсе студенты осваивают основы дайвинга. Квалификация Diver NDL позволяет совершать погружение на глубины до 18 метров. Аналог курса Open water diver PADI"
+    }
+]
+
+export const metaUniversalDiver: Meta[] = [
+    {
+        name: "description",
+        content:"Вторая ступень обучения дайвингу - курс Universal Diver NDL позволяет совершать погружение на глубины до 30 метров. Аналог Advanced open water diver PADI"
+    },
+    {
+        name:"keywords",
+        content:"обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса universal diver ndl"
+    },
+    {
+        property:"og:title",
+        content:"Вторая ступень обучения дайвингу курс Universal diver NDL"
+    },
+    {
+        property:"og:url",
+        content:"http://www.ozarenko-diving.com/kurs-universal-diver-ndl.html"
+    },
+    {
+        property:"og:description",
+        content:"Вторая ступень обучения дайвингу - курс Universal Diver NDL позволяет совершать погружение на глубины до 30 метров. Аналог Advanced open water diver PADI"
+    }
+]
+export const metaAdvancedUniversalDiver: Meta[] = [
+    {
+        name: "description",
+        content:"Сертификат дайвера Advanced Universal Diver NDL позволяет совершать погружение на глубины до 39 метров"
+    },
+    {
+        name:"keywords",
+        content:"обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса advanced universal diver ndl"
+    },
+    {
+        property:"og:title",
+        content:"Курс Advanced Universal diver NDL"
+    },
+    {
+        property:"og:url",
+        content:"http://www.ozarenko-diving.com/kurs-advanced-universal-diver-ndl.html"
+    },
+    {
+        property:"og:description",
+        content:"Сертификат дайвера Advanced Universal Diver NDL позволяет совершать погружение на глубины до 39 метров"
+    }
+]
+
+export const metaRescueDiver: Meta[] = [
+    {
+        name: "description",
+        content:"На данных курсах студенты осваивают действия в экстремальных ситуациях, оказание помощи на воде и под водой и навыки оказания первой медицинской помощи"
+    },
+    {
+        name:"keywords",
+        content:"обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса rescue diver ndl, Курс дайвинга спасатель rescue diver,  действия в экстремальных ситуациях, оказание помощи на воде и под водой, навыки оказания первой медицинской помощи"
+    },
+    {
+        property:"og:title",
+        content:"Курсы дайвинга Спасатель и Оказание первой помощи NDL"
+    },
+    {
+        property:"og:url",
+        content:"http://www.ozarenko-diving.com/kurs-rescue-diver-and-medic-first-aid.html"
+    },
+    {
+        property:"og:description",
+        content:"На данных курсах студенты осваивают действия в экстремальных ситуациях, оказание помощи на воде и под водой и навыки оказания первой медицинской помощи"
+    }
+]
+
+export const metaDivemasterNdl: Meta[] = [
+    {
+        name: "description",
+        content:"Первый профессиональный курс дайвинга Дайвмастер - Divemaster NDL. В течение недели вы получите навыки проведения подводных экскурсий для сертифицированных дайверов, будете ассистировать инструктору во время проведения курсов дайвинга, более глубоко изучите дайвинг теорию и многое другое"
+    },
+    {
+        name:"keywords",
+        content:"обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса divemaster ndl"
+    },
+    {
+        property:"og:title",
+        content:"Первый профессиональный курс дайвинга Дайвмастер - Divemaster NDL"
+    },
+    {
+        property:"og:url",
+        content:"http://www.ozarenko-diving.com/kurs-divemaster-ndl.html"
+    },
+    {
+        property:"og:description",
+        content:"Первый профессиональный курс дайвинга Дайвмастер - Divemaster NDL. В течение недели вы получите навыки проведения подводных экскурсий для сертифицированных дайверов, будете ассистировать инструктору во время проведения курсов дайвинга, более глубоко изучите дайвинг теорию и многое другое"
+    }
+]
+export const metaSpecialtyNdl: Meta[] = [
+    {
+        name: "description",
+        content:"Предлагаем вам пройти обучение на специализированных курсах дайвинга: мастерское владение плавучестью, найтрокс, глубокие погружения, дайвинг в сухом костюме"
+    },
+    {
+        name:"keywords",
+        content:"Спецкурсы NDL Найтрокс дайвер, Сухой костюм, Deep diver, Night diver"
+    },
+    {
+        property:"og:title",
+        content:"обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга nitrox diver ndl, курсы дайвинга deep diver ndl, курсы дайвинга night diver ndl, курсы дайвинга dry suit diver ndl,Спецкурсы дайвинга Nitrox diver, найтрокс дайвер, Dry suit diver, курс сухого костюма, Deep diver, курс глубоких погружений, Night diver, курс ночный погружений"
+    },
+    {
+        property:"og:url",
+        content:"http://www.ozarenko-diving.com/kurs-nitrox-night-deep-dry-suit.html"
+    },
+    {
+        property:"og:description",
+        content:"Предлагаем вам пройти обучение на специализированных курсах дайвинга: мастерское владение плавучестью, найтрокс, глубокие погружения, дайвинг в сухом костюме"
+    }
+]
+
 export const metaTechnicalDivingPage: Meta[] = [
     {
         name: "description",
