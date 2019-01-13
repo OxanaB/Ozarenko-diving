@@ -5,6 +5,10 @@ import { Team } from '../about-us-component';
 import { ViktorOzarenko } from '../viktor-ozarenko-component';
 import { Feedback } from '../feedback-component';
 import { ContactUs } from '../contact-us-component';
+import { PadiCourses } from '../padi-courses-component';
+import { NdlCourses } from '../ndl-courses-component'; 
+import { IdcCourses } from '../idc-component';
+import { FreediveCourses } from '../freedive-component';
 import { TechnicalDiving } from '../technical-diving-component';
 import { Sidemount } from '../sidemount-component';
 import { TechdivingCoursesIantd } from '../techdiving-courses-iantd-component';
@@ -39,13 +43,35 @@ const pages: any = {
         <Page meta={Meta.metaViktorOzarenkoPage}script="viktor-ozarenko-component" title={'Виктор Озаренко, командор дайвинг клуба "Искатели морских сокровищ", Одесса (Украина)'}>
             <Core><ViktorOzarenko /></Core>
         </Page>
-    ), './feedback.html': ReactDom.renderToString(
+    ), 
+    './feedback.html': ReactDom.renderToString(
         <Page meta={Meta.metaFeedbackPage} script="feedback-component" title={'Отзывы о дайвиге с нашим клубом в Шарм-эль-Шейхе (Египет)'}>
             <Core><Feedback /></Core>
         </Page>
-    ), './contact-us.html': ReactDom.renderToString(
+    ), 
+    './contact-us.html': ReactDom.renderToString(
         <Page meta={Meta.metaContactUsPage}script="contact-us-component" title={'Контактная информация'}>
             <Core><ContactUs /></Core>
+        </Page>
+    ),
+    './diving-courses-padi.html': ReactDom.renderToString(
+        <Page meta={Meta.metaPadiCourses}script="-component" title={'Курсы обучения дайвингу PADI в Одессе и Шарм-эль-Шейхе'}>
+            <Core><PadiCourses /></Core>
+        </Page>
+    ),
+    './diving-courses-ndl.html': ReactDom.renderToString(
+        <Page meta={Meta.metaNdlCourses}script="-component" title={'Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе'}>
+            <Core><NdlCourses /></Core>
+        </Page>
+    ),
+    './instructor-development-course.html': ReactDom.renderToString(
+        <Page meta={Meta.metaIdcCourses}script="-component" title={'Курсы инструкторов по дайвингу NDL и IANTD от Виктора Озаренко'}>
+            <Core><IdcCourses /></Core>
+        </Page>
+    ),
+    './freediving.html': ReactDom.renderToString(
+        <Page meta={Meta.metaFreediveCourses}script="-component" title={'Курсы фридайвинга в Шарм эль Шейхе и Одессе'}>
+            <Core><FreediveCourses /></Core>
         </Page>
     ),
     './technical-diving.html': ReactDom.renderToString(

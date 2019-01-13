@@ -58,52 +58,52 @@ export const padiCourses: SubMenu[] = [
 export const ndlCourses: SubMenu[] = [
     {
         name: 'Novice diver NDL',
-        url: '/diving-courses/ndl/kurs-novice-diver-ndl.html',
+        url: '/kurs-novice-diver-ndl.html',
     },
     {
         name: 'Diver NDL',
-        url: '/diving-courses/ndl/kurs-diver-ndl.html',
+        url: '/kurs-diver-ndl.html',
     },
     {
         name: 'Universal diver NDL',
-        url: '/diving-courses/ndl/kurs-universal-diver-ndl.html',
+        url: '/kurs-universal-diver-ndl.html',
     },
     {
         name: 'Advanced Universal diver NDL',
-        url: '/diving-courses/ndl/kurs-advanced-universal-diver-ndl.html',
+        url: '/kurs-advanced-universal-diver-ndl.html',
     },
     {
         name: 'Rescue diver NDL',
-        url: '/diving-courses/ndl/kurs-rescue-diver-and-medic-first-aid.html',
+        url: '/kurs-rescue-diver-and-medic-first-aid.html',
     },
     {
         name: 'Divemaster NDL',
-        url: '/diving-courses/ndl/kurs-divemaster-ndl.html',
+        url: '/kurs-divemaster-ndl.html',
     },
     {
         name: 'Специализированные курсы NDL',
-        url: '/diving-courses/ndl/kursy-nitrox-night-deep-dry-suit.html',
+        url: '/kursy-nitrox-night-deep-dry-suit.html',
     }
 ]
 
 export const courses: SubMenu[] = [
     {
         name: 'Курсы дайвинга PADI',
-        url: '/diving-courses/padi.html',
+        url: '/diving-courses-padi.html',
         subMenu: padiCourses,
     },
     {
         name: 'Курсы дайвинга NDL',
-        url: '/diving-courses/national-dive-leauge.html',
+        url: '/diving-courses-ndl.html',
         subMenu: ndlCourses,
     },
     {
         name: 'Инструкторские курсы',
-        url: '/diving-courses/instructor-development.html',
+        url: '/instructor-development-course.html',
     },
     {
         name: 'Фридайвинг',
-        url: '/diving-courses/freediving.html',
+        url: '/freediving.html',
     }
 ];
 
