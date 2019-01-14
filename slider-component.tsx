@@ -1,5 +1,4 @@
 import *as React from 'react';
-import { image } from 'd3';
 
 export interface SliderProps {
     images: string[];
@@ -7,35 +6,48 @@ export interface SliderProps {
 
 interface State {
     index: number;
-    className: string;
+    delta: number;
+    comingClassName: string;
+    currentClassName: string;
 }
 export class Slider extends React.Component<SliderProps, State> {
 
-    state = { index: 0, className: 'image-central' };
+    state = { index: 0, comingClassName: 'image-central', currentClassName: 'image-central', delta: 0 };
 
     componentDidMount() {
         this.props.images.forEach(src => {
             const image = new Image();
             image.src = src;
+            image.style.display = 'none';
+            document.body.appendChild(image);
         });
     }
 
     render() {
-        const { index, className } = this.state;
+        const { index, comingClassName, currentClassName, delta } = this.state;
         const { images } = this.props;
         return <div className="slider">
-            <img className={className} src={images[siblingIndex(images, index + 0)]} />
+            <img className={comingClassName} src={images[siblingIndex(images, index + delta)]} />
+            <img className={currentClassName} src={images[siblingIndex(images, index + 0)]} />
             <a href="" className="slider-arrow-right"
                 onClick={e => {
                     e.preventDefault();
-                    this.setState({ className: 'image-right' });
-                    // ....................
+                    this.setState({
+                        delta: +1,
+                        comingClassName: 'image-coming-from-left',
+                        currentClassName: 'image-going-to-right'
+                    });
                     setTimeout(() => {
-                        this.setState({ index: siblingIndex(images, index + 1), className: 'image-central' });
+                        this.setState({
+                            delta: 0,
+                            index: siblingIndex(images, index + 1),
+                            comingClassName: 'image-central',
+                            currentClassName: 'image-central'
+                        });
                     }, 500);
                 }}
             ></a>
-            <a href="" className="slider-arrow-left"
+            {/* <a href="" className="slider-arrow-left"
                 onClick={e => {
                     e.preventDefault();
                     this.setState({ className: 'image-left' });
@@ -44,7 +56,7 @@ export class Slider extends React.Component<SliderProps, State> {
                         this.setState({ index: siblingIndex(images, index - 1), className: 'image-central' });
                     }, 500);
                 }}
-            ></a>
+            ></a> */}
         </div>
     }
 }

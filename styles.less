@@ -327,11 +327,6 @@ padding-bottom: 15px;
         background-image: url(/images/arrow_left.png);
     }
 
-    @keyframes from-left-to-right {
-        from {left: 0px;}
-        to {left:@image-width;}
-    }
-
     @keyframes from-right-to-left {
         from {left: -@image-width;}
         to {left: 0px;}
@@ -353,9 +348,23 @@ padding-bottom: 15px;
     .image-central {
         .image();
     }
-    .image-right {
+
+    @keyframes coming-from-left {
+        from {left: -@image-width;}
+        to {left: 0px;}
+    }
+    .image-coming-from-left {
         .image();
-        animation-name: from-left-to-right;
+        animation-name: coming-from-left;
+        left: @image-width;
+    }
+    @keyframes going-to-right {
+        from {left: 0px;}
+        to {left:@image-width;}
+    }
+    .image-going-to-right {
+        .image();
+        animation-name: going-to-right;
         left: @image-width;
     }
 
