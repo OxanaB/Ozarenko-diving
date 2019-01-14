@@ -2,6 +2,7 @@ import * as React from 'react';
 import { enableClient } from './client';
 import { pricelistIntro } from './price-daily-sharm';
 import { map } from './utils';
+import { Slider } from './slider-component';
 
 export class IntroDiving extends React.Component {
     render() {
@@ -19,17 +20,7 @@ export class IntroDiving extends React.Component {
             <p>В-четвертых, после прохождения программы Discover Scuba Diving вы получаете временный сертификат дайвера, действительный в течение одного месяца, по которому вы можете нырять в любом другом месте в группе до 4 аквалангистов с таким же сертификатом в сопровождении одного инструктора на глубину до 12 метров.</p>
             <p>Наконец, самый большой плюс второго варианта с чего начать дайвинг: стоимость программы Discover Scuba Diving будет вычтена из курса Open water diver PADI, если вы решите продолжить обучение дайвингу в нашем клубе.</p>
             <div className="images-intro">
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
-                <img src="" title="" alt="" />
+                <Slider images={sliderIntroDive} />
                 <h5>Цены на дайвинг экскурсии и начальное обучение</h5>
             </div>
             <h2>Цены на дайвинг для начинающих</h2>
@@ -53,6 +44,18 @@ export class IntroDiving extends React.Component {
     }
 }
 
+const sliderIntroDive: string[] = [
+    '/images/diving-sharm/intro/intro-1.jpg',
+    '/images/diving-sharm/intro/intro-2.jpg',
+    '/images/diving-sharm/intro/intro-3.jpg',
+    '/images/diving-sharm/intro/intro-4.jpg',
+    '/images/diving-sharm/intro/intro-5.jpg',
+    '/images/diving-sharm/intro/intro-6.jpg',
+    '/images/diving-sharm/intro/intro-7.jpg',
+    '/images/diving-sharm/intro/intro-8.jpg',
+    '/images/diving-sharm/intro/intro-9.jpg',
+    '/images/diving-sharm/intro/intro-91.jpg',
+];
 
 declare var window: any;
 if (typeof window !== 'undefined') {

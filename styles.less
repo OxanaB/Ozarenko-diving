@@ -6,7 +6,7 @@
 }
 body { 
     background-image: url(./images/ozarenko-diving-background.jpg);
-    background-repeat: no-repeat;  
+    background-repeat: repeat;  
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: 100%;
@@ -17,6 +17,7 @@ body {
 @white-color: #ffffff;
 @hover-color: #FFF766;
 @active-color: #FFF200;
+@image-shadow: 0 8px 10px 1px grey;
 
 #a-no-decoration() {
     text-decoration: none;
@@ -203,7 +204,7 @@ padding-bottom: 15px;
 .main-page-link-element-image {
     margin-left: 5px;
     float: right;
-    box-shadow: 0 8px 10px 1px grey;
+    box-shadow: @image-shadow;
     img {
         width: 200px;
         height: 200px;
@@ -287,6 +288,77 @@ padding-bottom: 15px;
     p {
         padding-bottom: 15px;
     }
+}
+
+.slider {
+    @image-width: 393px;
+    width: @image-width;
+    height: 260px;
+    box-shadow: @image-shadow;
+    position: relative;
+    overflow: hidden;
+
+    a:hover {
+        background-color: fade(black, 20%);
+    }
+    
+    .slider-arrow() {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        z-index: 3;
+        width: 42px;
+
+        // height: 42px;
+    }
+
+    .slider-arrow-right {
+        .slider-arrow();
+        right: 0px;
+        background-image: url(/images/arrow_right.png);
+    }
+
+    .slider-arrow-left {
+        .slider-arrow();
+        left: 0px;
+        background-image: url(/images/arrow_left.png);
+    }
+
+    @keyframes from-left-to-right {
+        from {left: 0px;}
+        to {left:@image-width;}
+    }
+
+    @keyframes from-right-to-left {
+        from {left: -@image-width;}
+        to {left: 0px;}
+    }
+      
+
+    .image() {
+        position: absolute;
+        animation-duration: 0.5s;
+        top: 0px;
+    }
+
+    .image-left {
+        .image();
+        animation-name: from-right-to-left;
+        left: -@image-width;
+    }
+    
+    .image-central {
+        .image();
+    }
+    .image-right {
+        .image();
+        animation-name: from-left-to-right;
+        left: @image-width;
+    }
+
 }
 
 // @media screen and (min-width: 361px) and (max-width: 600px) {

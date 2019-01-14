@@ -6,7 +6,7 @@
 }
 body {
   background-image: url(./images/ozarenko-diving-background.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
   background-size: 100%;
@@ -241,4 +241,73 @@ body {
 }
 .client-feedback p {
   padding-bottom: 15px;
+}
+.slider {
+  width: 393px;
+  height: 260px;
+  box-shadow: 0 8px 10px 1px grey;
+  position: relative;
+  overflow: hidden;
+}
+.slider a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.slider .slider-arrow-right {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 3;
+  width: 42px;
+  right: 0px;
+  background-image: url(/images/arrow_right.png);
+}
+.slider .slider-arrow-left {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 3;
+  width: 42px;
+  left: 0px;
+  background-image: url(/images/arrow_left.png);
+}
+@keyframes from-left-to-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 393px;
+  }
+}
+@keyframes from-right-to-left {
+  from {
+    left: -393px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.slider .image-left {
+  position: absolute;
+  animation-duration: 0.5s;
+  top: 0px;
+  animation-name: from-right-to-left;
+  left: -393px;
+}
+.slider .image-central {
+  position: absolute;
+  animation-duration: 0.5s;
+  top: 0px;
+}
+.slider .image-right {
+  position: absolute;
+  animation-duration: 0.5s;
+  top: 0px;
+  animation-name: from-left-to-right;
+  left: 393px;
 }

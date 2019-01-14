@@ -1,1 +1,1 @@
-node ./node_modules/less/bin/lessc styles.less styles.css
+node ./node_modules/less/bin/lessc --js styles.less styles.css
