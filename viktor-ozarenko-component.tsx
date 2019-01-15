@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { enableClient } from './client';
+import { Slider } from './slider-component';
 
 export class ViktorOzarenko extends React.Component {
     render() {
         return <div className="page-container">
 
             <h1>Виктор Озаренко</h1>
-
+            <Slider images={sliderViktor} width={500} height={640}/>
             <p>Командор Клуба "Искатели морских сокровищ"​, сын двух городов-героев Одессы и
                 Севастополя. Незаурядная личность, опытный подводный пловец, человек-легенда, 40 лет
     профессионально занимается дайвингом.</p>
@@ -41,26 +42,20 @@ export class ViktorOzarenko extends React.Component {
                 точке земного шара, в самое холодное время года! Подробности рекорда читайте на странице журнала
     <a href="http://www.vokrugsveta.ru/vs/article/8113/">"Вокруг Света"</a>.</p>
 
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo1.jpg" />
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo2.jpg" />
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo3.jpg" />
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo4.jpg" />
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo5.jpg" />
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo6.jpg" />
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo7.jpg" />
-            <img alt="Дайвинг клуб Виктора Озаренко &quot;Искатели морских сокровищ&quot; | Обучение дайвингу в Одессе, в Египте, дайвинг в Шарм эль Шейхе, технический дайвинг, сайдмаунт"
-                src="/images/about-us/viktor-ozarenko/viktor_ozarenko_photo8.jpg" />
-
         </ div>
     }
 }
+const sliderViktor: string[] = [
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo1.jpg',
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo2.jpg',
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo3.jpg',
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo4.jpg',
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo5.jpg',
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo6.jpg',
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo7.jpg',
+    '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo8.jpg',
+]
+
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(ViktorOzarenko);

@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { enableClient } from './client';
+import { Slider } from './slider-component';
 
 export class Sidemount extends React.Component {
     render() {
         return <div className="page-container">
             <h1>Курсы обучения дайвингу в сайдмаунте (sidemount)</h1>
-            <img src="/images/technical-diving/sidemount/sidemount-3.jpg" alt="Сайдмаунт: позволяет проникать в узкие места и пещеры" />
-            <img src="/images/technical-diving/sidemount/sidemount-1.jpg" alt="Сайдмаунт: можно использовать разного объема баллоны" />
-            <img src="/images/technical-diving/sidemount/sidemount-2.jpg" alt="Сайдмаунт: удобен для хрупких девушек" />
+            
+            <Slider images={sliderSidemount} width={400} height={250}/>
+            
 
             <h2>Сайдмаунт - конфигурация с боковым расположением баллонов </h2>
 
@@ -89,7 +90,11 @@ export class Sidemount extends React.Component {
         </ div>
     }
 }
-
+const sliderSidemount: string[] = [
+    '/images/technical-diving/sidemount/sidemount-3.jpg',
+    '/images/technical-diving/sidemount/sidemount-1.jpg',
+    '/images/technical-diving/sidemount/sidemount-2.jpg',
+]
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(Sidemount);
