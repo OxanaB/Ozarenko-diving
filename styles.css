@@ -242,6 +242,15 @@ body {
 .client-feedback p {
   padding-bottom: 15px;
 }
+.sale {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 3px solid #FFF200;
+}
+.sale img {
+  max-width: 900px;
+  padding: 10px;
+}
 .slider {
   width: 393px;
   height: 260px;

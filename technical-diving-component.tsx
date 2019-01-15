@@ -18,10 +18,12 @@ export class TechnicalDiving extends React.Component {
                 легкой и удобной конфигурации сайдмаунт. Спарка - прошлый век!</p>
             </div>
             <div className="links-to-tech-courses">
-                <h2><a href="/techdiving-courses-iantd.html">
-                    Курсы технического дайвинга IANTD</a></h2>
-                <h2><a href="/techdiving-courses-ndl.html">
-                    Технический дивизион NDL</a></h2>
+                <a href="/techdiving-courses-iantd.html">
+                <img src="/images/logos/IANTD-logo.jpg"/>
+                <h2>Курсы технического дайвинга IANTD</h2></a>
+                <a href="/techdiving-courses-ndl.html">
+                <img src="/images/logos/ndl-tek-logo-red.jpg"/>
+                    <h2>Технический дивизион NDL</h2></a>
             </div>
             <div className="price-technical">
                 <h2>Цены на технические погружения в Одессе</h2>
