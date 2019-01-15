@@ -6,7 +6,7 @@ export class UniversalDiverNdl extends React.Component {
     render() {
         return <div className="page-container">
             <h1>Вторая ступень обучения дайвингу курс Universal diver NDL</h1>
-            <Slider images={sliderUniversal} width={640} height={500}/>
+            <Slider images={sliderUniversal} width={512} height={400}/>
             <p>Курс Universal Diver - это следующая ступень в обучении дайвингу. Данный курс позволяет аквалангисту наиболее полно почувствовать всё разнообразие дайвинга - его приключенческую сторону.</p>
             <p>К занятиям по программе курса может приступить каждый, кто уже получил сертификат Diver NDL или эквивалент.</p>
             <p>В состав курса Universal Diver входят практические занятия в открытом водоёме с получением обязательных навыков:</p>

@@ -9,7 +9,7 @@ export class Fleet extends React.Component {
             <p>Для чудесного отдыха в море очень важно правильно выбрать яхту, на которой вы будете жить и нырять в течение недели во время дайвинг сафари на Красном море.</p>
             <div className="boat">
                 <h2>яхта South Moon</h2>
-                <Slider images={sliderSouthMoon} width={750} height={500} />
+                <Slider images={sliderSouthMoon} width={600} height={400} />
                 <div className="boat-description">
                     <p>Корабль деревянный, полностью перестроен в 2014 году, регулярно проходит полное обслуживание в драй-доке.</p>
                     <p>Яхта рассчитана на 20 человек</p>
@@ -27,7 +27,7 @@ export class Fleet extends React.Component {
             </div>
             <div className="boat">
                 <h2>яхта Brina-1</h2>
-                <Slider images={sliderBrina} width={750} height={500} />
+                <Slider images={sliderBrina} width={600} height={400} />
                 <div className="boat-description">
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -46,7 +46,7 @@ export class Fleet extends React.Component {
 
             <div className="boat">
                 <h2>яхта Carlton Queen</h2>
-                <Slider images={sliderCarltonQueen} width={750} height={500} />
+                <Slider images={sliderCarltonQueen} width={600} height={400} />
                 <div className="boat-description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -65,7 +65,7 @@ export class Fleet extends React.Component {
             </div>
             <div className="boat">
                 <h2>яхта Carlton</h2>
-                <Slider images={sliderCarltonBoat} width={750} height={500} />
+                <Slider images={sliderCarltonBoat} width={600} height={400} />
                 <div className="boat-description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>

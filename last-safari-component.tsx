@@ -9,7 +9,7 @@ export class LastSafari extends React.Component {
             <p>Команда клуба "Искатели морских сокровищ" и плавучая гостиница яхта "Брина 1" приглашают вас на дайвинг сафари по северным рэкам Красного моря с 17 по 24 ноября 2018 года. В программе шести полноценных дней дайвинга: погружения на рифах заповедника Ras Mohammed, затонувших кораблях Dunraven, SS Thistlegorm, Chrisoula K, Carnatic, Giannis D, Ulysees, Kingston, Million Hope, рифах острова Тиран, а также пять ночных погружений. Присоединяйтесь!
     Минимально необходимый уровень подготовки: Scuba diver / Referral  OWD / Open water diver. Поднять свой уровень до Advanced open water diver можно и нужно непосредственно на корабле, причем желательно это успеть сделать до начала сложных погружений.
 Кроме того, на прохождение курсов и специализаций PADI /  IANTD действует скидка 30 % от обычной цены. </p>
-            <Slider images={sliderBrina} width={750} height={500}/>
+            <Slider images={sliderBrina} width={600} height={400}/>
             <div className="safari-prices">
                 <h2>Цена 715 евро!</h2>
                 <p>не включая перелет</p>

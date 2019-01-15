@@ -7,7 +7,7 @@ export class ViktorOzarenko extends React.Component {
         return <div className="page-container">
 
             <h1>Виктор Озаренко</h1>
-            <Slider images={sliderViktor} width={500} height={640}/>
+            <Slider images={sliderViktor} width={400} height={512}/>
             <p>Командор Клуба "Искатели морских сокровищ"​, сын двух городов-героев Одессы и
                 Севастополя. Незаурядная личность, опытный подводный пловец, человек-легенда, 40 лет
     профессионально занимается дайвингом.</p>

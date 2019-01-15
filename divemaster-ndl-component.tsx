@@ -6,7 +6,7 @@ export class DivemasterNdl extends React.Component {
     render() {
         return <div className="page-container">
             <h1>Первый профессиональный курс дайвинга - Divemaster NDL</h1>
-            <Slider images={sliderDivemaster} width={500} height={640} />
+            <Slider images={sliderDivemaster} width={400} height={512} />
             <p>Курс Дайвмастер (Divemaster NDL) - это первый профессиональный уровень в дайвинге. Дайвер успешно прошедший курс Divemaster NDL получает возможность работать и зарабатывать в дайвиндустрии как дайвгид, помогать инструктору при проведении курсов, проводить пробные погружения.</p>
             <p>Курс Divemaster NDL занимает от 2 недели, и состоит из теоретической и практической частей. Теоретическая часть содержит знания по:</p>
             <ul><li>по правилам организации погружений,</li>
