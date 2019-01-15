@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { enableClient } from './client';
+import { Slider } from './slider-component';
 
 export class SpecialtyDiverNDL extends React.Component {
     render() {
@@ -11,9 +12,7 @@ export class SpecialtyDiverNDL extends React.Component {
             <p>После прохождения курса вы получите сертификат, который позволяет нырять на обогащенном воздухе с максимальным процентом содержания кислорода 40%.</p>
             <p>Курс Nitrox diver занимает один день, за который вы совершите два погружения на обогащенном воздухе и изучите особенности его использования. </p>
             <p>В стоимость включены учебные материалы, баллоны с обогащенным воздухом, трансфер из отеля. Сертификационный взнос в NDL оплачивается дополнительно и стоит 35$.</p>
-            <img src="" title="Курс дайвинга Nitrox diver" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса nitrox diver ndl" />
-            <img src="" title="Курс дайвинга Nitrox diver" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса nitrox diver ndl" />
-            <img src="" title="Курс дайвинга Nitrox diver" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса nitrox diver ndl" />
+            <Slider images={sliderNitrox} width={500} height={640} />
             <div className="ndl-course-page-price"><p>550$</p></div>
             <a href="/contact-us.html" className="book-button">ЗАБРОНИРОВАТЬ</a>
 
@@ -27,8 +26,7 @@ export class SpecialtyDiverNDL extends React.Component {
             <a href="/contact-us.html" className="book-button">ЗАБРОНИРОВАТЬ</a>
 
             <h2 id="Deep">Курс дайвинга Deep diver</h2>
-            <img src="" title="Курс дайвинга Deep diver" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса deep diver ndl" />
-            <img src="" title="Курс дайвинга Deep diver" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса deep diver ndl" />
+            <Slider images={sliderDeep} width={640} height={500}/>
             <p>Глубоководные погружения всегда манили людей. Чем же так манит всех этих людей глубина? Ведь там темнее и холоднее?! На большей глубине сильнее расходуется воздух, что ограничивает время пребывания под водой. С увеличением глубины уменьшаются временные пределы пребывания под водой, поскольку усиливается насыщение тканей азотом. Все это правда. Но глубина все равно привлекает своей таинственностью. Так в чем же дело? В чем причины того, что люди совершают глубоководные погружения?</p>
             <ul>
                 <li>На глубине живут совершенно другие морские обитатели, которых нет на мелководье.</li>
@@ -53,8 +51,7 @@ export class SpecialtyDiverNDL extends React.Component {
             <a href="/contact-us.html" className="book-button">ЗАБРОНИРОВАТЬ</a>
 
             <h2 id="Night">Курс дайвинга Night diver</h2>
-            <img src="" title="Курс дайвинга Night diver" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса nigth diver ndl" />
-            <img src="" title="Курс дайвинга Night diver" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса nigth diver ndl" />
+            <Slider images={sliderNight} width={500} height={640} />
             <p>Ночными погружениями считаются погружения, которые проводятся с наступлением темноты. Именно в темное время суток появляется возможность созерцать многих подводных обитателей, которые прячутся от своих врагов днем, а то и просто спят в своих «домах». В тропиках практически только ночью можно увидеть лобстеров, омаров, лангустов и креветок. Только ночью при свете фонаря можно наблюдать танго «испанского танцора».</p>
             <p>Свет фонаря не рассеивается и делает краски кораллов и рыб более яркими и насыщенными. Именно ночью некоторые рыбы подпускают к себе очень близко и это прекрасная возможность их сфотографировать, да и выглядят в свете фонаря они порой по-другому. Ночные погружения это возможность взглянуть на уже знакомые места по-другому и получить новые впечатления, которые будут просто незабываемы.</p>
             <p>Ночные погружения это путь повышения дайверского мастерства и продолжение этого бесконечного пути в познании подводного мира.</p>
@@ -66,6 +63,20 @@ export class SpecialtyDiverNDL extends React.Component {
         </ div>
     }
 }
+const sliderNight: string[] = [
+    '/images/courses/night-diver-ndl-1.jpg',
+    '/images/courses/night-diver-ndl-2.jpg',
+]
+const sliderDeep: string[] = [
+    '/images/courses/deep-diver-ndl-1.jpg',
+    '/images/courses/deep-diver-ndl-2.jpg',
+]
+const sliderNitrox: string[] = [
+    '/images/courses/nitrox-diver-ndl-1.jpg',
+    '/images/courses/nitrox-diver-ndl-2.jpg',
+    '/images/courses/nitrox-diver-ndl-3.jpg',
+]
+
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(SpecialtyDiverNDL);

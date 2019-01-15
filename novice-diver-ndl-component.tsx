@@ -1,14 +1,12 @@
 import * as React from 'react'
 import { enableClient } from './client';
+import { Slider } from './slider-component';
 
 export class NoviceDiverNdl extends React.Component {
     render() {
         return <div className="page-container">
             <h1>Начальный курс обучения дайвингу Novice diver NDL</h1>
-            <img src="" title="Начальный курс обучения дайвингу Novice diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-            <img src="" title="Начальный курс обучения дайвингу Novice diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-            <img src="" title="Начальный курс обучения дайвингу Novice diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-            <img src="" title="Начальный курс обучения дайвингу Novice diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
+            <Slider images={sliderNovice} width={500} height={640}/>
             <p>На начальном курсе обучения студенты осваивают основы дайвинга. Квалификация Novice Diver NDL позволяет совершать погружение под наблюдением профессионала (дайвмастера или инструктора) на глубину не более 12 метров.</p>
             <p>В курс Novice Diver NDL входят:</p>
             <ul><li>Теория, практические занятий в закрытом водоеме (бассейне или какой-либо акватории имеющую мелководную часть, защищенную от течений и дном, на которое аквалангист может встать).</li>
@@ -29,6 +27,13 @@ export class NoviceDiverNdl extends React.Component {
         </ div>
     }
 }
+const sliderNovice: string[] = [
+    'images/courses/novice-diver-ndl-1.jpg',
+    'images/courses/novice-diver-ndl-2.jpg',
+    'images/courses/novice-diver-ndl-3.jpg',
+    'images/courses/novice-diver-ndl-4.jpg',
+]
+
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(NoviceDiverNdl);

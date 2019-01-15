@@ -1,13 +1,12 @@
 import * as React from 'react'
 import { enableClient } from './client';
+import { Slider } from './slider-component';
 
 export class DivemasterNdl extends React.Component {
     render() {
         return <div className="page-container">
             <h1>Первый профессиональный курс дайвинга - Divemaster NDL</h1>
-            <img src="" title="Первый профессиональный курс дайвинга Дайвмастер - Divemaster NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса divemaster ndl" />
-            <img src="" title="Первый профессиональный курс дайвинга Дайвмастер - Divemaster NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса divemaster ndl" />
-            <img src="" title="Первый профессиональный курс дайвинга Дайвмастер - Divemaster NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса divemaster ndl" />
+            <Slider images={sliderDivemaster} width={500} height={640} />
             <p>Курс Дайвмастер (Divemaster NDL) - это первый профессиональный уровень в дайвинге. Дайвер успешно прошедший курс Divemaster NDL получает возможность работать и зарабатывать в дайвиндустрии как дайвгид, помогать инструктору при проведении курсов, проводить пробные погружения.</p>
             <p>Курс Divemaster NDL занимает от 2 недели, и состоит из теоретической и практической частей. Теоретическая часть содержит знания по:</p>
             <ul><li>по правилам организации погружений,</li>
@@ -73,6 +72,12 @@ export class DivemasterNdl extends React.Component {
         </ div>
     }
 }
+const sliderDivemaster: string[] = [
+    '/images/courses/divemaster-ndl-1.jpg',
+    '/images/courses/divemaster-ndl-2.jpg',
+    '/images/courses/divemaster-ndl-3.jpg',
+    '/images/courses/divemaster-ndl-4.JPG',
+]
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(DivemasterNdl);

@@ -1,15 +1,12 @@
 import * as React from 'react'
 import { enableClient } from './client';
+import { Slider } from './slider-component';
 
 export class AdvUniDiverNdl extends React.Component {
     render() {
         return <div className="page-container">
             <h1>Продолжение обучению дайвингу курс Advanced Universal diver NDL</h1>
-            <img src="" title="Курс Advanced Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса advanced universal diver ndl" />
-            <img src="" title="Курс Advanced Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса advanced universal diver ndl" />
-            <img src="" title="Курс Advanced Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса advanced universal diver ndl" />
-            <img src="" title="Курс Advanced Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса advanced universal diver ndl" />
-
+            <Slider images={sliderAdvUni} width={500} height={640}/>
             <p>На курсе ADVANCED UNIVERSAL DIVER NDL вы полностью изучаете 3 специализации NDL (глубоководные погружения, ночные погружения и подводное ориентирование). </p>
             <p>Курс состоит из 1 погружения по подводной навигации, 1 глубоководного погружения до 39 метров и 2 ночных погружения.</p>
             <p>Квалификация ADVANCED UNIVERSAL DIVER NDL позволяет:</p>
@@ -68,6 +65,12 @@ export class AdvUniDiverNdl extends React.Component {
         </ div>
     }
 }
+const sliderAdvUni: string[] = [
+    '/images/courses/advanced-universal-diver-ndl-1.jpg',
+    '/images/courses/advanced-universal-diver-ndl-2.jpg',
+    '/images/courses/advanced-universal-diver-ndl-3.jpg',
+]
+
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(AdvUniDiverNdl);

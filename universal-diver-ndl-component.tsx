@@ -1,14 +1,12 @@
 import * as React from 'react'
 import { enableClient } from './client';
+import { Slider } from './slider-component';
 
 export class UniversalDiverNdl extends React.Component {
     render() {
         return <div className="page-container">
             <h1>Вторая ступень обучения дайвингу курс Universal diver NDL</h1>
-            <img src="" title="Вторая ступень обучения дайвингу курс Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса universal diver ndl" />
-            <img src="" title="Вторая ступень обучения дайвингу курс Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса universal diver ndl" />
-            <img src="" title="Вторая ступень обучения дайвингу курс Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса universal diver ndl" />
-            <img src="" title="Вторая ступень обучения дайвингу курс Universal diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса universal diver ndl" />
+            <Slider images={sliderUniversal} width={640} height={500}/>
             <p>Курс Universal Diver - это следующая ступень в обучении дайвингу. Данный курс позволяет аквалангисту наиболее полно почувствовать всё разнообразие дайвинга - его приключенческую сторону.</p>
             <p>К занятиям по программе курса может приступить каждый, кто уже получил сертификат Diver NDL или эквивалент.</p>
             <p>В состав курса Universal Diver входят практические занятия в открытом водоёме с получением обязательных навыков:</p>
@@ -67,6 +65,13 @@ export class UniversalDiverNdl extends React.Component {
         </div>
     }
 }
+const sliderUniversal: string[] = [
+    '/images/courses/universal-diver-ndl-1.jpg',
+    '/images/courses/universal-diver-ndl-2.jpg',
+    '/images/courses/universal-diver-ndl-3.jpg',
+    '/images/courses/universal-diver-ndl-4.jpg',
+]
+
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(UniversalDiverNdl);
