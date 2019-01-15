@@ -284,18 +284,6 @@ body {
     left: 0px;
   }
 }
-.slider .image-left {
-  position: absolute;
-  animation-duration: 0.5s;
-  top: 0px;
-  animation-name: from-right-to-left;
-  left: -393px;
-}
-.slider .image-central {
-  position: absolute;
-  animation-duration: 0.5s;
-  top: 0px;
-}
 @keyframes coming-from-left {
   from {
     left: -393px;
@@ -309,7 +297,6 @@ body {
   animation-duration: 0.5s;
   top: 0px;
   animation-name: coming-from-left;
-  left: 393px;
 }
 @keyframes going-to-right {
   from {
@@ -324,5 +311,32 @@ body {
   animation-duration: 0.5s;
   top: 0px;
   animation-name: going-to-right;
-  left: 393px;
+}
+@keyframes coming-from-right {
+  from {
+    left: 393px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.slider .image-coming-from-right {
+  position: absolute;
+  animation-duration: 0.5s;
+  top: 0px;
+  animation-name: coming-from-right;
+}
+@keyframes going-to-left {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -393px;
+  }
+}
+.slider .image-going-to-left {
+  position: absolute;
+  animation-duration: 0.5s;
+  top: 0px;
+  animation-name: going-to-left;
 }

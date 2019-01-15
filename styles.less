@@ -338,17 +338,7 @@ padding-bottom: 15px;
         animation-duration: 0.5s;
         top: 0px;
     }
-
-    .image-left {
-        .image();
-        animation-name: from-right-to-left;
-        left: -@image-width;
-    }
     
-    .image-central {
-        .image();
-    }
-
     @keyframes coming-from-left {
         from {left: -@image-width;}
         to {left: 0px;}
@@ -356,7 +346,6 @@ padding-bottom: 15px;
     .image-coming-from-left {
         .image();
         animation-name: coming-from-left;
-        left: @image-width;
     }
     @keyframes going-to-right {
         from {left: 0px;}
@@ -365,9 +354,24 @@ padding-bottom: 15px;
     .image-going-to-right {
         .image();
         animation-name: going-to-right;
-        left: @image-width;
     }
-
+    
+    @keyframes coming-from-right {
+        from {left: @image-width;}
+        to {left: 0px;}
+    }
+    .image-coming-from-right {
+        .image();
+        animation-name: coming-from-right;
+    }
+    @keyframes going-to-left {
+        from {left: 0px;}
+        to {left: -@image-width;}
+    }
+    .image-going-to-left {
+        .image();
+        animation-name: going-to-left;
+    }
 }
 
 // @media screen and (min-width: 361px) and (max-width: 600px) {

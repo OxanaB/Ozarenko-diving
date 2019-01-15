@@ -45,16 +45,16 @@ export class IntroDiving extends React.Component {
 }
 
 const sliderIntroDive: string[] = [
-    '/images/diving-sharm/intro/intro-1.jpg',
-    '/images/diving-sharm/intro/intro-2.jpg',
-    '/images/diving-sharm/intro/intro-3.jpg',
-    '/images/diving-sharm/intro/intro-4.jpg',
-    '/images/diving-sharm/intro/intro-5.jpg',
-    '/images/diving-sharm/intro/intro-6.jpg',
-    '/images/diving-sharm/intro/intro-7.jpg',
-    '/images/diving-sharm/intro/intro-8.jpg',
-    '/images/diving-sharm/intro/intro-9.jpg',
-    '/images/diving-sharm/intro/intro-91.jpg',
+    '/images/diving-sharm/intro/intro-01.jpg',
+    '/images/diving-sharm/intro/intro-02.jpg',
+    '/images/diving-sharm/intro/intro-03.jpg',
+    '/images/diving-sharm/intro/intro-04.jpg',
+    '/images/diving-sharm/intro/intro-05.jpg',
+    '/images/diving-sharm/intro/intro-06.jpg',
+    '/images/diving-sharm/intro/intro-07.jpg',
+    '/images/diving-sharm/intro/intro-08.jpg',
+    '/images/diving-sharm/intro/intro-09.jpg',
+    '/images/diving-sharm/intro/intro-10.jpg',
 ];
 
 declare var window: any;

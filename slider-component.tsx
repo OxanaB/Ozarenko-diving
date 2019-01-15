@@ -47,16 +47,24 @@ export class Slider extends React.Component<SliderProps, State> {
                     }, 500);
                 }}
             ></a>
-            {/* <a href="" className="slider-arrow-left"
+            <a href="" className="slider-arrow-left"
                 onClick={e => {
                     e.preventDefault();
-                    this.setState({ className: 'image-left' });
-                    // ....................
+                    this.setState({
+                        delta: -1,
+                        comingClassName: 'image-coming-from-right',
+                        currentClassName: 'image-going-to-left'
+                    });
                     setTimeout(() => {
-                        this.setState({ index: siblingIndex(images, index - 1), className: 'image-central' });
+                        this.setState({
+                            delta: 0,
+                            index: siblingIndex(images, index - 1),
+                            comingClassName: 'image-central',
+                            currentClassName: 'image-central'
+                        });
                     }, 500);
                 }}
-            ></a> */}
+            ></a>
         </div>
     }
 }
