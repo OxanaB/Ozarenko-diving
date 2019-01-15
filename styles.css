@@ -276,17 +276,9 @@ body {
   left: 0px;
   background-image: url(/images/arrow_left.png);
 }
-@keyframes from-right-to-left {
-  from {
-    left: -393px;
-  }
-  to {
-    left: 0px;
-  }
-}
 @keyframes coming-from-left {
   from {
-    left: -393px;
+    left: -100%;
   }
   to {
     left: 0px;
@@ -303,7 +295,7 @@ body {
     left: 0px;
   }
   to {
-    left: 393px;
+    left: 100%;
   }
 }
 .slider .image-going-to-right {
@@ -314,7 +306,7 @@ body {
 }
 @keyframes coming-from-right {
   from {
-    left: 393px;
+    left: 100%;
   }
   to {
     left: 0px;
@@ -331,7 +323,7 @@ body {
     left: 0px;
   }
   to {
-    left: -393px;
+    left: -100%;
   }
 }
 .slider .image-going-to-left {

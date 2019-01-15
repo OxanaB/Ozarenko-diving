@@ -327,12 +327,6 @@ padding-bottom: 15px;
         background-image: url(/images/arrow_left.png);
     }
 
-    @keyframes from-right-to-left {
-        from {left: -@image-width;}
-        to {left: 0px;}
-    }
-      
-
     .image() {
         position: absolute;
         animation-duration: 0.5s;
@@ -340,7 +334,7 @@ padding-bottom: 15px;
     }
     
     @keyframes coming-from-left {
-        from {left: -@image-width;}
+        from {left: -100%;}
         to {left: 0px;}
     }
     .image-coming-from-left {
@@ -349,7 +343,7 @@ padding-bottom: 15px;
     }
     @keyframes going-to-right {
         from {left: 0px;}
-        to {left:@image-width;}
+        to {left: 100%;}
     }
     .image-going-to-right {
         .image();
@@ -357,7 +351,7 @@ padding-bottom: 15px;
     }
     
     @keyframes coming-from-right {
-        from {left: @image-width;}
+        from {left: 100%;}
         to {left: 0px;}
     }
     .image-coming-from-right {
@@ -366,7 +360,7 @@ padding-bottom: 15px;
     }
     @keyframes going-to-left {
         from {left: 0px;}
-        to {left: -@image-width;}
+        to {left: -100%;}
     }
     .image-going-to-left {
         .image();
