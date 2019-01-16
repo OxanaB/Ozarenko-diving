@@ -49,6 +49,9 @@ body {
 .center {
   text-align: center;
 }
+.space-before {
+  margin-top: 10px;
+}
 .header {
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
@@ -231,28 +234,40 @@ body {
   font-size: 14px;
   color: #000;
 }
+.image-align-right {
+  display: flex;
+  justify-content: space-between;
+}
 .image-align-right img {
-  float: right;
   margin-left: 15px;
+  margin-top: -30px;
 }
 .image-align-right li {
   margin-left: 20px;
 }
+.image-align-right div {
+  margin-bottom: 20px;
+}
+.image-align-left {
+  display: flex;
+  justify-content: space-between;
+}
 .image-align-left img {
-  float: left;
   margin-right: 15px;
+  margin-top: 15px;
 }
 #logo-ndl {
   width: 145px;
   height: 180px;
+  margin-top: -40px;
 }
-#img-vertical {
-  width: 200px;
-  height: 325px;
+#freedive-hor {
+  width: 400px;
+  height: 250px;
 }
-#img-horisontal {
-  width: 450px;
-  height: 300px;
+#freedive-vert {
+  width: 250px;
+  height: 375px;
 }
 .team {
   display: flex;
