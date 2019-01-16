@@ -35,9 +35,9 @@ body {
 .page .page-container h3 {
   font-weight: normal;
   padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-.page .page-container h2,
-.page .page-container h3,
 .page .page-container h4,
 .page .page-container h5,
 .page .page-container p {
@@ -234,41 +234,6 @@ body {
   font-size: 14px;
   color: #000;
 }
-.image-align-right {
-  display: flex;
-  justify-content: space-between;
-}
-.image-align-right img {
-  margin-left: 15px;
-  margin-top: -30px;
-}
-.image-align-right li {
-  margin-left: 20px;
-}
-.image-align-right div {
-  margin-bottom: 20px;
-}
-.image-align-left {
-  display: flex;
-  justify-content: space-between;
-}
-.image-align-left img {
-  margin-right: 15px;
-  margin-top: 15px;
-}
-#logo-ndl {
-  width: 145px;
-  height: 180px;
-  margin-top: -40px;
-}
-#freedive-hor {
-  width: 400px;
-  height: 250px;
-}
-#freedive-vert {
-  width: 250px;
-  height: 375px;
-}
 .team {
   display: flex;
   flex-wrap: nowrap;
@@ -328,6 +293,74 @@ body {
 .client-feedback p {
   padding-bottom: 15px;
 }
+.image-align-right {
+  display: flex;
+  justify-content: space-between;
+}
+.image-align-right img {
+  margin-left: 15px;
+  margin-top: -30px;
+}
+.image-align-right li {
+  margin-left: 20px;
+}
+.image-align-left {
+  display: flex;
+  justify-content: space-between;
+}
+.image-align-left img {
+  margin-right: 15px;
+  margin-top: 15px;
+}
+#logo-ndl {
+  width: 145px;
+  height: 180px;
+  margin-top: -40px;
+}
+#freedive-hor {
+  width: 400px;
+  height: 250px;
+}
+#freedive-vert {
+  width: 250px;
+  height: 375px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.idc-iantd {
+  margin-right: 10px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.idc-iantd h2 {
+  margin-left: 0px;
+  background-color: #FFF200;
+  padding: 15px;
+}
+.idc-iantd img {
+  width: 180px;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.idc-ndl {
+  display: flex;
+  flex-direction: column;
+}
+.idc-ndl h2 {
+  margin-left: 0px;
+  background-color: #FFF200;
+  padding: 15px;
+}
+.idc-ndl img {
+  width: 145px;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .sale {
   display: flex;
   justify-content: flex-start;
@@ -345,6 +378,7 @@ body {
 }
 .slider-align-right .slider {
   float: right;
+  margin-top: 5px;
   margin-left: 10px;
 }
 .slider {

@@ -45,9 +45,11 @@ body {
         }
         h1, h2, h3 {
             font-weight: normal;
-            padding-bottom: 5px; 
+            padding-bottom: 5px;
+            margin-bottom: @margin-text; 
+            margin-top: @margin-text;
         }
-        h2, h3, h4, h5, p {
+        h4, h5, p {
             margin-top: @margin-text;
 
         }
@@ -63,6 +65,7 @@ body {
 .space-before {
     margin-top: 10px;
 }
+
 
 .header {
     background-color: fade(@white-color, 80%);
@@ -192,6 +195,7 @@ body {
     margin-top: @menu-padding;
 }
         
+// Elements of exact dive servises on main page (now 4 of them)
 
 .main-page-link-elements {
     display: flex;
@@ -231,6 +235,7 @@ body {
     }
 }
 
+// Button on the main page link to exact service
 
 @button-color: #89C9CD;
 
@@ -257,6 +262,8 @@ body {
     background-color: lighten(@button-color, 10%);
     }
 }
+
+// Footer
 
 .footer {
     background-color: #fff;
@@ -285,41 +292,7 @@ body {
     }
 }
 
-.image-align-right {
-    display: flex;
-    justify-content: space-between;
-    img {
-        margin-left: 15px;
-        margin-top: -30px;
-    }
-    li {
-        margin-left: 20px;
-    }   
-    
-}
-
-.image-align-left {
-    display: flex;
-    justify-content: space-between;
-    img {
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-}
-
-#logo-ndl {
-    width: 145px;
-    height: 180px;
-    margin-top: -40px;
-}
-#freedive-hor {
-    width: 400px;
-    height: 250px;
-}
-#freedive-vert {
-    width: 250px;
-    height: 375px;
-}
+// About us page
 
 .team {
     display: flex;
@@ -361,7 +334,7 @@ body {
 
 }
 
-
+// Feedback page
 
 .clients-feedback-feed {
     display: flex;
@@ -390,6 +363,95 @@ body {
     }
 }
 
+// Freedive page
+
+.image-align-right {
+    display: flex;
+    justify-content: space-between;
+    img {
+        margin-left: 15px;
+        margin-top: -30px;
+    }
+    li {
+        margin-left: 20px;
+    }   
+    
+}
+
+.image-align-left {
+    display: flex;
+    justify-content: space-between;
+    img {
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
+#logo-ndl {
+    width: 145px;
+    height: 180px;
+    margin-top: -40px;
+}
+#freedive-hor {
+    width: 400px;
+    height: 250px;
+}
+#freedive-vert {
+    width: 250px;
+    height: 375px;
+}
+
+// IDC page
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.h2-idc() {
+    margin-left: 0px;
+    background-color: @active-color;
+    padding: 15px;
+}
+
+.display-idc() {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-margin() {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.idc-iantd {
+    
+    margin-right: 10px;
+    max-width: 50%;
+    .display-idc();
+    h2 { .h2-idc(); }
+
+    img {
+        width: 180px;
+        height: 180px;
+        .image-margin();
+    }
+}
+
+.idc-ndl {
+    .display-idc();
+    h2 { .h2-idc(); }
+    
+    
+    img {
+        width: 145px;
+        height: 180px;
+        .image-margin();
+    }
+}
+
+// Archive akciy page
+
 .sale {
     display: flex;
     justify-content: flex-start;
@@ -400,6 +462,8 @@ body {
         padding: 10px;
     }
 }
+
+// Slider properties
 
 .slider-align-left {
     .slider {
@@ -414,6 +478,7 @@ body {
 .slider-align-right {
     .slider {
         float: right;
+        margin-top: 5px;
         margin-left: @margin-text;
     }
 }
