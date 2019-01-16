@@ -25,16 +25,15 @@ body {
 }
 .page .page-container h1 {
   margin-bottom: 10px;
+  font-weight: normal;
 }
 .page .page-container h1 a {
   text-decoration: none;
   color: #000;
 }
-.page .page-container h1,
 .page .page-container h2 {
   font-weight: normal;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 .page .page-container h3,
@@ -48,6 +47,7 @@ body {
 }
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 .space-before {
   margin-top: 10px;
@@ -349,8 +349,8 @@ body {
 .idc-iantd img {
   width: 180px;
   height: 180px;
+  margin-bottom: 10px;
   margin-top: 10px;
-  margin-bottom: 5px;
 }
 .idc-ndl {
   display: flex;
@@ -364,8 +364,39 @@ body {
 .idc-ndl img {
   width: 145px;
   height: 180px;
+  margin-bottom: 10px;
   margin-top: 10px;
-  margin-bottom: 5px;
+}
+.h2-padi {
+  margin-left: 0px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.padi-courses-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px 5px;
+}
+.padi-courses-container .padi-course {
+  max-width: 180px;
+}
+.padi-courses-container .padi-course h2 {
+  margin-left: 0px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  height: fit-content;
+}
+.padi-courses-container .padi-course h2 + h2 {
+  height: max-content;
+}
+.padi-courses-container .padi-course:nth-child(even) h2 {
+  background-color: #FFF200;
+}
+.padi-courses-container .padi-course:nth-child(odd) h2 {
+  background-color: #89C9CD;
 }
 .sale {
   display: flex;

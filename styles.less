@@ -35,23 +35,21 @@ body {
 
     .page-container {
         padding: 25px;
-    
+        
         h1 {
             margin-bottom: @margin-text;
-                        
+            font-weight: normal;                        
             a {
                 .a-no-decoration();
             }
         }
-        h1, h2 {
+        h2 {
             font-weight: normal;
-            padding-bottom: 5px;
-            margin-bottom: @margin-text/2; 
+            margin-bottom: @margin-text; 
             margin-top: @margin-text;
         }
         h3, h4, h5, p {
             margin-top: @margin-text;
-
         }
         ul {
             margin-left: 20px;
@@ -61,6 +59,7 @@ body {
 
 .center {
     text-align: center;
+    margin: 0 auto;
 }
 .space-before {
     margin-top: 10px;
@@ -427,8 +426,8 @@ body {
 }
 
 .image-margin() {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: @margin-text; 
+    margin-top: @margin-text;
 }
 
 .idc-iantd {
@@ -456,6 +455,45 @@ body {
         .image-margin();
     }
 }
+
+// PADI courses page
+
+.h2-padi{
+    margin-left: 0px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.padi-courses-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px 5px;  
+    
+    .padi-course {
+        max-width: 180px;
+        h2 {
+            .h2-padi();
+            height: fit-content;
+        }
+        h2 + h2 {
+            height: max-content;
+        }
+        &:nth-child(even) { 
+            h2 {
+            background-color: @active-color;
+            }
+        }
+        &:nth-child(odd) {
+            h2 {
+            background-color: @button-color;
+            }
+        }
+        
+    }
+}
+
 
 // Archive akciy page
 
