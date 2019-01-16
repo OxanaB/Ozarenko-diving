@@ -8,15 +8,30 @@ export interface MainMenuChosenConcern {
     mainMenuIndex: number;
 }
 
+export interface SubMenuHiddenConcern {
+    about: 'sub-menu-hidden';
+}
+
+export type MenuConcern = MainMenuChosenConcern | SubMenuHiddenConcern;
+
 export interface MenuProps {
     mainMenus: MainMenu[];
     activeMainMenuIndex: number | null;
-    when: (concern: MainMenuChosenConcern) => void;
+    when: (concern: MenuConcern) => void;
 }
 
 export class Menu extends React.Component<MenuProps> {
     render() {
-        return <div className="main-menus">
+        return <>
+            {
+                this.props.activeMainMenuIndex === null
+                    ? null
+                    : <div className="backdrop" onClick={e => {
+                        this.props.when({ about: 'sub-menu-hidden' });
+                    }} />
+            }
+
+            <div className="main-menus">
                 {map(this.props.mainMenus, (mainMenu, mainMenuIndex) => {
                     return <div className="main-menu" key={mainMenuIndex} onClick={() => {
                         this.props.when({ about: 'main-menu-chosen', mainMenuIndex });
@@ -26,11 +41,9 @@ export class Menu extends React.Component<MenuProps> {
                             mainMenuIndex === this.props.activeMainMenuIndex
                                 ? <div className="sub-menus" key={mainMenuIndex}>{
                                     map(mainMenu.subMenus, subMenu => {
-                                        return <div className="sub-menu" key={subMenu.url}>
-                                            <a href={subMenu.url}>
-                                                {subMenu.name}
-                                            </a>
-                                        </div>;
+                                        return <a href={subMenu.url} className="sub-menu" key={subMenu.url}>
+                                            {subMenu.name}
+                                        </a>;
                                     })
                                 }</div>
                                 : null
@@ -38,6 +51,7 @@ export class Menu extends React.Component<MenuProps> {
                     </div>;
                 })}
             </div>
-          
+        </>;
+
     }
 }

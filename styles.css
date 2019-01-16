@@ -31,13 +31,13 @@ body {
   color: #000;
 }
 .page .page-container h1,
-.page .page-container h2,
-.page .page-container h3 {
+.page .page-container h2 {
   font-weight: normal;
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 10px;
 }
+.page .page-container h3,
 .page .page-container h4,
 .page .page-container h5,
 .page .page-container p {
@@ -141,11 +141,18 @@ body {
   border-radius: 10px;
   z-index: 4;
 }
+.backdrop {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+}
 .sub-menu {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 13px;
-}
-.sub-menu a {
+  display: block;
   text-decoration: none;
   color: #000;
 }
@@ -322,8 +329,7 @@ body {
   height: 250px;
 }
 #freedive-vert {
-  width: 250px;
-  height: 375px;
+  height: 300px;
 }
 .wrapper {
   display: flex;
@@ -344,7 +350,7 @@ body {
   width: 180px;
   height: 180px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .idc-ndl {
   display: flex;
@@ -359,7 +365,7 @@ body {
   width: 145px;
   height: 180px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .sale {
   display: flex;
