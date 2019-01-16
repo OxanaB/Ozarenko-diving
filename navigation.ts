@@ -22,10 +22,10 @@ export const about: SubMenu[] = [
         name: 'Отзывы',
         url: '/feedback.html',
     },
-    {
-        name: 'Новости',
-        url: '/news.html',
-    },
+    // {
+    //     name: 'Новости',
+    //     url: '/news.html',
+    // },
     {
         name: 'Контакты',
         url: '/contact-us.html',
@@ -109,7 +109,7 @@ export const courses: SubMenu[] = [
 
 export const technicalDiving: SubMenu[] = [
     {
-        name: 'Технические погружения',
+        name: 'Технический дайвинг',
         url: '/technical-diving.html',
     },
     {

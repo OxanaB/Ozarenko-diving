@@ -12,7 +12,7 @@ body {
     background-size: 100%;
 }
 
-@menu-padding: 10px 20px;
+@menu-padding: 10px 23px;
 @margin-text: 10px;
 @white-color: #ffffff;
 @hover-color: #FFF766;
@@ -117,9 +117,9 @@ body {
 }
 
 .main-menus {
-    margin-right: 15px;
-    margin-left: 15px;
-    background-color: @white-color;  
+    margin: 0 auto;
+    width: fit-content;
+    background-color: @white-color;
     border: 1px solid #e2e2e2;
     border-radius: 10px;
     box-shadow: 2px 3px 6px 0px #000;
@@ -129,7 +129,7 @@ body {
 
 .main-menu {
     padding: @menu-padding;
-    background-color: @white-color;
+    background: linear-gradient(#fff 50%, #eee 50% 50%);
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -137,6 +137,7 @@ body {
 
     &:first-child {
         border-radius: 10px 0px 0px 10px;
+        
     }
 
     &:last-child {
@@ -144,12 +145,12 @@ body {
     }
 
     &:hover {
-        background-color: @hover-color;
+        background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
     }
 }
-    .main-menu + .main-menu {
-        border-left: 1px solid #000;
-    }
+.main-menu + .main-menu {
+    border-left: 1px solid #000;
+}
 
 .sub-menus {
     position: absolute;
@@ -164,22 +165,27 @@ body {
 
 .sub-menu {
     background-color: fade(@white-color, 90%);
-    padding: @menu-padding;
-    .a-no-decoration();
+    padding: 13px;
+    a {
+        .a-no-decoration();
+    }
     
     &:first-child {
-    border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
     }
     &:last-child {
-    border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 10px;
     }
     &:hover {
-    background-color: @hover-color;
+        background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
     }
     &:active {
-    background-color: @active-color;
+        background: linear-gradient(#FFF766 50%, #FFF200 50% 50%);
     }
 }
+    @color: lighten(#FFF200, 50%);
+
+
 .sub-menu + .sub-menu {
     margin-top: @menu-padding;
 }
