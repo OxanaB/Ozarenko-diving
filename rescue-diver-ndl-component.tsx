@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { enableClient } from './client';
 import { Slider } from './slider-component';
+import { SpecialtyNdlLinks } from './specialty-links-ndl';
 
 export class RescueDiverNdl extends React.Component {
     render() {
@@ -39,33 +40,7 @@ export class RescueDiverNdl extends React.Component {
                 </div>
             </div>
             <h3>Специализированные курсы NDL</h3>
-            <div className="specialties">
-                <div className="diver-card">
-                    <a href="/kurs-nitrox-night-deep-dry-suit.html#Nitrox">
-                        <img src="" title="Курс Nitrox diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-                    </a>
-                </div>
-                <div className="diver-card">
-                    <a href="/kurs-nitrox-night-deep-dry-suit.html#Deep">
-                        <img src="" title="Курс Deep diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-                    </a>
-                </div>
-                <div className="diver-card">
-                    <a href="/kurs-nitrox-night-deep-dry-suit.html#PPB">
-                        <img src="" title="Курс Professional bouyancy diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-                    </a>
-                </div>
-                <div className="diver-card">
-                    <a href="/kurs-nitrox-night-deep-dry-suit.html#Night">
-                        <img src="" title="Курс Night diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-                    </a>
-                </div>
-                <div className="diver-card">
-                    <a href="/kurs-nitrox-night-deep-dry-suit.html#DrySuit">
-                        <img src="" title="Курс Dry suit diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
-                    </a>
-                </div>
-            </ div>
+            <SpecialtyNdlLinks />
             <a href="/diving-courses-ndl.html" className="ndl-courses-list-button">Вернуться назад к структуре курсов</a>
 
 
