@@ -31,37 +31,47 @@ export class Team extends React.Component {
                 <li>обучения рекреационных и технических инструкторов по системам NDL и IANTD.</li>
             </ul>
 
-            <h2>Команда клуба "Искатели морских сокровищ"</h2>
-            <div className="team-member">
-                <img alt="Оксана Быкова, русский инструктор по дайвингу в Египте, Шарм эль Шейх" src="/images/about-us/team/diving-instructor-oxana.jpg" />
-                <h3>Оксана Быкова, инструктор по дайвингу,</h3>
-                <p>Оксана Быкова, инструктор по дайвингу:</p>
-                <p>PADI OWSI #420043, EFR Instructor, NDL Instructor Rank II №BO 2-6115</p>
-                <p>E-mail: <a href="mailto:ozarenko.diving@gmail.com">ozarenko.diving@gmail.com</a></p>
-            </div>
+            <h2 className="center">Команда клуба "Искатели морских сокровищ"</h2>
+            <div className="team">
+                <div className="team-member">
+                    <img alt="Оксана Быкова, инструктор по дайвингу PADI" src="/images/about-us/team/diving-instructor-oxana.jpg" />
+                    <h3>Оксана Быкова, инструктор по дайвингу</h3>
+                    <div>
+                        <p>PADI OWSI #420043,</p>
+                        <p>EFR Instructor,</p>
+                        <p> NDL Instructor Rank II №BO 2-6115</p>
+                        <p>E-mail: <a href="mailto:ozarenko.diving@gmail.com">ozarenko.diving@gmail.com</a></p>
+                    </div>
+                </div>
 
-            <div className="team-member">
-                <img alt="Виктор Озаренко, украинский инструктор по дайвингу в Египте, Шарм эль Шейх, школа дайвинга Виктора Озаренко"
-                    src="/images/about-us/team/diving-trainer-viktor-ozarenko.jpg" />
+                <div className="team-member">
+                    <img alt="Виктор Озаренко, инструктор по дайвингу, школа дайвинга в Одессе"
+                        src="/images/about-us/team/diving-trainer-viktor-ozarenko.jpg" />
 
-                <h3>Виктор Озаренко, инструктор-тренер,командор клуба</h3>
-                <p>​Виктор Озаренко, курс-директор, инструктор-тренер:</p>
-                <p>PADI #626156 Master Scuba Diver
-        Trainer, EFR Instructor, Tec Gas Blender EANx/ Trimix DSAT, IANTD #666 Trimix Inctructor Trainer, NDL Course Director, Master IDC tech Instructor NDL</p>
-                <p>г. Одесса, Украина</p>
-                <p>Телефон, вайбер: +380 68 498 1046</p>
-                <p>E-mail: <a ref="mailto:ozarenko.diving@gmail.com">ozarenko.diving@gmail.com</a></p>
-            </div>
+                    <h3>Виктор Озаренко, инструктор-тренер,командор клуба</h3>
+                    <div>
+                        <p>PADI #626156 Master Scuba Diver Trainer, </p>
+                        <p>EFR Instructor, </p>
+                        <p>Tec Gas Blender EANx/ Trimix DSAT, </p>
+                        <p>IANTD #666 Trimix Inctructor Trainer, </p>
+                        <p>NDL Course Director, Master IDC tech Instructor NDL</p>
+                        <p>г. Одесса, Украина</p>
+                        <p>Телефон, вайбер: +380 68 498 1046</p>
+                        <p>E-mail: <a href="mailto:ozarenko.diving@gmail.com">ozarenko.diving@gmail.com</a></p>
+                    </div>
+                </div>
 
-            <div className="team-member">
-                <img alt="Богдан Хмельницкий инструктор, Bogdan Khmelnitskiy diving instructor" src="/images/about-us/team/diving_instructor_bogdan.jpg" />
-                <h3>Богдан Хмельницкий, инструктор по дайвингу</h3>
-                <p>Богдан Хмельницкий, инструктор по дайвингу:</p>
-                <p>NDL Instructor Rank II №KB 2-4935</p>
-                <p>г. Белгород-Днестровский, Одесская область, Украина</p>
-                <p>Телефон, вайбер:</p>
-                <p>+38 067 718 8160</p>
-                <p>E-mail: <a href="mailto:akkerman@rambler.ru">akkerman@rambler.ru</a></p>
+                <div className="team-member">
+                    <img alt="Богдан Хмельницкий инструктор, Bogdan Khmelnitskiy diving instructor" src="/images/about-us/team/diving_instructor_bogdan.jpg" />
+                    <h3>Богдан Хмельницкий, инструктор по дайвингу</h3>
+                    <div>
+                        <p>NDL Instructor Rank II №KB 2-4935</p>
+                        <p>г. Белгород-Днестровский, Одесская область, Украина</p>
+                        <p>Телефон, вайбер:</p>
+                        <p>+38 067 718 8160</p>
+                        <p>E-mail: <a href="mailto:akkerman@rambler.ru">akkerman@rambler.ru</a></p>
+                    </div>
+                </div>
             </div>
 
         </ div>

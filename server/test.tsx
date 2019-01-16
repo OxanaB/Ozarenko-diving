@@ -112,7 +112,7 @@ const pages: any = {
         </Page>
     ),
     './freediving.html': ReactDom.renderToString(
-        <Page meta={Meta.metaFreediveCourses} script="freediving-component" title={'Курсы фридайвинга в Шарм эль Шейхе и Одессе'}>
+        <Page meta={Meta.metaFreediveCourses} script="freedive-component" title={'Курсы фридайвинга в Шарм эль Шейхе и Одессе'}>
             <Core><FreediveCourses /></Core>
         </Page>
     ),

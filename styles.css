@@ -21,12 +21,20 @@ body {
   background-color: rgba(255, 255, 255, 0.93);
 }
 .page .page-container {
-  padding: 20px;
+  padding: 25px;
+}
+.page .page-container h1 {
+  margin-bottom: 10px;
+}
+.page .page-container h1 a {
+  text-decoration: none;
+  color: #000;
 }
 .page .page-container h1,
 .page .page-container h2,
 .page .page-container h3 {
   font-weight: normal;
+  padding-bottom: 5px;
 }
 .page .page-container h2,
 .page .page-container h3,
@@ -38,6 +46,9 @@ body {
 .page .page-container ul {
   margin-left: 20px;
 }
+.center {
+  text-align: center;
+}
 .header {
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
@@ -45,45 +56,46 @@ body {
 .header .header-container {
   width: 970px;
   margin: 0 auto;
+  box-shadow: 0px 7px 9px -7px black;
   display: flex;
   flex-direction: column;
 }
-.header-img {
-  width: 702px;
-  height: 56px;
-  margin-top: 10px;
-  margin-left: -14px;
+.header a {
+  display: inline-block;
+  background-image: url(./images/logos/ozarenko_logo-main.png);
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
+  max-width: 702px;
+  height: 56px;
+  margin-top: 10px;
+  margin-left: -14px;
 }
-.header-img:hover {
+.header a:hover {
   background-image: url(./images/logos/ozarenko_logo-hover.png);
 }
-.header-img:active {
+.header a:active {
   background-image: url(./images/logos/ozarenko_logo-active.png);
 }
-.header-text-elements {
+.header .header-text-elements {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 7px 9px -7px black;
-  padding-top: 5px;
-  padding-bottom: 15px;
+  align-items: baseline;
+  padding-left: 82px;
 }
-.header-text-elements .header-text {
+.header .header-text-elements p {
   font-family: 'Georgia', cursive;
   font-weight: bold;
   font-style: italic;
   font-size: 12px;
-  margin-left: 80px;
-  padding-top: 5px;
 }
-.header-text-elements .header-link {
-  margin-right: 10px;
+.header .header-text-elements a {
+  display: inline-block;
   font-size: 20px;
-}
-.header-text-elements .header-link a {
   color: #000;
+  background: none;
+  height: fit-content;
+  padding-bottom: 15;
 }
 .main-menus {
   margin-right: 15px;
@@ -124,12 +136,13 @@ body {
   top: 35px;
   border: 1px solid #e2e2e2;
   border-radius: 10px;
-  text-decoration: none;
-  color: #000;
+  z-index: 4;
 }
 .sub-menu {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
 }
 .sub-menu:first-child {
   border-radius: 10px 10px 0px 0px;
@@ -210,12 +223,45 @@ body {
 }
 .footer-columns {
   color: #000;
-  padding-right: 5px;
 }
 .fotter-column-row a {
   font-weight: normal;
   font-size: 14px;
   color: #000;
+}
+.team {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.team .team-member {
+  display: flex;
+  flex-direction: column;
+}
+.team .team-member img {
+  width: 250px;
+  height: 375px;
+}
+.team .team-member h3 {
+  margin-top: 0px;
+  width: 250px;
+  background-color: #89C9CD;
+  font-weight: normal;
+  padding: 10px;
+}
+.team .team-member div {
+  width: 250px;
+}
+.team-member:nth-child(2) {
+  margin: 0px 25px;
+}
+.team-member:nth-child(2) h3 {
+  background-color: #FFF200;
+}
+.team-member:nth-child(2) h3,
+.team-member:nth-child(2) img,
+.team-member:nth-child(2) div {
+  width: 350px;
 }
 .clients-feedback-feed {
   display: flex;
@@ -251,6 +297,16 @@ body {
   max-width: 900px;
   padding: 10px;
 }
+.slider-align-left .slider {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 13px;
+  margin-top: 5px;
+}
+.slider-align-right .slider {
+  float: right;
+  margin-left: 10px;
+}
 .slider {
   width: 393px;
   height: 260px;
@@ -264,6 +320,7 @@ body {
 .slider img {
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 .slider .slider-arrow-right {
   display: inline-block;
