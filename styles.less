@@ -195,7 +195,7 @@ body {
         background: linear-gradient(#FFF766 50%, #FFF200 50% 50%);
     }
 }
-    @color: lighten(#FFF200, 50%);
+    
 
 
 .sub-menu + .sub-menu {
@@ -377,7 +377,6 @@ body {
     justify-content: space-between;
     img {
         margin-left: 15px;
-        margin-top: -30px;
     }
     li {
         margin-left: 20px;
@@ -456,6 +455,15 @@ body {
     }
 }
 
+// center page
+
+.center-page {
+    max-width: 930px;
+    width: fit-content;  
+    margin: 0 auto;
+    align-items: center;
+}
+
 // PADI courses page
 
 .h2-padi{
@@ -464,8 +472,11 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
-
-.padi-courses-container {
+#padi-logo {
+    width: 160px;
+    height: 220px;
+}
+.padi-courses {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(5, 1fr);
@@ -494,6 +505,27 @@ body {
     }
 }
 
+// NDL courses page
+
+.ndl-courses {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 10px;
+}
+
+.ndl-course {
+
+    h2 {
+        padding: 15px;
+        background-color: @active-color;
+    }
+
+    .ndl-card {
+        width: 280px;
+        height: 180px;
+    }
+}
 
 // Archive akciy page
 

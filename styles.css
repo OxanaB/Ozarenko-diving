@@ -306,7 +306,6 @@ body {
 }
 .image-align-right img {
   margin-left: 15px;
-  margin-top: -30px;
 }
 .image-align-right li {
   margin-left: 20px;
@@ -367,36 +366,60 @@ body {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+.center-page {
+  max-width: 930px;
+  width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+}
 .h2-padi {
   margin-left: 0px;
   padding: 15px;
   font-size: 18px;
   font-weight: bold;
 }
-.padi-courses-container {
+#padi-logo {
+  width: 160px;
+  height: 220px;
+}
+.padi-courses {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px 5px;
 }
-.padi-courses-container .padi-course {
+.padi-courses .padi-course {
   max-width: 180px;
 }
-.padi-courses-container .padi-course h2 {
+.padi-courses .padi-course h2 {
   margin-left: 0px;
   padding: 15px;
   font-size: 18px;
   font-weight: bold;
   height: fit-content;
 }
-.padi-courses-container .padi-course h2 + h2 {
+.padi-courses .padi-course h2 + h2 {
   height: max-content;
 }
-.padi-courses-container .padi-course:nth-child(even) h2 {
+.padi-courses .padi-course:nth-child(even) h2 {
   background-color: #FFF200;
 }
-.padi-courses-container .padi-course:nth-child(odd) h2 {
+.padi-courses .padi-course:nth-child(odd) h2 {
   background-color: #89C9CD;
+}
+.ndl-courses {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px 10px;
+}
+.ndl-course h2 {
+  padding: 15px;
+  background-color: #FFF200;
+}
+.ndl-course .ndl-card {
+  width: 280px;
+  height: 180px;
 }
 .sale {
   display: flex;
