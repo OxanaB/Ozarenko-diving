@@ -274,31 +274,63 @@ body {
 
 .footer {
     background-color: #fff;
-
-    .footer-container {
-    margin: 5px;
-    display: flex;
-    justify-content: space-around;
-    }
-}
-
-.footer-columns-headline {
-    font-weight: bold;
-}
-
-.footer-columns {
-    color: #000;
-}
-
-.fotter-column-row {
-    
-    a {
-        font-weight: normal;
+    p {
+        padding: 20px 10px;    
         font-size: 14px;
-        color: #000;
     }
+    .links-container {
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.columns {
+    font-weight: bold;
+    color: #000;
+    margin-right: 20px;
+    &:first-child {
+        width: 115px;
+    }
+    &:last-child {
+        width: 220px;
+        margin-right: 0px;
+    }
+
+}
+    
+    .column-content {
+        padding-top: 5px;
+        font-style: oblique;
+        font-weight: normal;
+    }
+    
+    .row-in-column {
+        padding-top: 5px;
+        a {
+            .a-no-decoration();
+            font-size: 14px;
+        }
+    }
+
+    .social-media-widgets {
+        display: flex;
+        
+        
+        .widget-1 {
+            padding: 0px 20px 0px 10px;
+        }
+        .widget-2 {
+            flex-direction: column;
+            
+            div{
+                margin: 20px 0px;
+                &:first-child {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
 // About us page
 
 .team {

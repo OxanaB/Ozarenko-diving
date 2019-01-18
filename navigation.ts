@@ -155,15 +155,15 @@ export const divingInSharm: SubMenu[] = [
 
 export const liveaboard: SubMenu[] = [
     {
-        name: 'Прошедшие дайвинг сафари',
+        name: 'Прошедшее сафари',
         url: '/last-safari-egypt.html',
     },
     {
-        name: 'Южные маршруты Красного моря',
+        name: 'Юг Красного моря',
         url: '/redsea-liveaboard-south.html',
     },
     {
-        name: 'Северные маршруты Красного моря',
+        name: 'Север Красного моря',
         url: '/redsea-liveaboard-north.html',
     },
     {
@@ -177,6 +177,10 @@ export const mainMenu: MainMenu[] = [
         name: 'О клубе',
         subMenus: about,
     },
+    { 
+        name: 'Дайвинг сафари',
+        subMenus: liveaboard,
+    },
     {
         name: 'Обучение дайвингу',
         subMenus: courses,
@@ -188,10 +192,6 @@ export const mainMenu: MainMenu[] = [
     { 
         name: 'Дайвинг в Шарм эль Шейхе', 
         subMenus: divingInSharm, 
-    },
-    { 
-        name: 'Дайвинг сафари',
-        subMenus: liveaboard,
     }
 ];
 

@@ -225,21 +225,54 @@ body {
 .footer {
   background-color: #fff;
 }
-.footer .footer-container {
-  margin: 5px;
-  display: flex;
-  justify-content: space-around;
-}
-.footer-columns-headline {
-  font-weight: bold;
-}
-.footer-columns {
-  color: #000;
-}
-.fotter-column-row a {
-  font-weight: normal;
+.footer p {
+  padding: 20px 10px;
   font-size: 14px;
+}
+.footer .links-container {
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .columns {
+  font-weight: bold;
   color: #000;
+  margin-right: 20px;
+}
+.footer .columns:first-child {
+  width: 115px;
+}
+.footer .columns:last-child {
+  width: 220px;
+  margin-right: 0px;
+}
+.footer .column-content {
+  padding-top: 5px;
+  font-style: oblique;
+  font-weight: normal;
+}
+.footer .row-in-column {
+  padding-top: 5px;
+}
+.footer .row-in-column a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+.footer .social-media-widgets {
+  display: flex;
+}
+.footer .social-media-widgets .widget-1 {
+  padding: 0px 20px 0px 10px;
+}
+.footer .social-media-widgets .widget-2 {
+  flex-direction: column;
+}
+.footer .social-media-widgets .widget-2 div {
+  margin: 20px 0px;
+}
+.footer .social-media-widgets .widget-2 div:first-child {
+  margin-top: 0px;
 }
 .team {
   display: flex;
