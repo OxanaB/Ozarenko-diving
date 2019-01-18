@@ -229,10 +229,23 @@ body {
 }
 .wrapper-two-columns div {
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .wrapper-two-columns .booking {
   max-width: 600px;
+  height: 1355px;
   border: none;
+}
+.wrapper-two-columns .boat-description {
+  max-width: 300px;
+  margin-left: 10px;
+}
+.wrapper-two-columns .boat-description p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.wrapper-two-columns .boat-description li + p {
+  margin-top: 10px;
 }
 .footer {
   background-color: #fff;

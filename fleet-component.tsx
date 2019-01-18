@@ -7,11 +7,10 @@ export class Fleet extends React.Component {
         return <div className="page-container">
             <h1>Сафарийный флот</h1>
             <p>Для чудесного отдыха в море очень важно правильно выбрать яхту, на которой вы будете жить и нырять в течение недели во время дайвинг сафари на Красном море.</p>
-            <div className="boat">
                 <h2>яхта South Moon</h2>
+            <div className="wrapper-two-columns">
                 <Slider images={sliderSouthMoon} width={600} height={400} />
                 <div className="boat-description">
-                    <p>Корабль деревянный, полностью перестроен в 2014 году, регулярно проходит полное обслуживание в драй-доке.</p>
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
                     <li>6 двухместных кают single bed</li>
@@ -25,8 +24,8 @@ export class Fleet extends React.Component {
                     <p>Порт баризования: Травко, Шарм-эль-Шейх</p>
                 </div>
             </div>
-            <div className="boat">
                 <h2>яхта Brina-1</h2>
+            <div className="wrapper-two-columns">
                 <Slider images={sliderBrina} width={600} height={400} />
                 <div className="boat-description">
                     <p>Яхта рассчитана на 20 человек</p>
@@ -44,8 +43,8 @@ export class Fleet extends React.Component {
                 </div>
             </div>
 
-            <div className="boat">
                 <h2>яхта Carlton Queen</h2>
+            <div className="wrapper-two-columns">
                 <Slider images={sliderCarltonQueen} width={600} height={400} />
                 <div className="boat-description">
                     <p>Рассчитана на 20 человек</p>
@@ -63,8 +62,8 @@ export class Fleet extends React.Component {
                     <p>Яхта имеет разрешение на дайвинг по всему Красному морю Египта от Дахаба до границы с Суданом</p>
                 </div>
             </div>
-            <div className="boat">
                 <h2>яхта Carlton</h2>
+            <div className="wrapper-two-columns">
                 <Slider images={sliderCarltonBoat} width={600} height={400} />
                 <div className="boat-description">
                     <p>Рассчитана на 20 человек</p>
