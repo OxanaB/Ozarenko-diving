@@ -47,9 +47,9 @@ export class LastSafari extends React.Component {
                 </div>
                 <div className="wreck-description">
                     <h3>SS Thistlegorm (1941)</h3>
-                    <iframe src="https://www.youtube.com/embed/Z2BZCj95DUU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
+                    <iframe className="video" src="https://www.youtube.com/embed/Z2BZCj95DUU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
                     <h3>Million Hope (1996)</h3>
-                    <iframe src="https://www.youtube.com/embed/aXIA4NdrMeI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
+                    <iframe className="video" src="https://www.youtube.com/embed/aXIA4NdrMeI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
                 </div>
             </div>
             <div className="wrapper-div-image">

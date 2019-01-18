@@ -343,9 +343,6 @@ body {
 .image-align-right li {
   margin-left: 20px;
 }
-.image-align-right a {
-  margin: 0 auto;
-}
 .image-align-left {
   display: flex;
   justify-content: space-between;
@@ -407,6 +404,12 @@ body {
   width: fit-content;
   margin: 0 auto;
   align-items: center;
+}
+.video {
+  width: 450px;
+  height: 300px;
+  padding: 10px;
+  border: none;
 }
 .wrapper-two-columns {
   display: flex;

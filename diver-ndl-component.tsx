@@ -15,7 +15,8 @@ export class DiverNdl extends React.Component {
             <p>В стоимость курса включены оборудование для дайвинга, трансфер из отеля, учебные материалы и работа инструктора. Дополнительно оплачивается сертификационный взнос 35$,.</p>
             <p>Предложение действует при завершении всех требований курса за три дня. В случае если вы не успеваете сдать все навыки за три дня и вам требуется дополнительный четвертый день, курс оплачивается по полной стоимости 315$.</p>
             <h2>Смотрите видео о том как проходит курс Diver NDL</h2>
-            <iframe src="https://youtu.be/CpO1yeCZULg" />
+            <iframe className="video" src="https://www.youtube.com/embed/CpO1yeCZULg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
+            
             <div className="ndl-course-page-price"><p>335$</p></div>
             <a href="/contact-us.html" className="book-button">ЗАБРОНИРОВАТЬ</a>
             <p>Что дальше?</p>

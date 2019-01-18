@@ -19,10 +19,10 @@ export class TechnicalDiving extends React.Component {
             </div>
             <div className="links-to-tech-courses">
                 <a href="/techdiving-courses-iantd.html">
-                <img src="/images/logos/IANTD-logo.jpg"/>
-                <h2>Курсы технического дайвинга IANTD</h2></a>
+                    <img src="/images/logos/IANTD-logo.jpg" />
+                    <h2>Курсы технического дайвинга IANTD</h2></a>
                 <a href="/techdiving-courses-ndl.html">
-                <img src="/images/logos/ndl-tek-logo-red.jpg"/>
+                    <img src="/images/logos/ndl-tek-logo-red.jpg" />
                     <h2>Технический дивизион NDL</h2></a>
             </div>
             <div className="price-technical">
@@ -60,14 +60,17 @@ export class TechnicalDiving extends React.Component {
             </div>
             <h2>Видео с наших технических погружений</h2>
             <div className="video-links-techdive">
-                <div><iframe src="https://youtu.be/j0J6FTidC-w" />
-                    <p>Дахаб, Blue Hole (Голубая дыра)</p>
+                <div>
+                    <iframe className="video" src="https://www.youtube.com/embed/j0J6FTidC-w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
+                    <h4>Дахаб, Blue Hole (Голубая дыра)</h4>
                 </div>
-                <div><iframe src="https://youtu.be/8WYPb_94k0k" />
-                    <p>Дахаб, малый каньон на Abu Talha</p>
+                <div>
+                    <iframe className="video" src="https://www.youtube.com/embed/8WYPb_94k0k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
+                    <h4>Дахаб, малый каньон на Abu Talha</h4>
                 </div>
-                <div><iframe src="https://youtu.be/rO5cfTarQdg" />
-                    <p>Шарм эль Шейх, Томас каньон</p>
+                <div>
+                    <iframe className="video" src="https://www.youtube.com/embed/rO5cfTarQdg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
+                    <h4>Шарм эль Шейх, Томас каньон</h4>
                 </div>
             </div>
         </ div>
