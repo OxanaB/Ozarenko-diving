@@ -10,7 +10,7 @@ export class Fleet extends React.Component {
                 <h2>яхта South Moon</h2>
             <div className="wrapper-two-columns">
                 <Slider images={sliderSouthMoon} width={600} height={400} />
-                <div className="boat-description">
+                <div className="description">
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
                     <li>6 двухместных кают single bed</li>
@@ -27,7 +27,7 @@ export class Fleet extends React.Component {
                 <h2>яхта Brina-1</h2>
             <div className="wrapper-two-columns">
                 <Slider images={sliderBrina} width={600} height={400} />
-                <div className="boat-description">
+                <div className="description">
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
                     <li>7 двухместных кают single bed</li>
@@ -46,7 +46,7 @@ export class Fleet extends React.Component {
                 <h2>яхта Carlton Queen</h2>
             <div className="wrapper-two-columns">
                 <Slider images={sliderCarltonQueen} width={600} height={400} />
-                <div className="boat-description">
+                <div className="description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
                     <li>6 двухместных кают single bed</li>
@@ -65,7 +65,7 @@ export class Fleet extends React.Component {
                 <h2>яхта Carlton</h2>
             <div className="wrapper-two-columns">
                 <Slider images={sliderCarltonBoat} width={600} height={400} />
-                <div className="boat-description">
+                <div className="description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
                     <li>5 двухместных кают single bed</li>
