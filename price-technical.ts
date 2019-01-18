@@ -72,10 +72,5 @@ export const priceListTechnicalRent: TechDivingPrice[] = [
         title: 'Найтрокс 32%',
         subtitle: '12 литровый / 15 литровый баллон',
         price: '6 $ / 8 $'
-    },
-    {
-        title: '',
-        subtitle: '',
-        price: ''
     }
 ]

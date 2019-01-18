@@ -447,11 +447,14 @@ body {
 }
 .wrapper-div-image .img-left {
   float: left;
-  margin: 10px 10px 0px 0px;
+  margin: 5px 25px 10px 0px;
 }
 .wrapper-div-image .img-right {
   float: right;
   margin: 10px 0px 0px 10px;
+}
+.wrapper-div-image img + p {
+  margin-top: 0px;
 }
 #north {
   width: 400px;
@@ -509,6 +512,94 @@ body {
 .ndl-course .ndl-card {
   width: 280px;
   height: 180px;
+}
+.price-table-big {
+  padding: 10px 0px;
+  width: 100%;
+  border-bottom: 3px solid #FFF200;
+}
+.price-table-big:last-child {
+  border-bottom: none;
+}
+.price-table-big .title {
+  font-size: 20px;
+  width: 90%;
+}
+.price-table-big .digits {
+  font-size: 24px;
+  text-align: right;
+  width: 10%;
+}
+.price-table-big .subtitle {
+  font-style: oblique;
+  width: 90%;
+}
+.wrapper-rebreather-prices {
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  grid-template-rows: auto;
+  grid-gap: 5px 10px;
+}
+.wrapper-rebreather-prices h3 {
+  display: inline-block;
+  height: 70px;
+  background-color: #FFF766;
+  padding: 5px;
+  text-align: center;
+  font-weight: normal;
+}
+.wrapper-rebreather-prices .price-simple {
+  width: 100%;
+}
+.wrapper-rebreather-prices .price-simple td:first-child {
+  text-align: center;
+  width: 70%;
+}
+.wrapper-rebreather-prices .price-simple td:last-child {
+  width: 30%;
+  text-align: center;
+}
+.price-technical-rent {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  grid-template-rows: auto;
+  grid-gap: 5px 10px;
+}
+.price-technical-rent td:first-child {
+  width: 70%;
+}
+.price-technical-rent td:last-child {
+  width: 30%;
+}
+.wrapper-price-sharm {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  grid-gap: 5px 10px;
+  border-bottom: 3px solid #FFF200;
+}
+.wrapper-price-sharm h3 {
+  display: inline-block;
+  width: 300px;
+  background-color: #FFF766;
+  padding: 10px;
+  font-weight: normal;
+}
+.wrapper-price-sharm .price-simple {
+  width: 100%;
+}
+.wrapper-price-sharm .price-simple td:first-child {
+  text-align: left;
+  width: 80%;
+}
+.wrapper-price-sharm .price-simple td:last-child {
+  width: 20%;
+  text-align: right;
+}
+#rebrth {
+  width: 350px;
+  height: 525px;
+  box-shadow: 0 8px 10px 1px grey;
 }
 .sale {
   display: flex;

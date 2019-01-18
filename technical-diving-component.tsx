@@ -30,28 +30,28 @@ export class TechnicalDiving extends React.Component {
                 <p>В стоимость технических погружений включены один декомпрессионый дайв в день с персональным гидом Виктором Озаренко, воздушная спарка или баллоны на сайдмаунт,
                 грузы. Ваши газы и газы гида оплачиваются дополнительно.</p>
                 {map(priceListTechnicalDaily, (priceListTechnicalDaily, index) => {
-                    return <table className="price-with-subtitle-table" key={index}>
+                    return <table className="price-table-big" key={index}>
                         <tbody><tr>
-                            <td className="price-title">{priceListTechnicalDaily.title}</td>
-                            <td className="price-digits">{priceListTechnicalDaily.price}</td>
+                            <td className="title">{priceListTechnicalDaily.title}</td>
+                            <td className="digits">{priceListTechnicalDaily.price}</td>
                         </tr>
-                            <td>{priceListTechnicalDaily.subtitle}</td>
+                            <td className="subtitle">{priceListTechnicalDaily.subtitle}</td>
                             <td></td>
                         </tbody>
                     </table>
                 })}
             </div>
-            <div className="price-technical-rent">
                 <h2>Аренда снаряжения</h2>
+            <div className="price-technical-rent">
                 {map(priceListTechnicalRent, (priceListTechnicalRent, index) => {
-                    return <table className="price-with-subtitle-table" key={index}>
+                    return <table className="price-table-big" key={index}>
                         <tbody>
                             <tr>
-                                <td className="price-title">{priceListTechnicalRent.title}</td>
-                                <td className="price-digits">{priceListTechnicalRent.price}</td>
+                                <td className="title">{priceListTechnicalRent.title}</td>
+                                <td className="digits">{priceListTechnicalRent.price}</td>
                             </tr>
                             <tr>
-                                <td>{priceListTechnicalRent.subtitle}</td>
+                                <td className="subtitle">{priceListTechnicalRent.subtitle}</td>
                                 <td></td>
                             </tr>
                         </tbody>
