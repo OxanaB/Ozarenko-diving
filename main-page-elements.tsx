@@ -21,14 +21,14 @@ export const mainPageLinkElements: MainPageElements[] = [
         buttonLink: '/sidemount.html'
     },
     {
-        title: 'Курс Open water diver PADI',
+        title: 'Курс Open water diver ',
         subtitle: 'начальное обучение дайвингу',
         price: '435 $',
-        description: 'Путь в мир дайвинга начинается с базового курса Open water diver PADI, который проходит 4 дня и включает в себя тренировку в закрытой воде и 4 погружений в открытой воде на глубину до 18 метров. В стоимость курса включены оборудование для дайвинга, учебные материалы и сертификат',
+        description: 'Путь в мир дайвинга начинается с базового курса Open water diver, который проходит 4 дня и включает в себя тренировку в закрытой воде и 4 погружений в открытой воде на глубину до 18 метров. В стоимость курса включены оборудование для дайвинга, учебные материалы и сертификат',
         image: '/images/main-page/kurs-diver-ndl.jpg',
         imageAlt: 'обучение дайвингу, курс open water diver padi, начальный курс дайвинга, обучение дайвингу в одессе',
         buttonText: 'Подробнее о курсе',
-        buttonLink: '/diving-courses/padi/open-water-diver-padi.html'
+        buttonLink: '/kurs-diver-ndl.html'
     },
     {
         title: 'Технический дайвинг',
@@ -48,7 +48,7 @@ export const mainPageLinkElements: MainPageElements[] = [
         image: '/images/main-page/idc.jpg',
         imageAlt: 'инструкторские курсы, расписание IDC, как стать инструктором по дайвингу',
         buttonText: 'Стать инструктором',
-        buttonLink: '/diving-courses/instructor-development.html'
+        buttonLink: '/instructor-development-course.html'
     },
     // {
     //     title: 'Кэмпинг в Рас Мухаммеде',
