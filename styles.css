@@ -638,6 +638,26 @@ body {
   padding: 10px;
   box-shadow: 0 8px 10px 1px grey;
 }
+.sidemount {
+  position: relative;
+}
+.sidemount img {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#sm-4 {
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
+}
+#sm-5 {
+  width: 300px;
+  height: 352px;
+  padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
+}
 .sale {
   position: relative;
   border-bottom: 3px solid #FFF200;
