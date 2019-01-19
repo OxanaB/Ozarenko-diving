@@ -658,6 +658,35 @@ body {
   padding: 10px;
   box-shadow: 0 8px 10px 1px grey;
 }
+.tech-courses-iantd div {
+  position: relative;
+}
+.tech-courses-iantd table {
+  width: 100%;
+}
+.tech-courses-iantd td:first-child {
+  text-align: left;
+  width: 80%;
+}
+.tech-courses-iantd td:last-child {
+  width: 20%;
+  text-align: right;
+}
+.tech-courses-iantd h2 {
+  width: 100%;
+  background-color: #FFF200;
+  padding: 15px 15px 15px 5px;
+  margin-right: 10px;
+}
+.tech-courses-iantd img {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
+  margin-bottom: 15px;
+  float: left;
+  margin-right: 15px;
+}
 .sale {
   position: relative;
   border-bottom: 3px solid #FFF200;
