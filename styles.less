@@ -441,7 +441,7 @@ body {
     height: 300px;
 }
 
-// IDC page
+// IDC page & tech dive
 .wrapper {
     display: flex;
     justify-content: space-around;
@@ -463,31 +463,46 @@ body {
     margin-top: @margin-text;
 }
 
-.idc-iantd {
+.img-iantd {
+    width: 180px;
+    height: 180px;
+    .image-margin();
+}
+.img-ndl() {
+    width: 145px;
+    height: 180px;
+    .image-margin();
+}
+
+.tech-iantd {
     
-    margin-right: 10px;
+    a { .a-no-decoration(); }
+    h2 { .h2-idc(); }
+    
+}
+
+.tech-ndl {
+    
+    a { .a-no-decoration(); }
+    h2 { .h2-idc(); }
+    
+}
+
+.idc-iantd {    
     max-width: 50%;
+    margin-right: 10px;
     .display-idc();
     h2 { .h2-idc(); }
-
-    img {
-        width: 180px;
-        height: 180px;
-        .image-margin();
-    }
+    img {  .img-iantd(); }
 }
 
 .idc-ndl {
     .display-idc();
     h2 { .h2-idc(); }
-    
-    
-    img {
-        width: 145px;
-        height: 180px;
-        .image-margin();
-    }
+    img { .img-ndl(); }
 }
+
+
 
 // center page
 
@@ -505,6 +520,12 @@ body {
     height: 300px;
     padding: 10px;
     border: none;
+}
+
+.video-links-techdive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2 auto;
 }
 
 // Booking, fleet
@@ -692,8 +713,13 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 450px);
     grid-template-rows: auto;
-    grid-gap: 5px 10px;
+    grid-gap: 0px 20px;
     
+    .price-table-big {
+        &:last-child {
+            border-bottom: @border-bottom;
+        }
+    }
     td {
         &:first-child {
             width: 70%;

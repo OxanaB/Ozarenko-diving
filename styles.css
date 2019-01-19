@@ -367,9 +367,33 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.img-iantd {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.tech-iantd a {
+  text-decoration: none;
+  color: #000;
+}
+.tech-iantd h2 {
+  margin-left: 0px;
+  background-color: #FFF200;
+  padding: 15px;
+}
+.tech-ndl a {
+  text-decoration: none;
+  color: #000;
+}
+.tech-ndl h2 {
+  margin-left: 0px;
+  background-color: #FFF200;
+  padding: 15px;
+}
 .idc-iantd {
-  margin-right: 10px;
   max-width: 50%;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -410,6 +434,11 @@ body {
   height: 300px;
   padding: 10px;
   border: none;
+}
+.video-links-techdive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2 auto;
 }
 .wrapper-two-columns {
   display: flex;
@@ -563,7 +592,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 450px);
   grid-template-rows: auto;
-  grid-gap: 5px 10px;
+  grid-gap: 0px 20px;
+}
+.price-technical-rent .price-table-big:last-child {
+  border-bottom: 3px solid #FFF200;
 }
 .price-technical-rent td:first-child {
   width: 70%;
