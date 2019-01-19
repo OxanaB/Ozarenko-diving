@@ -359,9 +359,13 @@ body {
 #freedive-hor {
   width: 400px;
   height: 250px;
+  padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
 }
 #freedive-vert {
   height: 300px;
+  padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
 }
 .wrapper {
   display: flex;
@@ -631,27 +635,24 @@ body {
 #rebrth {
   width: 350px;
   height: 525px;
+  padding: 10px;
   box-shadow: 0 8px 10px 1px grey;
 }
 .sale {
-  display: flex;
-  justify-content: flex-start;
+  position: relative;
   border-bottom: 3px solid #FFF200;
+  padding: 15px 10px;
 }
 .sale img {
   max-width: 900px;
   padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
 }
 .slider-align-left .slider {
   float: left;
   margin-right: 25px;
   margin-bottom: 13px;
   margin-top: 5px;
-}
-.slider-align-right .slider {
-  float: right;
-  margin-top: 5px;
-  margin-left: 10px;
 }
 .slider {
   width: 393px;

@@ -435,10 +435,14 @@ body {
 #freedive-hor {
     width: 400px;
     height: 250px;
+    padding: 10px;
+    box-shadow: @image-shadow;
 }
 #freedive-vert {
     // width: 200px;
     height: 300px;
+    padding: 10px;
+    box-shadow: @image-shadow;
 }
 
 // IDC page & tech dive
@@ -569,7 +573,7 @@ body {
     .img-left {
         float: left;
         margin: 5px 25px 10px 0px;
-
+        
     }
     .img-right {
         float: right;
@@ -765,19 +769,21 @@ body {
 #rebrth {
     width: 350px;
     height: 525px;
+    padding: 10px;
     box-shadow: @image-shadow;
 }
 
 // Archive akciy page
 
 .sale {
-    display: flex;
-    justify-content: flex-start;
+    position: relative;
     border-bottom: @border-bottom;
-    
+    padding: 15px 10px;
     img {
+        
         max-width: 900px;
         padding: 10px;
+        box-shadow: @image-shadow;
     }
 }
 
@@ -791,14 +797,6 @@ body {
         margin-top: 5px;
     }
 
-}
-
-.slider-align-right {
-    .slider {
-        float: right;
-        margin-top: 5px;
-        margin-left: @margin-text;
-    }
 }
 
 .slider {
