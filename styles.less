@@ -6,10 +6,10 @@
 }
 body { 
     background-image: url(./images/ozarenko-diving-background.jpg);
-    background-repeat: repeat;  
+    background-repeat: no-repeat;  
     background-position: 50% 50%;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 @menu-padding: 10px 23px;
@@ -63,10 +63,6 @@ body {
     text-align: center;
     margin: 0 auto;
 }
-.space-before {
-    margin-top: 10px;
-}
-
 
 .header {
     background-color: fade(@white-color, 80%);
@@ -404,48 +400,31 @@ body {
     }
 }
 
-// Freedive page
+// Image-align-right (top of pages with courses with image of padi or ndl
 
 .image-align-right {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+
     img {
-        margin-left: 15px;
+        float: right;
+        margin: 0px 5px 15px 15px; 
+        box-shadow: @image-shadow;
+        }
+    p {
+        &:last-child:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
     }
-    li {
-        margin-left: 20px;
-    }   
     
 }
 
-.image-align-left {
-    display: flex;
-    justify-content: space-between;
-    img {
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-}
-
-#logo-ndl {
-    width: 145px;
-    height: 180px;
-    margin-top: -40px;
-}
-#freedive-hor {
-    width: 400px;
-    height: 250px;
-    padding: 10px;
-    box-shadow: @image-shadow;
-}
-#freedive-vert {
-    // width: 200px;
-    height: 300px;
-    padding: 10px;
-    box-shadow: @image-shadow;
-}
 
 // IDC page & tech dive
+
 .wrapper {
     display: flex;
     justify-content: space-around;
@@ -558,12 +537,6 @@ body {
         li + p {
             margin-top: 10px;
         }
-    .safari-description {
-        max-width: 400px;
-    }
-    .wreck-description {
-        max-width: 480px;
-    }
     }
 }
 
@@ -642,6 +615,12 @@ body {
     grid-template-columns: 50% auto;
     grid-template-rows: auto auto auto;
     grid-gap: 10px 10px;
+}
+
+#logo-ndl {
+    width: 145px;
+    height: 180px;
+    
 }
 
 .ndl-course {
@@ -795,7 +774,7 @@ body {
 }
 
 // Tech courses 
-.tech-courses-iantd {
+.courses {
         div { 
         position: relative;
     }
@@ -811,15 +790,21 @@ body {
         &:last-child {
             width: 20%;
             text-align: right;
-        }
+      }
     }
     
     h2 {
-        // display: inline-block;
-        width: 100%;
+        
         background-color: @active-color;
         padding: 15px 15px 15px 5px;
         margin-right: 10px;
+    }
+    
+    .freedive img {
+        float: right;
+        height: 300px;
+        padding: 10px;
+        box-shadow: @image-shadow;
     }
     
     img {
@@ -829,9 +814,63 @@ body {
         box-shadow: @image-shadow;
         margin-bottom: 15px;
         float: left;
-        margin-right: 15px;
+        margin: 0px 15px 15px 5px;   
+    }
+    p {
+ 
+        &:last-child:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }   
+    }
+    li {
+        display: flex;
+        align-self: flex-end;
+        
     }
 }
+
+// Freedive courses
+.courses-freedive {
+    div { 
+    position: relative;
+}
+
+h2 {    
+    background-color: @active-color;
+    padding: 15px 15px 15px 5px;
+    margin-right: 10px;
+}
+
+ img {
+    float: right;
+    height: 300px;
+    padding: 10px;
+    box-shadow: @image-shadow;
+    margin: 0px 15px 15px 5px;   
+}
+
+
+    a:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }   
+
+
+} 
+
+// #freedive-hor {
+//     width: 400px;
+//     height: 250px;
+//     padding: 10px;
+//     box-shadow: @image-shadow;
+// }
 
 // Archive akciy page
 

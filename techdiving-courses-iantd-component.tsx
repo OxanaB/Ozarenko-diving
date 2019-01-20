@@ -17,7 +17,7 @@ export class TechdivingCoursesIantd extends React.Component {
                                 <li>Стоимость каждой сертификации IANTD 60 евро. Сертификат печатается в Хургаде.</li>
                         </ul>
                         <div></div>
-                        <div className="tech-courses-iantd">
+                        <div className="courses">
                                 <table>
                                         <tbody>
                                                 <tr>

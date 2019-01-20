@@ -6,10 +6,10 @@
 }
 body {
   background-image: url(./images/ozarenko-diving-background.jpg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 }
 .page,
 .footer {
@@ -48,9 +48,6 @@ body {
 .center {
   text-align: center;
   margin: 0 auto;
-}
-.space-before {
-  margin-top: 10px;
 }
 .header {
   background-color: rgba(255, 255, 255, 0.8);
@@ -334,38 +331,19 @@ body {
   padding-bottom: 15px;
 }
 .image-align-right {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 .image-align-right img {
-  margin-left: 15px;
-}
-.image-align-right li {
-  margin-left: 20px;
-}
-.image-align-left {
-  display: flex;
-  justify-content: space-between;
-}
-.image-align-left img {
-  margin-right: 15px;
-  margin-top: 15px;
-}
-#logo-ndl {
-  width: 145px;
-  height: 180px;
-  margin-top: -40px;
-}
-#freedive-hor {
-  width: 400px;
-  height: 250px;
-  padding: 10px;
+  float: right;
+  margin: 0px 5px 15px 15px;
   box-shadow: 0 8px 10px 1px grey;
 }
-#freedive-vert {
-  height: 300px;
-  padding: 10px;
-  box-shadow: 0 8px 10px 1px grey;
+.image-align-right p:last-child:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 .wrapper {
   display: flex;
@@ -538,6 +516,10 @@ body {
   grid-template-rows: auto auto auto;
   grid-gap: 10px 10px;
 }
+#logo-ndl {
+  width: 145px;
+  height: 180px;
+}
 .ndl-course h2 {
   padding: 15px;
   background-color: #FFF200;
@@ -658,34 +640,72 @@ body {
   padding: 10px;
   box-shadow: 0 8px 10px 1px grey;
 }
-.tech-courses-iantd div {
+.courses div {
   position: relative;
 }
-.tech-courses-iantd table {
+.courses table {
   width: 100%;
 }
-.tech-courses-iantd td:first-child {
+.courses td:first-child {
   text-align: left;
   width: 80%;
 }
-.tech-courses-iantd td:last-child {
+.courses td:last-child {
   width: 20%;
   text-align: right;
 }
-.tech-courses-iantd h2 {
-  width: 100%;
+.courses h2 {
   background-color: #FFF200;
   padding: 15px 15px 15px 5px;
   margin-right: 10px;
 }
-.tech-courses-iantd img {
+.courses .freedive img {
+  float: right;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
+}
+.courses img {
   width: 400px;
   height: 300px;
   padding: 10px;
   box-shadow: 0 8px 10px 1px grey;
   margin-bottom: 15px;
   float: left;
-  margin-right: 15px;
+  margin: 0px 15px 15px 5px;
+}
+.courses p:last-child:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.courses li {
+  display: flex;
+  align-self: flex-end;
+}
+.courses-freedive div {
+  position: relative;
+}
+.courses-freedive h2 {
+  background-color: #FFF200;
+  padding: 15px 15px 15px 5px;
+  margin-right: 10px;
+}
+.courses-freedive img {
+  float: right;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 0 8px 10px 1px grey;
+  margin: 0px 15px 15px 5px;
+}
+.courses-freedive a:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 .sale {
   position: relative;

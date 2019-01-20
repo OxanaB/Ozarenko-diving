@@ -4,15 +4,15 @@ import { enableClient } from './client';
 export class FreediveCourses extends React.Component {
     render() {
         return <div className="page-container">
-            <h1>Курсы фридайвинга</h1>
             <div className="image-align-right">
-                <p>Фридайвинг – это погружение без использования акваланга на задержке дыхания (апноэ). Это состояние дает человеку ощущение свободного полета и полного единения с природой, вся естественная красота подводного мира открывается во время свободного погружения. Целью курса NDL Freediver фридайвинг-курса является достижение чувства полного комфорта под водой. Именно грамотный фридайвинг дает возможность человеку заниматься настоящей подводной охотой. </p>
+            <h1>Курсы фридайвинга</h1>
                 <img id="logo-ndl" src="/images/logos/ndl_logo_black.jpg" title="" alt="курсы фридайвинга, фридайвинг курсы, фридайвинг Шарм, фридайвинг Одесса, freediving, дайвинг клуб, апное, фридайвинг цены, египет фридайвинг цены" />
+                <p>Фридайвинг – это погружение без использования акваланга на задержке дыхания (апноэ). Это состояние дает человеку ощущение свободного полета и полного единения с природой, вся естественная красота подводного мира открывается во время свободного погружения. Целью курса NDL Freediver фридайвинг-курса является достижение чувства полного комфорта под водой. Именно грамотный фридайвинг дает возможность человеку заниматься настоящей подводной охотой. </p>
             </div>
+            <div className="courses-freedive">
             <h2>NDL FREEDIVER Level 1</h2>
-            <div className="image-align-left">
-                <img id="freedive-hor" src="/images/courses/freediver-1.jpg" title="NDL FREEDIVER Level 1" alt="курсы фридайвинга, фридайвинг курсы, фридайвинг Шарм, фридайвинг Одесса, freediving, дайвинг клуб, апное, фридайвинг цены, египет фридайвинг цены" />
-                <div>
+                <img src="/images/courses/freediver-1.jpg" title="NDL FREEDIVER Level 1" alt="курсы фридайвинга, фридайвинг курсы, фридайвинг Шарм, фридайвинг Одесса, freediving, дайвинг клуб, апное, фридайвинг цены, египет фридайвинг цены" />
+                
                     <p>NDL FREEDIVER Level 1 - это базовый курс обучения фридайвингу. В состав курса входят:</p>
                     <ul>
                         <li>5 теоретических занятий</li>
@@ -37,11 +37,11 @@ export class FreediveCourses extends React.Component {
                         <li>Навыки спасения и оказания первой помощи.</li>
                     </ul>
                     <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
-                </div>
-            </div>
-            <h2 className="space-before">NDL FREEDIVER Level 2</h2>
-            <div className="image-align-right">
-                <div>
+                
+            <h2>NDL FREEDIVER Level 2</h2>
+            
+            
+                <img src="/images/courses/freediver-2.jpg" title="NDL FREEDIVER Level 2" alt="курсы фридайвинга, фридайвинг курсы, фридайвинг Шарм, фридайвинг Одесса, freediving, дайвинг клуб, апное, фридайвинг цены, египет фридайвинг цены" />
 
                     <p>Курс NDL FREEDIVER Level 2 предназначен для тех, кто уже прошел курс NDL FREEDIVER Level 1 в бассейне и хочет научиться нырять в озерах и морях.</p>
                     <p>На курсе NDL FREEDIVER Level 1 Вы уже получили все основные теоретические знания и освоили базовые практические навыки позволяющие вам начать обучение погружениям в глубину.</p>
@@ -54,13 +54,12 @@ export class FreediveCourses extends React.Component {
                         <li>Минимальное количество учебных погружений – 4</li>
                     </ul>
                     <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
-                </div>
-                <img id="freedive-vert" src="/images/courses/freediver-2.jpg" title="NDL FREEDIVER Level 2" alt="курсы фридайвинга, фридайвинг курсы, фридайвинг Шарм, фридайвинг Одесса, freediving, дайвинг клуб, апное, фридайвинг цены, египет фридайвинг цены" />
-            </div>
+            
+            
             <h2>NDL FREEDIVER Level 3</h2>
-            <div className="image-align-left">
-                <img id="freedive-vert" src="/images/courses/freediver-3.jpg" title="NDL FREEDIVER Level 3" alt="курсы фридайвинга, фридайвинг курсы, фридайвинг Шарм, фридайвинг Одесса, freediving, дайвинг клуб, апное, фридайвинг цены, египет фридайвинг цены" />
-                <div>
+            
+                <img src="/images/courses/freediver-3.jpg" title="NDL FREEDIVER Level 3" alt="курсы фридайвинга, фридайвинг курсы, фридайвинг Шарм, фридайвинг Одесса, freediving, дайвинг клуб, апное, фридайвинг цены, египет фридайвинг цены" />
+            
                     <p>Курс NDL FREEDIVER Level 3 предназначен для тех, кто уже прошел курс NDL FREEDIVER Level 2, ныряет на глубину более 12 м и хочет расширить свои границы.</p>
                     <p>В состав курса NDL FREEDIVER Level 3 входят практические занятия в открытом водоёме предназначенные для освоения навыков, соответствующих данной квалификации:</p>
                     <ul>
@@ -78,7 +77,8 @@ export class FreediveCourses extends React.Component {
                         <li>Минимальное количество учебных погружений – 6.</li>
                     </ul>
                     <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
-                </div>
+             
+            
             </div>
 
         </ div>
