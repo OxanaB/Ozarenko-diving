@@ -447,12 +447,6 @@ body {
 .wrapper-two-columns .description li + p {
   margin-top: 10px;
 }
-.wrapper-two-columns .description .safari-description {
-  max-width: 400px;
-}
-.wrapper-two-columns .description .wreck-description {
-  max-width: 480px;
-}
 .wrapper-div-image {
   position: relative;
 }

@@ -37,15 +37,14 @@ export class LastSafari extends React.Component {
             <p>День 8. Check-out. Трансфер в аэропорт или отель.</p>
             <p>Программа сафари зависит от погодных условий и уровня аквалангистов. Окончательное решение по конкретному дайву принимают капитан и главный гид корабля. </p>
             <p>Сафари рекреационное. </p>
+            <iframe className="video" src="https://www.youtube.com/embed/Z2BZCj95DUU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
+            <iframe className="video" src="https://www.youtube.com/embed/aXIA4NdrMeI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
             <p>Во время сафари вам пригодятся персональный дайв-компьютер, буй с катушкой (на бадди-пару) и подводный фонарик (для ночных дайвов и при проникновении в затонувшие корабли).</p>
             <p>На яхте 10 кают. 6 кают TWIN (c двумя одноместными кроватями), 1 каюта DBL (с двухместной кроватью) на нижней палубе, 1 каюта  DBL (с двухместной кроватью) на средней палубе, 2  семейные каюты  (с кроватями queen-size ) на верхней палубе. В каждой каюте есть ванная комната (туалет, душ), кондиционер, LCD, DVD.</p>
             <p>Спать можно и на верней палубе под звёздами.</p>
             <p>Питание - полный пансион (3 раза в день + безалкогольные напитки + ежедневные коктейли и соки + прощальный ужин от команды). Трансфер из / в аэропорт включен в стоимость сафари.</p>
-            <p>Авиа перелет бронируется отдельно.</p>
+            <p>Авиа перелет бронируется отдельно.</p>  
 
-            <iframe className="video" src="https://www.youtube.com/embed/Z2BZCj95DUU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
-
-            <iframe className="video" src="https://www.youtube.com/embed/aXIA4NdrMeI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
 
 
             <div className="wrapper-div-image">
