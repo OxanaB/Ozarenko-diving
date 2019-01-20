@@ -16,5 +16,7 @@
     },
     "files.encoding": "utf8",
     "editor.autoClosingBrackets": "never",
-    "editor.autoClosingQuotes": "never"
+    "editor.autoClosingQuotes": "never",
+    "tslint.enable": true,
+    "tslint.autoFixOnSave": true
 }
