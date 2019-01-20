@@ -1,5 +1,12 @@
 {
 	"rules": {
-		"no-trailing-whitespace": true
+		"curly": true,
+		"triple-equals": true,
+		"eofline": true,
+		"import-spacing": true,
+		"newline-before-return": true,
+		"no-trailing-whitespace": true,
+		"no-irregular-whitespace": true,
+		"semicolon": [true, "always"],
 	}
 }

@@ -5,7 +5,8 @@
         "strict": true,
         "jsx": "react",
         "sourceMap": true,
-        "target": "es2018"
+        "target": "es2018",
+        "noFallthroughCasesInSwitch": true
     },
     "exclude": ["server"]
 }
