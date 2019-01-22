@@ -198,12 +198,12 @@ body {
   width: 200px;
   height: 200px;
 }
-.button-go-to-page {
-  background-color: #89C9CD;
+.button {
   padding: 10px 15px;
   margin: 5px 0px;
   font-size: 24px;
-  border-color: #89C9CD;
+  background-color: #89c9cd;
+  border-color: #89c9cd;
   border-style: outset;
   border-width: 2px;
   border-radius: 5px;
@@ -212,11 +212,11 @@ body {
   text-decoration: none;
   color: #000;
 }
-.button-go-to-page:active {
+.button:active {
   padding: 12px 13px 8px 17px;
   border-style: inset;
 }
-.button-go-to-page:hover {
+.button:hover {
   background-color: #add9dc;
 }
 .footer {
@@ -287,7 +287,7 @@ body {
 .team .team-member h3 {
   margin-top: 0px;
   width: 250px;
-  background-color: #89C9CD;
+  background-color: #89c9cd;
   font-weight: normal;
   padding: 10px;
 }
@@ -502,7 +502,7 @@ body {
   background-color: #FFF200;
 }
 .padi-courses .padi-course:nth-child(odd) h2 {
-  background-color: #89C9CD;
+  background-color: #89c9cd;
 }
 .ndl-courses {
   display: grid;
@@ -521,6 +521,78 @@ body {
 .ndl-course .ndl-card {
   width: 280px;
   height: 180px;
+}
+.ndl-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ndl-navigation img {
+  width: 280px;
+  height: 180px;
+  border-radius: 5px;
+}
+.ndl-navigation a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.ndl-navigation .arrow {
+  width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: rgba(137, 201, 205, 0.5);
+  border-radius: 50px;
+  border: 1px solid lightgrey;
+}
+.ndl-navigation .forward {
+  background-image: url(/images/icons8-forward-button-96.png);
+}
+.ndl-navigation .back {
+  background-image: url(/images/icons8-back-arrow-96.png);
+}
+.ndl-course-page-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ndl-course-page-description img {
+  margin-bottom: 20px;
+}
+.ndl-course-page-description div + div {
+  max-width: min-content;
+  min-width: 440px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.ndl-course-page-description .button {
+  margin: 20px;
+  align-self: center;
+}
+.ndl-course-page-description .slider {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.center-align {
+  display: flex;
+  flex-direction: column;
+}
+.center-align h2,
+.center-align .center,
+.center-align iframe {
+  align-self: center;
+  margin: 20px 0px;
+}
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.specialties img {
+  width: 180px;
+  height: 115px;
+  border-radius: 3px;
 }
 .price-table-big {
   padding: 10px 0px;

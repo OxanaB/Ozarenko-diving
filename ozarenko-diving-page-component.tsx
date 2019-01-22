@@ -24,7 +24,7 @@ export class OzarenkoDivingPage extends React.Component {
                             <h3><span>{elements.price}</span></h3>
                             <p>{elements.description}</p>
                             <a
-                                className="button-go-to-page"
+                                className="button"
                                 href={elements.buttonLink}>{elements.buttonText}</a>
                         </div>
                     </div>

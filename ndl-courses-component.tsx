@@ -15,13 +15,17 @@ export class NdlCourses extends React.Component {
             <div className="ndl-courses">
                 <div className="ndl-course">
                     <h2>Novice Diver NDL 235$</h2>
+                    <a href="/kurs-novice-diver-ndl.html">
                     <img className="ndl-card" src="/images/courses/card-novice-diver-ndl.jpg" title="Курс обучения дайвингу Novice Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kurs-novice-diver-ndl.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kurs-novice-diver-ndl.html">Подробнее о курсе ---></a></p>
                 </div>
                 <div className="ndl-course">
                     <h2>Diver NDL 335$</h2>
+                    <a href="/kurs-diver-ndl.html">
                     <img className="ndl-card" src="/images/courses/card-diver-ndl.jpg" title="Курс обучения дайвингу Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kurs-diver-ndl.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kurs-diver-ndl.html">Подробнее о курсе ---></a></p>
                 </div>
 
                 <div className="ndl-course">
@@ -32,11 +36,11 @@ export class NdlCourses extends React.Component {
                 <div className="ndl-course">
                     <h2>Junior diver NDL 335$</h2>
                     <p>Ваш ребенок тоже может пройти обучение дайвингу и нырять со взрослыми наравне. Специально для детей от 10 до 14 лет разработан курс Junior Dvier NDL. Детки по младше (8 и 9 лет) могут учиться дайвингу на курсе Junior Novice diver.</p>
-                    <p><a href="/kids-diving.html" className="link-to-ndl-courses">Подробнее о детском дайвинге  </a></p>
+                    <p><a href="/kids-diving.html">Подробнее о детском дайвинге  </a></p>
                 </div>
             </div>
             <div className="center-page">
-            <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
+            <a href="/contact-us.html" className="button center">ЗАБРОНИРОВАТЬ</a>
             </div>
 
             <h2 className="center">Продолжение обучению дайвингу</h2>
@@ -46,26 +50,34 @@ export class NdlCourses extends React.Component {
             <div className="ndl-courses">
                 <div className="ndl-course">
                     <h2>Universal diver 260$</h2>
+                    <a href="/kurs-universal-diver-ndl.html">
                     <img className="ndl-card" src="/images/courses/card-universal-diver-ndl.jpg" title="Курс обучения дайвингу Universal Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kurs-universal-diver-ndl.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kurs-universal-diver-ndl.html">Подробнее о курсе ---></a></p>
                 </div>
 
                 <div className="ndl-course">
                     <h2>Advanced universal diver 235$</h2>
+                    <a href="/kurs-advanced-universal-diver-ndl.html">
                     <img className="ndl-card" src="/images/courses/card-advanced-universal-diver-ndl.png" title="Курс обучения дайвингу Advanced universal Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kurs-advanced-universal-diver-ndl.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kurs-advanced-universal-diver-ndl.html">Подробнее о курсе ---></a></p>
                 </div>
 
                 <div className="ndl-course">
                     <h2>Cпасатель Rescue diver 335$</h2>
+                    <a href="/kurs-rescue-diver-and-medic-first-aid.html">
                     <img className="ndl-card" src="/images/courses/card-rescue-diver-ndl.jpg" title="Курс обучения дайвингу Cпасатель Rescue diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kurs-rescue-diver-and-medic-first-aid.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kurs-rescue-diver-and-medic-first-aid.html">Подробнее о курсе ---></a></p>
                 </div>
 
                 <div className="ndl-course">
                     <h2>Medic First Aid 110$</h2>
+                    <a href="/kurs-rescue-diver-and-medic-first-aid.html">
                     <img className="ndl-card" src="/images/courses/card-mfa-ndl.jpg" title="Курс обучения дайвингу Medic First Aid NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kurs-rescue-diver-and-medic-first-aid.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kurs-rescue-diver-and-medic-first-aid.html">Подробнее о курсе ---></a></p>
                 </div>
             </div>
             <div className="center-page">
@@ -75,44 +87,56 @@ export class NdlCourses extends React.Component {
             <div className="ndl-courses">
                 <div className="ndl-course">
                     <h2>Deep diver 250$</h2>
+                    <a href="/kursy-nitrox-night-deep-dry-suit.html#Deep">
                     <img className="ndl-card" src="/images/courses/card-deep-diver-ndl.jpg" title="Курс обучения дайвингу Deep Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Deep" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Deep">Подробнее о курсе ---></a></p>
                 </div>
 
                 <div className="ndl-course">
                     <h2>Nitrox Diver 135$</h2>
+                    <a href="/kursy-nitrox-night-deep-dry-suit.html#Nitrox">
                     <img className="ndl-card" src="/images/courses/card-nitrox-diver-ndl.jpg" title="Курс обучения дайвингу Nitrox Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Nitrox" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Nitrox">Подробнее о курсе ---></a></p>
                 </div>
 
                 <div className="ndl-course">
                     <h2>Night diver 215$</h2>
+                    <a href="/kursy-nitrox-night-deep-dry-suit.html#Night">
                     <img className="ndl-card" src="/images/courses/card-night-diver-ndl.jpg" title="Курс обучения дайвингу Night Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Night" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#Night">Подробнее о курсе ---></a></p>
                 </div>
 
                 <div className="ndl-course">
                     <h2>Dry siut diver 180$</h2>
+                    <a href="/kursy-nitrox-night-deep-dry-suit.html#DrySuit">
                     <img className="ndl-card" src="/images/courses/card-drysuit-diver-ndl.jpg" title="Курс обучения дайвингу Dry siut Diver NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#DrySuit" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#DrySuit">Подробнее о курсе ---></a></p>
                 </div>
                        
                 <div className="ndl-course">
                     <h2>Professional buoyancy diver 135$</h2>
+                    <a href="/kursy-nitrox-night-deep-dry-suit.html#PPB">
                     <img className="ndl-card" src="/images/courses/card-professional-bouyancy-diver-ndl.jpg" title="Курс обучения дайвингу Professional buoyancy NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#PPB" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kursy-nitrox-night-deep-dry-suit.html#PPB">Подробнее о курсе ---></a></p>
                 </div>
 
 
                 <div className="ndl-course">
                     <h2>Курс Дайвмастер - Divemaster NDL 650$</h2>
+                    <a href="/kurs-divemaster-ndl.html">
                     <img className="ndl-card" src="/images/courses/card-divemaster-ndl.jpg" title="Курс Дайвмастер - Divemaster NDL" alt="Курсы обучения дайвингу по системе NDL в Одессе и Шарм-эль-Шейхе" />
-                    <p><a href="/kurs-divemaster-ndl.html" className="link-to-ndl-courses">Подробнее о курсе ---></a></p>
+                    </a>
+                    <p><a href="/kurs-divemaster-ndl.html">Подробнее о курсе ---></a></p>
                 </div>
             
             </div>
             <div className="center-page">
-                <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
+                <a href="/contact-us.html" className="button center">ЗАБРОНИРОВАТЬ</a>
             </div>
 
             <p>Следующей ступенью обучения дайвингу может стать так называемый технодайвинг или технический дайвинг. Во время технокурсов вы научитесь нырять в дублированном снаряжении, получите навыки качественного планирования погружений, что сможете всегда безопасно нырять даже без подводного компьютера, отработаете несколько способов гребка ластами, отточите мастерство зависания в толще воды, и самое главное - для вас откроются места недоступные в рекреационном дайвинге: глубокие каньоны, закрытые пещеры и каверны и многое другое.</p>

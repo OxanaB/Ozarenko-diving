@@ -29,7 +29,7 @@ export class Insurance extends React.Component {
             <p>1 месяц..........................$100</p>
             <p>годовое покрытие INDEPTHS IDEC.............$250</p>
             <p>годовое покрытие INDEPTHS IDEC Plus.....$300</p>
-            <a href="/contact-us.html" className="order-button">ЗАКАЗАТЬ СТРАХОВОЙ ПОЛИС</a>
+            <a href="/contact-us.html" className="button">ЗАКАЗАТЬ СТРАХОВОЙ ПОЛИС</a>
         </div>
     }
 }

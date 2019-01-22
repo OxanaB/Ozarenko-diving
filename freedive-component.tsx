@@ -36,7 +36,7 @@ export class FreediveCourses extends React.Component {
                         <li>Задержка дыхания в статике и динамике;</li>
                         <li>Навыки спасения и оказания первой помощи.</li>
                     </ul>
-                    <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
+                    <a href="/contact-us.html" className="button">ЗАБРОНИРОВАТЬ</a>
                 
             <h2>NDL FREEDIVER Level 2</h2>
             
@@ -53,7 +53,7 @@ export class FreediveCourses extends React.Component {
                         <li>Условием получения сертификата является достижение глубины 12 м.</li>
                         <li>Минимальное количество учебных погружений – 4</li>
                     </ul>
-                    <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
+                    <a href="/contact-us.html" className="button">ЗАБРОНИРОВАТЬ</a>
             
             
             <h2>NDL FREEDIVER Level 3</h2>
@@ -76,7 +76,7 @@ export class FreediveCourses extends React.Component {
                         <li>владение навыками спасения и взаимной страховки</li>
                         <li>Минимальное количество учебных погружений – 6.</li>
                     </ul>
-                    <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
+                    <a href="/contact-us.html" className="button">ЗАБРОНИРОВАТЬ</a>
              
             
             </div>

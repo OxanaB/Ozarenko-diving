@@ -27,7 +27,7 @@ export class IdcCourses extends React.Component {
                         <h3>Инструкторский курс Trimix Instructor.</h3>
                         <li>Инструктор IANTD уровня Trimix представляет собой высшую степень совершенства в овладении мастерством погружений на смесях в продвинутом дайвинге. Минимальный возраст 21 год. Должен представить доказательства не менее 500 зарегистрированных погружений, 200 из которых совершались на глубины свыше 30 метров, и не менее 50 погружений на смесях Trimix. Должен иметь квалификацию инструктора IANTD уровня Normoxic Trimix или эквивалент с подтверждённым статусом инструктора не менее 1 года.</li>
                     </div>
-                    <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
+                    <a href="/contact-us.html" className="button center">ЗАБРОНИРОВАТЬ</a>
                 </div>
                 <div className="idc-ndl">
                     <div className="wrapper">
@@ -47,7 +47,7 @@ export class IdcCourses extends React.Component {
                         <p>Кандидаты, сдавшие экзамены с проходным суммарным количеством баллов ниже 4, имеют право обучать студентов по курсам Novice Diver NDL и Diver NDL.</p>
                         <p>Кандидаты, сдавшие экзамены с проходным суммарным количеством баллов 4 и выше, имеют право обучать студентов по всему спектру NDL программ.</p>
                     </div>
-                    <a href="/contact-us.html" className="button-go-to-page center">ЗАБРОНИРОВАТЬ</a>
+                    <a href="/contact-us.html" className="button center">ЗАБРОНИРОВАТЬ</a>
                 </div>
             </div>
 
