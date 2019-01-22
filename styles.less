@@ -118,6 +118,14 @@ body {
 }
 }
 
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: @active-color;
+    
+}
+
 .main-menus {
     margin: 0 auto;
     width: fit-content;
@@ -194,11 +202,44 @@ body {
     }
 }
     
-
-
 .sub-menu + .sub-menu {
     margin-top: @menu-padding;
 }
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .header {
+        display: none;
+    }
+    .main-menus {
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        margin: 5;
+        top: 10;
+        left: 0;
+        background-color: @white-color;
+      
+    }
+
+    .main-menu + .main-menu {
+        border-left: none;
+    }
+    .header {
+        background-color: fade(@white-color, 80%);
+        width: fit-content;
+    }
+    .footer {
+       .links-container {
+            display: none;
+        }
+    }
+    .main-page-link-element {
+        border-bottom: @border-bottom;
+        width: fit-content;
+     
+    }
+}
+
         
 // Elements of exact dive servises on main page (now 4 of them)
 

@@ -28,3 +28,7 @@ export function fold<T,R>(vals: T[], result:R, take:(result:R, val:T) => R):R {
 export function broke(never: never): never {
     return never;
 }
+
+export function to<T>(result: T): T {
+    return result;
+}

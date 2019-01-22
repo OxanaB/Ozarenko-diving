@@ -1,7 +1,6 @@
-import React = require("react");
+import * as React from 'react';
 import { MainMenu as MainMenu } from "./navigation";
 import { map } from "./utils";
-
 
 export interface MainMenuChosenConcern {
     about: 'main-menu-chosen';
@@ -23,14 +22,13 @@ export interface MenuProps {
 export class Menu extends React.Component<MenuProps> {
     render() {
         return <>
-            {
-                this.props.activeMainMenuIndex === null
+            {       this.props.activeMainMenuIndex === null
                     ? null
                     : <div className="backdrop" onClick={e => {
                         this.props.when({ about: 'sub-menu-hidden' });
                     }} />
-            }
 
+            }
             <div className="main-menus">
                 {map(this.props.mainMenus, (mainMenu, mainMenuIndex) => {
                     return <div className="main-menu" key={mainMenuIndex} onClick={() => {
@@ -51,6 +49,7 @@ export class Menu extends React.Component<MenuProps> {
                     </div>;
                 })}
             </div>
+
         </>;
 
     }
