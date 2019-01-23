@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100%;
 }
 .page,
 .footer {
@@ -51,57 +51,43 @@ body {
 }
 .header {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-}
-.header .header-container {
-  width: 970px;
+  width: 100vw;
   margin: 0 auto;
   box-shadow: 0px 7px 9px -7px black;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
 }
-.header a {
-  display: inline-block;
-  background-image: url(./images/logos/ozarenko_logo-main.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  cursor: pointer;
-  max-width: 702px;
-  height: 56px;
-  margin-top: 10px;
-  margin-left: -14px;
-}
-.header a:hover {
-  background-image: url(./images/logos/ozarenko_logo-hover.png);
-}
-.header a:active {
-  background-image: url(./images/logos/ozarenko_logo-active.png);
-}
-.header .header-text-elements {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-left: 82px;
-}
-.header .header-text-elements p {
+.header p {
   font-family: 'Georgia', cursive;
   font-weight: bold;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
+  padding: 10px;
+  margin-left: 20px;
 }
-.header .header-text-elements a {
+.header a {
   display: inline-block;
+  cursor: pointer;
+}
+.header a:first-child {
+  background-image: url(./images/logos/ozarenko_logo-main.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 702px;
+  height: 56px;
+  width: 100%;
+}
+.header a:first-child:hover {
+  background-image: url(./images/logos/ozarenko_logo-hover.png);
+}
+.header a:first-child:active {
+  background-image: url(./images/logos/ozarenko_logo-active.png);
+}
+.header a:last-child {
   font-size: 20px;
   color: #000;
-  background: none;
-  height: fit-content;
-  padding-bottom: 15;
-}
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #FFF200;
+  margin-left: 40px;
 }
 .main-menus {
   margin: 0 auto;
@@ -173,34 +159,6 @@ body {
 }
 .sub-menu + .sub-menu {
   margin-top: 10px 23px;
-}
-@media screen and (min-width: 320px) and (max-width: 450px) {
-  .header {
-    display: none;
-  }
-  .main-menus {
-    flex-direction: column;
-    align-items: flex-start;
-    width: fit-content;
-    margin: 5;
-    top: 10;
-    left: 0;
-    background-color: #ffffff;
-  }
-  .main-menu + .main-menu {
-    border-left: none;
-  }
-  .header {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: fit-content;
-  }
-  .footer .links-container {
-    display: none;
-  }
-  .main-page-link-element {
-    border-bottom: 3px solid #FFF200;
-    width: fit-content;
-  }
 }
 .main-page-link-elements {
   display: flex;
@@ -917,4 +875,77 @@ body {
   animation-duration: 0.5s;
   top: 0px;
   animation-name: going-to-left;
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  body {
+    background-image: url(/images/background-ozarenko-mobile.jpg);
+    background-position: 0%;
+    background-repeat: repeat;
+  }
+  .page,
+  .footer {
+    width: 95%;
+    position: relative;
+  }
+  .page-container {
+    padding: 5px;
+  }
+  .header {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  .header a:first-child {
+    background-image: url(./images/baseline_home_black_48dp.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 42px;
+    height: 42px;
+    margin: 12px 0px 0px 65px;
+  }
+  .header a:first-child:active {
+    background-color: #FFF200;
+    background-image: url(./images/baseline_home_black_48dp.png);
+  }
+  .header p {
+    margin: 0;
+  }
+  .header a:last-child {
+    display: none;
+  }
+  .mobile-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(/images/baseline_menu_black_48dp.png);
+  }
+  .mobile-button:active {
+    background-color: #FFF200;
+  }
+  .main-menus {
+    position: fixed;
+    top: 0;
+    left: 5;
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 0;
+    box-shadow: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .main-menus .main-menu {
+    border: 1px solid black;
+    padding: 10px 23px;
+    text-align: left;
+  }
+  .main-menus .main-menu:first-child,
+  .main-menus .main-menu:last-child {
+    border-radius: 0;
+  }
 }
