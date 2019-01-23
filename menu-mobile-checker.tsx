@@ -36,7 +36,12 @@ export class MenuMobileChecker extends React.Component<MenuProps, MenuMobileChek
         const { mode, isMenuOpened } = this.state;
         switch (mode) {
             case 'mobile': return isMenuOpened
-                ? <Menu {...this.props} />
+                ? <>
+                <Menu {...this.props} />
+                <div className="close" onClick={e => {
+                    this.setState({ isMenuOpened: !this.state.isMenuOpened})
+                }}>
+                </div></>
                 : <div className="mobile-menu" onClick={e => {
                     this.setState({ isMenuOpened: !this.state.isMenuOpened })
                 }}>

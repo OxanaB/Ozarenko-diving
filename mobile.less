@@ -54,11 +54,26 @@
             background-color: @active-color;
         }
     }
+    .close {
+        background-image: url(/images/outline_close_black_18dp.png);
+        background-color: lightgrey;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 280;
+        width: 25px;
+        height: 25px;
+        padding: 15px;
+        z-index: 20;
+
+    }
     .main-menus {
         position: fixed;
         top: 0;
         left: 5;
-        width: 280px;
+        width: 305px;
+        height: 305px;
         background-color: @white-color;
         border: 1px solid black;
         border-radius: 0;
@@ -71,6 +86,9 @@
             border: 1px solid black;
             padding: @menu-padding;
             text-align: left;
+            width: 270px;
+            margin-left: 0;
+            top: 10;
                     
             &:first-child, &:last-child {
                 border-radius: 0;
