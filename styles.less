@@ -7,10 +7,7 @@
 body { 
     background-image: url(./images/ozarenko-diving-background.jpg);
     background-repeat: no-repeat;  
-    background-position: 50% 50%;
     background-attachment: fixed;
-    background-size: 100%;
-   
 }
 
 @menu-padding: 10px 23px;
@@ -67,12 +64,12 @@ body {
 
 .header {
     background-color: fade(@white-color, 80%);
-    width: 100vw;
+    width: 970px;
     margin: 0 auto;
     box-shadow: 0px 7px 9px -7px black;   
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
     p {
         font-family: 'Georgia', cursive;
         font-weight: bold;
@@ -104,7 +101,7 @@ body {
         &:last-child { 
             font-size: 20px;
             color: #000;
-            margin-left: 40px;
+            margin-right: 15px;
         }
     }
 }
@@ -436,11 +433,13 @@ body {
 .image-margin() {
     margin-bottom: @margin-text; 
     margin-top: @margin-text;
+    
 }
 
 .img-iantd {
     width: 180px;
     height: 180px;
+    flex-basis: auto;
     .image-margin();
 }
 .img-ndl() {
