@@ -9,12 +9,13 @@
         width: 95%;
         position: relative;
      }
-    .page-container {
-        padding: 5px;
+    .page .page-container {
+        padding: 10px;
     }
     
     .header {
-        background-color: fade(@white-color, 95%);    
+        background-color: @white-color;    
+        width: 100%;
                
         a:first-child {
             background-image: url(./images/baseline_home_black_48dp.png);
@@ -24,7 +25,7 @@
             height: 42px;
             margin: 12px 0px 0px 65px;
      
-                &:active {
+                &:active, &:hover {
                 background-color: @active-color;
                 background-image: url(./images/baseline_home_black_48dp.png);
                 }
@@ -32,6 +33,9 @@
         
             p {
                 margin: 0;
+                &:hover {
+                    background-color: @hover-color;
+                }
             }
     
             a:last-child { 
@@ -39,62 +43,107 @@
             }
     
     }
-    .mobile-button {
+    .button() {
         position: fixed;
         top: 0;
         left: 0;
         width: 48px;
         height: 48px;
         margin: 10px;
-        background-position: 50% 50%;
-        background-size: contain;
-        background-image: url(/images/baseline_menu_black_48dp.png);
-        
-        &:active {
-            background-color: @active-color;
-        }
-    }
-    .close {
-        background-image: url(/images/outline_close_black_18dp.png);
-        background-color: lightgrey;
+        border: 1px solid #c7c7c7;
+        border-radius: 2px;
+        background-color: #d3d3d39a;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        position: fixed;
-        top: 0;
-        left: 280;
-        width: 25px;
-        height: 25px;
-        padding: 15px;
-        z-index: 20;
-
+        background-size: contain;
+            &:active {
+            background-color: @active-color;
+            }
     }
+    .mobile-button {
+        .button();
+        background-image: url(/images/baseline_menu_black_48dp.png);
+    }
+    .close {
+        .button();
+        background-image: url(/images/outline_close_black_18dp.png);
+    }
+
     .main-menus {
         position: fixed;
-        top: 0;
-        left: 5;
-        width: 305px;
-        height: 305px;
+        top: 58;
+        left: 10;
         background-color: @white-color;
-        border: 1px solid black;
         border-radius: 0;
         box-shadow: none;
         flex-direction: column;
-        overflow: hidden;
+        font-size: 1.2em;
         z-index: 10;
         
         .main-menu {
-            border: 1px solid black;
-            padding: @menu-padding;
+            border: 1px solid #c7c7c7;
+            padding: 20px;
             text-align: left;
-            width: 270px;
-            margin-left: 0;
-            top: 10;
-                    
+            margin: 1;
+                               
             &:first-child, &:last-child {
                 border-radius: 0;
-                            }
+                }
+            &:hover, &:active {
+                background: none;
             }
+        }
+        .sub-menus {
+            position: relative;
+            top: 10;
+            border: 1px solid #e2e2e2;
+            border-radius: 0;
+            margin-left: -13;
+            z-index: 11;
+        }
         
+        .sub-menu {
+            border-bottom: 1px solid #e2e2e2;
+            margin: 1px;
+            background: linear-gradient(#fff 50%, #eee 50% 50%);
+            
+            &:first-child, &:last-child {
+                border-radius: 0px;
+            }
+            
+        }
+
+    }
+    .main-page-link-element {
+        flex-flow: column wrap;
+            }
+   .main-page-link-element-image {       
+        align-self: baseline;
+        margin-bottom: 15px;
+        float: none;
+        box-shadow: none;
+        img {
+            width: 260px;
+            height: 260px;
+        }
+        a {
+            clear: both;
+        }
     }
 
+    .video {
+        width: 100%;
+        height: auto;
+    }
+    .footer {
+        .links-container {
+        display: none;
+        }
+    .social-media-widgets {
+        flex-flow: column-reverse wrap;
+        }
+        .widget-1, .widget-2 {
+        padding: 0px 20px 0px 10px;
+        }
+    }
 }
