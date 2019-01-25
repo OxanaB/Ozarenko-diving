@@ -965,6 +965,11 @@ body {
   }
   .main-menus .main-menu {
     border: 1px solid #c7c7c7;
+    background-image: url(/images/baseline_keyboard_arrow_down_black_18dp.png) right center no-repeat;
+    background: linear-gradient(#fff 50%, #eee 50% 50%);
+    max-width: 95%;
+    position: sticky;
+    top: 10;
     padding: 20px;
     text-align: left;
     margin: 1;
@@ -978,11 +983,12 @@ body {
     background: none;
   }
   .main-menus .sub-menus {
-    position: relative;
+    position: sticky;
     top: 10;
     border: 1px solid #e2e2e2;
     border-radius: 0;
     margin-left: -13;
+    margin-top: 10px;
     z-index: 11;
   }
   .main-menus .sub-menu {
