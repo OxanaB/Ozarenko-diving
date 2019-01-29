@@ -31,13 +31,13 @@ export class Menu extends React.Component<MenuProps> {
             }
             <div className="main-menus">
                 {map(this.props.mainMenus, (mainMenu, mainMenuIndex) => {
-                    return <div className="main-menu" key={mainMenuIndex} onClick={() => {
+                    return <div className="main-menu" key={mainMenu.name} onClick={() => {
                         this.props.when({ about: 'main-menu-chosen', mainMenuIndex });
                     }}>
                         {mainMenu.name}
                         {
                             mainMenuIndex === this.props.activeMainMenuIndex
-                                ? <div className="sub-menus" key={mainMenuIndex}>{
+                                ? <div className="sub-menus" key={mainMenu.subMenus.toString()}>{
                                     map(mainMenu.subMenus, subMenu => {
                                         return <a href={subMenu.url} className="sub-menu" key={subMenu.url}>
                                             {subMenu.name}
