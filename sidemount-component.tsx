@@ -7,7 +7,7 @@ export class Sidemount extends React.Component {
         return <div className="page-container">
             <h1>Курсы обучения дайвингу в сайдмаунте</h1>
             <div className="slider-align-left">
-            <Slider images={sliderSidemount} width={448} height={280}/>
+            <Slider images={sliderSidemount} className={"special-sidemount"}/>
             
 
             <h2>Сайдмаунт - конфигурация с боковым расположением баллонов </h2>

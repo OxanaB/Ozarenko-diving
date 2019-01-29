@@ -2,8 +2,7 @@ import *as React from 'react';
 
 export interface SliderProps {
     images: string[];
-    width: number;
-    height: number;
+    className: string;
 }
 
 interface State {
@@ -27,11 +26,8 @@ export class Slider extends React.Component<SliderProps, State> {
 
     render() {
         const { index, comingClassName, currentClassName, delta } = this.state;
-        const { images, width, height } = this.props;
-        const styles: React.CSSProperties = {
-            width, height
-        };
-        return <div className="slider" style={styles}>
+        const { images, className } = this.props;
+            return <div className={"slider " + className} >
             <img className={comingClassName} src={images[siblingIndex(images, index + delta)]} />
             <img className={currentClassName} src={images[siblingIndex(images, index + 0)]} />
             <a href="" className="slider-arrow-right"

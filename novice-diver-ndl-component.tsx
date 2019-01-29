@@ -7,7 +7,7 @@ export class NoviceDiverNdl extends React.Component {
         return <div className="page-container">
             <h1>Начальный курс обучения дайвингу Novice diver NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderNovice} width={400} height={512} />
+                <Slider images={sliderNovice} className={"vertical"} />
                 <div>
 
                     <p>На начальном курсе обучения студенты осваивают основы дайвинга. Квалификация Novice Diver NDL позволяет совершать погружение под наблюдением профессионала (дайвмастера или инструктора) на глубину не более 12 метров.</p>

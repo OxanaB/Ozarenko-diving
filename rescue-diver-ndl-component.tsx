@@ -8,7 +8,7 @@ export class RescueDiverNdl extends React.Component {
         return <div className="page-container">
             <h1>Курс дайвинга - Спасатель Rescue diver NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderRescue} width={460} height={349} />
+                <Slider images={sliderRescue} className={"special-rescue"} />
                 <div>
                     <p>Подводное плавание с аквалангом - это деятельность, в определенной степени, связанная с риском для жизни и здоровья. Именно поэтому и разработан курс Rescue Diver, который поможет Вам научиться оказывать помощь попавшим в беду аквалангистам. Это даст Вам возможность брать на себя ответственность за жизнь и здоровье своих друзей и близких. </p>
                     <p>Обучение на курсе RESCUE DIVER NDL готовит дайверов к предупреждению возможных проблем, а, при необходимости, к управлению чрезвычайной ситуацией всеми доступными способами. </p>

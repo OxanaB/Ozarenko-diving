@@ -879,6 +879,46 @@ body {
   top: 0px;
   animation-name: going-to-left;
 }
+.vertical {
+  width: 400px;
+  height: 512px;
+}
+.horisontal {
+  width: 512px;
+  height: 400px;
+}
+.special {
+  width: 460px;
+  height: 351px;
+}
+.special-south {
+  width: 500px;
+  height: 350px;
+}
+.special-rocky {
+  width: 600px;
+  height: 400px;
+}
+.special-sidemount {
+  width: 448px;
+  height: 280px;
+}
+.special-rescue {
+  width: 460px;
+  height: 349px;
+}
+.special-intro {
+  width: 393px;
+  height: 260px;
+}
+.safariboat {
+  width: 600px;
+  height: 400px;
+}
+.thg {
+  width: 600px;
+  height: 348px;
+}
 @media screen and (min-width: 320px) and (max-width: 450px) {
   body {
     background-image: url(/images/background-ozarenko-mobile.jpg);
@@ -1079,5 +1119,119 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  .vertical {
+    width: 320px;
+    height: 410px;
+  }
+  .horisontal {
+    width: 320px;
+    height: 250px;
+  }
+  .special {
+    width: 320px;
+    height: 244px;
+  }
+  .special-south {
+    width: 320px;
+    height: 224px;
+  }
+  .special-rocky {
+    width: 320px;
+    height: 213px;
+  }
+  .special-sidemount {
+    width: 320px;
+    height: 200px;
+  }
+  .special-rescue {
+    width: 320x;
+    height: 243px;
+  }
+  .special-intro {
+    width: 320px;
+    height: 212px;
+  }
+  .safariboat {
+    width: 320px;
+    height: 213px;
+  }
+  .thg {
+    width: 320px;
+    height: 186px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .vertical {
+    width: 375px;
+    height: 480px;
+  }
+  .horisontal {
+    width: 375px;
+    height: 293px;
+  }
+  .special {
+    width: 375px;
+    height: 286px;
+  }
+  .special-south {
+    width: 375px;
+    height: 262px;
+  }
+  .special-rocky {
+    width: 375px;
+    height: 250px;
+  }
+  .special-sidemount {
+    width: 375px;
+    height: 234px;
+  }
+  .special-rescue {
+    width: 375px;
+    height: 285px;
+  }
+  .special-intro {
+    width: 375px;
+    height: 248px;
+  }
+  .safariboat {
+    width: 375px;
+    height: 250px;
+  }
+  .thg {
+    width: 375px;
+    height: 218px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  .horisontal {
+    width: 450px;
+    height: 351px;
+  }
+  .special {
+    width: 450px;
+    height: 343px;
+  }
+  .special-south {
+    width: 450px;
+    height: 315px;
+  }
+  .special-rocky {
+    width: 450px;
+    height: 300px;
+  }
+  .special-rescue {
+    width: 450px;
+    height: 341px;
+  }
+  .safariboat {
+    width: 450px;
+    height: 300px;
+  }
+  .thg {
+    width: 450px;
+    height: 361px;
   }
 }

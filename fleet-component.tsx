@@ -9,7 +9,7 @@ export class Fleet extends React.Component {
             <p>Для чудесного отдыха в море очень важно правильно выбрать яхту, на которой вы будете жить и нырять в течение недели во время дайвинг сафари на Красном море.</p>
                 <h2>яхта South Moon</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderSouthMoon} width={600} height={400} />
+                <Slider images={sliderSouthMoon} className={"safariboat"} />
                 <div className="description">
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -26,7 +26,7 @@ export class Fleet extends React.Component {
             </div>
                 <h2>яхта Brina-1</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderBrina} width={600} height={400} />
+                <Slider images={sliderBrina} className={"safariboat"} />
                 <div className="description">
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -45,7 +45,7 @@ export class Fleet extends React.Component {
 
                 <h2>яхта Carlton Queen</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderCarltonQueen} width={600} height={400} />
+                <Slider images={sliderCarltonQueen} className={"safariboat"} />
                 <div className="description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -64,7 +64,7 @@ export class Fleet extends React.Component {
             </div>
                 <h2>яхта Carlton</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderCarltonBoat} width={600} height={400} />
+                <Slider images={sliderCarltonBoat} className={"safariboat"} />
                 <div className="description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>

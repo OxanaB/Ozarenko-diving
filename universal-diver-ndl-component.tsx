@@ -8,7 +8,7 @@ export class UniversalDiverNdl extends React.Component {
         return <div className="page-container">
             <h1>Вторая ступень обучения дайвингу курс Universal diver NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderUniversal} width={460} height={351} />
+                <Slider images={sliderUniversal} className={"special"} />
                 <div>
 
                     <p>Курс Universal Diver - это следующая ступень в обучении дайвингу. Данный курс позволяет аквалангисту наиболее полно почувствовать всё разнообразие дайвинга - его приключенческую сторону.</p>

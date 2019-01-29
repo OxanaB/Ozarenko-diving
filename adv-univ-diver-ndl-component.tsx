@@ -8,7 +8,7 @@ export class AdvUniDiverNdl extends React.Component {
         return <div className="page-container">
             <h1>Курс Advanced Universal diver NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderAdvUni} width={400} height={512} />
+                <Slider images={sliderAdvUni} className={"vertical"} />
                 <div>
                     <p>На курсе ADVANCED UNIVERSAL DIVER NDL вы полностью изучаете 3 специализации NDL (глубоководные погружения, ночные погружения и подводное ориентирование). </p>
                     <p>Курс состоит из 1 погружения по подводной навигации, 1 глубоководного погружения до 39 метров и 2 ночных погружения.</p>

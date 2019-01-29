@@ -17,7 +17,7 @@ export class IntroDiving extends React.Component {
                     <p>Пробное погружение можно делать как с берега, так и во время морской прогулки на дайверской яхте к рифам острова Тиран или в заповедник Рас Мухаммед.</p>
                 </div>
                 <div className="images-intro">
-                    <Slider images={sliderIntroDive} width={393} height={260} />
+                    <Slider images={sliderIntroDive} className={"special-intro"} />
                     <h5>Цены на дайвинг экскурсии и начальное обучение</h5>
                 </div>
             </div>

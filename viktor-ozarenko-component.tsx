@@ -6,7 +6,7 @@ export class ViktorOzarenko extends React.Component {
     render() {
         return <div className="page-container">
             <div className="slider-align-left">
-                <Slider images={sliderViktor} width={400} height={512} />
+                <Slider images={sliderViktor} className={"vertical"} />
                 <div className="text">
                     <h1>Виктор Озаренко</h1>
                     <p>Командор Клуба "Искатели морских сокровищ"​, сын двух городов-героев Одессы и
