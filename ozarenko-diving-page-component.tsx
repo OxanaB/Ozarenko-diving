@@ -6,13 +6,9 @@ import { enableClient } from './client';
 export class OzarenkoDivingPage extends React.Component {
     render() {
         return <>
-            <div className="slider-main-page">
-
-            </div>
-
             <div className="main-page-link-elements">
                 {map(mainPageLinkElements, (elements, index) => {
-                    return <div className="main-page-link-element" key={index}>
+                    return <div className="main-page-link-element" key={index.toString()}>
                         <div className="main-page-link-element-image">
                             <a href={elements.buttonLink}>
                                 <img src={elements.image} alt={elements.imageAlt} />
@@ -29,10 +25,6 @@ export class OzarenkoDivingPage extends React.Component {
                         </div>
                     </div>
                 })}
-            </div>
-
-            <div className="news-feed">
-
             </div>
         </>
 
