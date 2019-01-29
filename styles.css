@@ -337,7 +337,7 @@ body {
 }
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .img-iantd {
   width: 180px;
@@ -365,10 +365,13 @@ body {
   padding: 15px;
 }
 .idc-iantd {
-  max-width: 50%;
   margin-right: 10px;
   display: flex;
   flex-direction: column;
+  max-width: 450px;
+}
+.idc-iantd .wrapper {
+  flex-wrap: nowrap;
 }
 .idc-iantd h2 {
   margin-left: 0px;
@@ -385,6 +388,10 @@ body {
 .idc-ndl {
   display: flex;
   flex-direction: column;
+  max-width: 450px;
+}
+.idc-ndl .wrapper {
+  flex-wrap: nowrap;
 }
 .idc-ndl h2 {
   margin-left: 0px;
@@ -477,7 +484,7 @@ body {
 }
 .padi-courses .padi-course {
   width: 290px;
-  margin: 10px 5px;
+  margin: 0px 15px 0px 0px;
 }
 .padi-courses .padi-course h2 {
   margin-left: 0px;
@@ -1040,5 +1047,11 @@ body {
   .team .team-member:nth-child(2) img {
     display: block;
     block-size: auto;
+  }
+  .wrapper .idc-iantd .wrapper {
+    flex-wrap: wrap;
+  }
+  .wrapper .idc-ndl .wrapper {
+    flex-wrap: wrap;
   }
 }

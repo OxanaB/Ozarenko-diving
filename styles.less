@@ -416,7 +416,7 @@ body {
 
 .wrapper {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     
 }
 .h2-idc() {
@@ -428,6 +428,11 @@ body {
 .display-idc() {
     display: flex;
     flex-direction: column;
+    max-width: 450px;
+    .wrapper {
+        flex-wrap: nowrap;
+     
+    }
 }
 
 .image-margin() {
@@ -463,7 +468,6 @@ body {
 }
 
 .idc-iantd {    
-    max-width: 50%;
     margin-right: 10px;
     .display-idc();
     h2 { .h2-idc(); }
@@ -576,7 +580,7 @@ body {
     
     .padi-course {
         width: 290px;
-        margin: 10px 5px;  
+        margin: 0px 15px 0px 0px;  
         h2 {
             .h2-padi();
             height: fit-content;
