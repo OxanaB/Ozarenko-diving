@@ -1029,4 +1029,20 @@ body {
   .footer .widget-2 {
     padding: 0px 20px 0px 10px;
   }
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team .team-member:nth-child(2) {
+    margin: 0;
+  }
+  .team .team-member:nth-child(2) h3,
+  .team .team-member:nth-child(2) img,
+  .team .team-member:nth-child(2) div {
+    width: 100%;
+  }
+  .team .team-member:nth-child(2) img {
+    display: block;
+    block-size: auto;
+  }
 }
