@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Header } from './header-component';
-import { MenuProps } from './menu';
 import { Footer } from './footer';
 import { mainMenu } from './navigation';
 import { map } from './utils';
@@ -29,6 +28,8 @@ export class Page extends React.Component<PageProps> {
                     />
                 })}
                 <script src="/facebook.js"></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133475833-1"></script>
+                <script src="google-analytics.js"></script>
                 <script src="https://apis.google.com/js/platform.js"></script>
                 {
                     this.props.script !== undefined
