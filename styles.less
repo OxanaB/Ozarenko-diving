@@ -417,6 +417,7 @@ body {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 .h2-idc() {
@@ -786,10 +787,9 @@ body {
 }
 
 .wrapper-price-sharm {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: auto;
-    grid-gap: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border-bottom: @border-bottom;
 
     h3 {
@@ -801,7 +801,7 @@ body {
     }
 
     .price-simple {
-        width: 100%;
+        width: 300px;
         
         td {
             &:first-child {

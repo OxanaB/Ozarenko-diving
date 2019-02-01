@@ -338,6 +338,7 @@ body {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .img-iantd {
   width: 180px;
@@ -654,10 +655,9 @@ body {
   width: 30%;
 }
 .wrapper-price-sharm {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: auto;
-  grid-gap: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border-bottom: 3px solid #FFF200;
 }
 .wrapper-price-sharm h3 {
@@ -668,7 +668,7 @@ body {
   font-weight: normal;
 }
 .wrapper-price-sharm .price-simple {
-  width: 100%;
+  width: 300px;
 }
 .wrapper-price-sharm .price-simple td:first-child {
   text-align: left;
@@ -1119,6 +1119,28 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 5px;
+  }
+  .wrapper-price-sharm div:first-child {
+    order: 3;
+  }
+  .price-technical-rent,
+  .wrapper-rebreather-prices,
+  .video-links-techdive {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .price-technical-rent h3,
+  .wrapper-rebreather-prices h3,
+  .video-links-techdive h3 {
+    width: 100%;
+  }
+  .wrapper-two-columns {
+    flex-flow: nowrap column;
+  }
+  .wrapper-two-columns .booking {
+    max-width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 320px) {

@@ -197,6 +197,28 @@
             margin-bottom: 5px;
         }
     }
+    .wrapper-price-sharm {
+        div {
+            &:first-child {
+                order: 3;
+            }
+        }
+    }
+    .price-technical-rent, .wrapper-rebreather-prices, .video-links-techdive {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        h3 {
+            width: 100%;
+        }
+    }
+    .wrapper-two-columns {
+        flex-flow: nowrap column;
+        .booking {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 320px){
