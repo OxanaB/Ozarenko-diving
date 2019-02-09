@@ -919,6 +919,153 @@ body {
   width: 600px;
   height: 348px;
 }
+.dive-request-form {
+  position: relative;
+  width: 380px;
+  margin: 15px;
+  background-color: #ffffffcc;
+}
+.dive-request-form input,
+.dive-request-form textarea {
+  min-width: 350px;
+  margin-bottom: 10px;
+}
+.dive-request-form button {
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+  padding: 10;
+  font-size: 1em;
+  border-radius: 5px;
+}
+.dive-request-form .invalid {
+  outline-color: red;
+}
+.dive-request-form a {
+  color: black;
+  text-decoration: none;
+}
+.dive-request-form .options {
+  font-style: italic;
+  font-size: 0.8em;
+  padding: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.dive-request-form .tags {
+  font-style: italic;
+  font-size: 0.8em;
+  display: inline;
+  margin-left: 5px;
+}
+.dive-request-form .tags a {
+  font-size: 1.2em;
+  font-style: normal;
+  padding: 10px;
+  display: inline-block;
+}
+.dive-request-form .tags a:hover,
+.dive-request-form .tags a:active {
+  font-weight: bold;
+}
+.dive-request-form .wrapper-input-icon {
+  display: flex;
+  align-items: center;
+}
+.dive-request-form .wrapper-input-icon svg {
+  margin-left: 5px;
+}
+.dive-request-form p {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.dive-request-form .date-picker .calendar {
+  width: 305px;
+  max-height: 370px;
+  position: fixed;
+  top: 245;
+  left: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+}
+.dive-request-form .date-picker .calendar .month-viewer {
+  width: 290px;
+  display: flex;
+  background-color: lightgray;
+  padding: 10px;
+}
+.dive-request-form .date-picker .calendar .month-viewer .previous-month {
+  display: block;
+  height: 37px;
+  width: 55px;
+  margin: 0px 5px;
+  border: 1px solid #a9a9a9;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-image: url(../images/arrow_left.png);
+}
+.dive-request-form .date-picker .calendar .month-viewer .next-month {
+  display: block;
+  height: 37px;
+  width: 55px;
+  margin: 0px 5px;
+  border: 1px solid #a9a9a9;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  background-image: url(../images/arrow_right.png);
+}
+.dive-request-form .date-picker .calendar .month-viewer select {
+  font-size: 18px;
+  padding: 5px;
+}
+.dive-request-form .date-picker .calendar td {
+  border: 1px solid lightgray;
+  text-align: center;
+  overflow: hidden;
+}
+.dive-request-form .date-picker .calendar .not-active a {
+  color: lightgray;
+}
+.dive-request-form .date-picker .calendar a {
+  display: block;
+  padding: 10px;
+}
+.dive-request-form .date-picker .calendar a:hover,
+.dive-request-form .date-picker .calendar a:focus {
+  text-decoration: underline;
+}
+.dive-request-form .date-picker .calendar a:active {
+  background-color: lightgray;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .dive-request-form {
+    width: 350px;
+    margin-top: 20px;
+  }
+  .dive-request-form input,
+  .dive-request-form textarea {
+    min-width: 320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dive-request-form {
+    width: 320px;
+    margin-top: 20px;
+  }
+  .dive-request-form input,
+  .dive-request-form textarea {
+    min-width: 300px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 450px) {
   body {
     background-image: url(/images/background-ozarenko-mobile.jpg);

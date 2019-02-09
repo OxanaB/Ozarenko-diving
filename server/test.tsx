@@ -6,7 +6,7 @@ import { ViktorOzarenko } from '../viktor-ozarenko-component';
 import { Feedback } from '../feedback-component';
 import { ContactUs } from '../contact-us-component';
 import { PadiCourses } from '../padi-courses-component';
-import { NdlCourses } from '../ndl-courses-component'; 
+import { NdlCourses } from '../ndl-courses-component';
 import { IdcCourses } from '../idc-component';
 import { FreediveCourses } from '../freedive-component';
 import { NoviceDiverNdl } from '../novice-diver-ndl-component';
@@ -30,6 +30,7 @@ import { LastSafari } from '../last-safari-component';
 import { Fleet } from '../fleet-component';
 import { NorthRoutes } from '../north-routes-component';
 import { SouthRoutes } from '../south-routes-component';
+import { DiveRequest } from '../dive-request-component';
 import { writeFileSync } from 'fs';
 import { Page } from '../page';
 import * as Meta from '../meta';
@@ -50,12 +51,12 @@ const pages: any = {
         <Page meta={Meta.metaViktorOzarenkoPage} script="viktor-ozarenko-component" title={'Виктор Озаренко, командор дайвинг клуба "Искатели морских сокровищ", Одесса (Украина)'}>
             <Core><ViktorOzarenko /></Core>
         </Page>
-    ), 
+    ),
     './feedback.html': ReactDom.renderToString(
         <Page meta={Meta.metaFeedbackPage} script="feedback-component" title={'Отзывы о дайвиге с нашим клубом в Шарм-эль-Шейхе (Египет)'}>
             <Core><Feedback /></Core>
         </Page>
-    ), 
+    ),
     './contact-us.html': ReactDom.renderToString(
         <Page meta={Meta.metaContactUsPage} script="contact-us-component" title={'Контактная информация'}>
             <Core><ContactUs /></Core>
@@ -181,11 +182,16 @@ const pages: any = {
             <Core><SouthRoutes /></Core>
         </Page>
     ),
-     './redsea-liveaboard-north.html': ReactDom.renderToString(
+    './redsea-liveaboard-north.html': ReactDom.renderToString(
         <Page meta={Meta.metaNorthRoutes} script="north-routes-component" title={'Маршруты дайвинг сафари по северу Красного моря (Египет)'}>
             <Core><NorthRoutes /></Core>
         </Page>
-    )
+    ),
+    './test.html': ReactDom.renderToString(
+        <Page meta={Meta.metaNorthRoutes} script="dive-request-component" title={'test'}>
+            <Core><DiveRequest /></Core>
+        </Page>
+    ),
 };
 
 for (const name in pages) {
