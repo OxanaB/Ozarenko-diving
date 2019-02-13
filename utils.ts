@@ -14,7 +14,7 @@ export function filter<T>(all: T[], shouldKeep: (val:T) => boolean): T[] {
         const val = all[index]
         if (shouldKeep(val) ) {
             result.push(val)
-        };         
+        };
     } return result;
 }
 
