@@ -1,48 +1,28 @@
 import * as React from "react";
-import { MobileMenu, MobileMenuProps } from "./mobile-menu";
-import { DesktopMenu, DesktopMenuProps } from "./desktop-menu";
+import { MenuProps, makeMenu } from "./menu";
+import { mainMenu } from "./navigation";
 
 export interface CoreProps {
-    menu: DesktopMenuProps | MobileMenuProps;
+    menu?: MenuProps;
 }
+const defaultMenu: MenuProps = {
+    mainMenus: mainMenu,
+    activeMainMenuIndex: null,
+    when: () => { }
+};
+export const MenuForMobile = makeMenu('mobile-menu');
+export const MenuForDesktop = makeMenu('desktop-menu');
 
 export class Core extends React.Component<CoreProps> {
+    state = {
+        isToOpenDropDownMenu: false,
+        isToSwitchToCloseButton: false
+    }
     render() {
-        const { menu: { mainMenus, activeMainMenuIndex, className } } = this.props;
-        const desktopMenuProps: DesktopMenuProps = {
-            mainMenus, className,
-            activeMainMenuIndex,
-            when: () => { }
-        };
-        const mobileMenuProps: MobileMenuProps = {
-            mainMenus, className,
-            activeMainMenuIndex,
-            when: () => { }
-        };
         return <>
-            <DesktopMenu {...desktopMenuProps} />
-            <MobileMenu {...mobileMenuProps} />
+            <MenuForDesktop {...this.props.menu || defaultMenu} />
+            <MenuForMobile {...this.props.menu || defaultMenu} />
             {this.props.children}
         </>
     }
 }
-
-
-// export interface CoreProps {
-//     menu?: MenuProps;
-// }
-
-// const defaultMenu: MenuProps = {
-//     mainMenus: mainMenu,
-//     activeMainMenuIndex: null,
-//     when: () => { }
-// };
-// export class Core extends React.Component<CoreProps> {
-
-//     render() {
-//         return <>
-//             <MenuMobileChecker {...this.props.menu || defaultMenu} />
-//             {this.props.children}
-//         </>
-//     }
-// }

@@ -6,7 +6,7 @@ import { broke } from './utils';
 import { MenuProps } from "./menu";
 
 export function enableClient(Content: new (props: {}) => React.Component<{}, {}, any>) {
-    function XXX(props: MenuProps) {
+    function DynamicPage(props: MenuProps) {
         return <Core menu={props}><Content /></Core>;
     }
     const rootElement = document.getElementById('root');
@@ -21,7 +21,7 @@ export function enableClient(Content: new (props: {}) => React.Component<{}, {},
                         activeMainMenuIndex: concern.mainMenuIndex
                     };
                     lastProps = newProps;
-                    ReactDOM.render(<XXX {...newProps} />, rootElement);
+                    ReactDOM.render(<DynamicPage {...newProps} />, rootElement);
                     break;
                 }
                 case 'sub-menu-hidden': {
@@ -30,12 +30,12 @@ export function enableClient(Content: new (props: {}) => React.Component<{}, {},
                         activeMainMenuIndex: null,
                     };
                     lastProps = newProps;
-                    ReactDOM.render(<XXX {...newProps} />, rootElement);
+                    ReactDOM.render(<DynamicPage {...newProps} />, rootElement);
                     break;
                 }
                 default: return broke(concern);
             }
         }
     };
-    ReactDOM.hydrate(<XXX {...lastProps} />, rootElement);
+    ReactDOM.hydrate(<DynamicPage {...lastProps} />, rootElement);
 }
