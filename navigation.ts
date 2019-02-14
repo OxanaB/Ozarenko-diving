@@ -177,7 +177,7 @@ export const mainMenu: MainMenu[] = [
         name: 'О клубе',
         subMenus: about,
     },
-    { 
+    {
         name: 'Дайвинг сафари',
         subMenus: liveaboard,
     },
@@ -185,13 +185,13 @@ export const mainMenu: MainMenu[] = [
         name: 'Обучение дайвингу',
         subMenus: courses,
     },
-    { 
-        name: 'Технический дайвинг', 
+    {
+        name: 'Технический дайвинг',
         subMenus: technicalDiving,
     },
-    { 
-        name: 'Дайвинг в Шарм эль Шейхе', 
-        subMenus: divingInSharm, 
+    {
+        name: 'Дайвинг в Шарм эль Шейхе',
+        subMenus: divingInSharm,
     }
 ];
 

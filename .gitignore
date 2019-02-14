@@ -1,6 +1,8 @@
 node_modules
 *.js
 *.js.map
+*.html
+!index.html
 browser
 !async.js
 !react.js

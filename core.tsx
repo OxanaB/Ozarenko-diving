@@ -14,10 +14,6 @@ export const MenuForMobile = makeMenu('mobile-menu');
 export const MenuForDesktop = makeMenu('desktop-menu');
 
 export class Core extends React.Component<CoreProps> {
-    state = {
-        isToOpenDropDownMenu: false,
-        isToSwitchToCloseButton: false
-    }
     render() {
         return <>
             <MenuForDesktop {...this.props.menu || defaultMenu} />

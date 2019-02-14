@@ -36,31 +36,7 @@ export function makeMenu(className: string) {
                             this.props.when({ about: 'sub-menu-hidden' });
                         }} />
                 }
-                <div className={className}>
-                    {map(this.props.mainMenus, (mainMenu, mainMenuIndex) => {
-                        return <div className="main-menu" key={mainMenu.name}
-                            onClick={() => {
-                                this.props.when({
-                                    about: 'main-menu-chosen',
-                                    mainMenuIndex
-                                });
-                            }}>
-                        {mainMenu.name}
-                            {
-                                mainMenuIndex === this.props.activeMainMenuIndex
-                                    ? <div className="sub-menu" key={mainMenu.subMenus.toString()}>{
-                                        map(mainMenu.subMenus, subMenu => {
-                                            return <a href={subMenu.url} className="sub-menu-item" key={subMenu.url}>
-                                                {subMenu.name}
-                                            </a>
-                                        })
-                                    }</div>
-                                    : null
-                            }
-                        </div>
-                    })}
-                </div>
-            <div className="dropdown" onClick={() => {
+                <div className="dropdown" onClick={() => {
                     this.setState({ isToOpenDropDownMenu: true, isToSwitchToCloseButton: true })
                 }}></div>
                 <div className="close" onClick={() => {
@@ -77,7 +53,7 @@ export function makeMenu(className: string) {
                                             mainMenuIndex
                                         });
                                     }}>
-                        {mainMenu.name}
+                                    {mainMenu.name}
                                     {
                                         mainMenuIndex === this.props.activeMainMenuIndex
                                             ? <div className="sub-menu" key={mainMenu.subMenus.toString()}>{
