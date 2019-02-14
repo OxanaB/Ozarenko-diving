@@ -106,54 +106,9 @@ body {
     }
 }
 
-
-.main-menus {
-    margin: 0 auto;
-    width: fit-content;
-    background-color: @white-color;
-    border: 1px solid #e2e2e2;
-    border-radius: 10px;
-    box-shadow: 2px 3px 6px 0px #000;
-    display: flex;
-    justify-content: space-around;
+.mobile-menu {
+    display: none;
 }
-
-.main-menu {
-    padding: @menu-padding;
-    background: linear-gradient(#fff 50%, #eee 50% 50%);
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    .a-no-decoration();
-
-    &:first-child {
-        border-radius: 10px 0px 0px 10px;
-        
-    }
-
-    &:last-child {
-        border-radius: 0px 10px 10px 0px;
-    }
-
-    &:hover {
-        background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
-    }
-}
-.main-menu + .main-menu {
-    border-left: 1px solid #000;
-}
-
-.sub-menus {
-    position: absolute;
-    text-align: left;
-    left: 0px;
-    right: 0px;
-    top: 35px;
-    border: 1px solid #e2e2e2;
-    border-radius: 10px;
-    z-index: 4;
-}
-
 .backdrop {
     position: fixed;
     top: 0px;
@@ -162,32 +117,74 @@ body {
     right: 0px;
     opacity: 0.0;
 }
+.desktop-menu {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: @white-color;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px 0px #000;
 
-.sub-menu {
-    background-color: fade(@white-color, 95%);
-    padding: 13px;
-    display: block;
-    .a-no-decoration();
+    .main-menu {
+        position: relative;
+        padding: @menu-padding;
+        background: linear-gradient(#fff 50%, #eee 50% 50%);
+        text-align: center;
+        cursor: pointer;
+
+        &:first-child {
+            border-radius: 10px 0px 0px 10px;      
+        }
+
+        &:last-child {
+            border-radius: 0px 10px 10px 0px;
+        }
+
+        &:hover {
+            background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
+        }
+    }
+    .main-menu + .main-menu {
+        border-left: 1px solid #000;
+    }
+
+    .sub-menu {
+        position: absolute;
+        text-align: left;
+        left: 0px;
+        right: 0px;
+        top: 35px;
+        border: 1px solid #e2e2e2;
+        border-radius: 10px;
+        z-index: 4;
     
-    &:first-child {
-        border-radius: 10px 10px 0px 0px;
-    }
-    &:last-child {
-        border-radius: 0px 0px 10px 10px;
-    }
-    &:hover {
-        background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
-    }
-    &:active {
-        background: linear-gradient(#FFF766 50%, #FFF200 50% 50%);
+
+        .sub-menu-item {
+            background-color: fade(@white-color, 95%);
+            padding: 13px;
+            display: block;
+            .a-no-decoration();
+
+            &:first-child {
+                border-radius: 10px 10px 0px 0px;
+            }
+            &:last-child {
+                border-radius: 0px 0px 10px 10px;
+            }
+            &:hover {
+                background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
+            }
+            &:active {
+                background: linear-gradient(#FFF766 50%, #FFF200 50% 50%);
+            }
+        }    
+        .sub-menu-item + .sub-menu-item {
+            margin-top: @menu-padding;
+        }
     }
 }
-    
-.sub-menu + .sub-menu {
-    margin-top: @menu-padding;
-}
-
-
         
 // Elements of exact dive servises on main page (now 4 of them)
 

@@ -43,10 +43,10 @@
             }
     
     }
-    .button() {
-        position: fixed;
-        top: 0;
-        left: 0;
+    .mobile-nav-button() {
+        position: absolute;
+        top: -105;
+        left: -10;
         width: 48px;
         height: 48px;
         margin: 10px;
@@ -60,26 +60,28 @@
             background-color: @active-color;
             }
     }
-    .mobile-button {
-        .button();
+    .dropdown {
+        .mobile-nav-button();
         background-image: url(/images/baseline_menu_black_48dp.png);
     }
     .close {
-        .button();
+        .mobile-nav-button();
         background-image: url(/images/outline_close_black_18dp.png);
     }
-
-    .main-menus {
-        position: sticky;
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
         margin: -50px 0px 0px 0px;
         width: 320px;
-        overflow: hidden;
         background-color: @white-color;
-        border-radius: 0;
-        box-shadow: none;
-        flex-direction: column;
         font-size: 1.2em;
-        z-index: 10;
+        text-align: left;
+        border: 1px solid #e2e2e2;
         
         .main-menu {
             border: 1px solid #c7c7c7;
@@ -87,39 +89,34 @@
             position: sticky;
             top: 10;
             padding: 20px;
-            text-align: left;
-            margin: 1;
-                                           
-            &:first-child, &:last-child {
-                border-radius: 0;
-                }
-            &:hover, &:active {
-                background: none;
-            }
         }
-        .sub-menus {
+        .sub-menu {
             position: sticky;
             top: 10;
             border: 1px solid #e2e2e2;
             border-radius: 0;
             margin-left: -13;
             margin-top: 10px;
-
             z-index: 11;
-        }
-        
-        .sub-menu {
-            border-bottom: 1px solid #e2e2e2;
-            margin: 1px;
-            background: linear-gradient(#fff 50%, #eee 50% 50%);
-            
-            &:first-child, &:last-child {
-                border-radius: 0px;
+           
+            .sub-menu-item {
+                display: block;
+                padding: 20px;
+                background: linear-gradient(#fff 50%, #eee 50% 50%);
+                .a-no-decoration();
+                &:hover {
+                    background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
+                }
+                &:active {
+                    background: linear-gradient(#FFF766 50%, #FFF200 50% 50%);
+                }
+            }    
+            .sub-menu-item + .sub-menu-item {
+                margin-top: @menu-padding;
             }
-            
         }
-
     }
+
     .main-page-link-element {
         flex-flow: column wrap;
             }

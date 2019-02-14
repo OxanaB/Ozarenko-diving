@@ -87,46 +87,8 @@ body {
   color: #000;
   margin-right: 15px;
 }
-.main-menus {
-  margin: 0 auto;
-  width: fit-content;
-  background-color: #ffffff;
-  border: 1px solid #e2e2e2;
-  border-radius: 10px;
-  box-shadow: 2px 3px 6px 0px #000;
-  display: flex;
-  justify-content: space-around;
-}
-.main-menu {
-  padding: 10px 23px;
-  background: linear-gradient(#fff 50%, #eee 50% 50%);
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  color: #000;
-}
-.main-menu:first-child {
-  border-radius: 10px 0px 0px 10px;
-}
-.main-menu:last-child {
-  border-radius: 0px 10px 10px 0px;
-}
-.main-menu:hover {
-  background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
-}
-.main-menu + .main-menu {
-  border-left: 1px solid #000;
-}
-.sub-menus {
-  position: absolute;
-  text-align: left;
-  left: 0px;
-  right: 0px;
-  top: 35px;
-  border: 1px solid #e2e2e2;
-  border-radius: 10px;
-  z-index: 4;
+.mobile-menu {
+  display: none;
 }
 .backdrop {
   position: fixed;
@@ -136,26 +98,65 @@ body {
   right: 0px;
   opacity: 0;
 }
-.sub-menu {
+.desktop-menu {
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px 0px #000;
+}
+.desktop-menu .main-menu {
+  position: relative;
+  padding: 10px 23px;
+  background: linear-gradient(#fff 50%, #eee 50% 50%);
+  text-align: center;
+  cursor: pointer;
+}
+.desktop-menu .main-menu:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+.desktop-menu .main-menu:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+.desktop-menu .main-menu:hover {
+  background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
+}
+.desktop-menu .main-menu + .main-menu {
+  border-left: 1px solid #000;
+}
+.desktop-menu .sub-menu {
+  position: absolute;
+  text-align: left;
+  left: 0px;
+  right: 0px;
+  top: 35px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  z-index: 4;
+}
+.desktop-menu .sub-menu .sub-menu-item {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 13px;
   display: block;
   text-decoration: none;
   color: #000;
 }
-.sub-menu:first-child {
+.desktop-menu .sub-menu .sub-menu-item:first-child {
   border-radius: 10px 10px 0px 0px;
 }
-.sub-menu:last-child {
+.desktop-menu .sub-menu .sub-menu-item:last-child {
   border-radius: 0px 0px 10px 10px;
 }
-.sub-menu:hover {
+.desktop-menu .sub-menu .sub-menu-item:hover {
   background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
 }
-.sub-menu:active {
+.desktop-menu .sub-menu .sub-menu-item:active {
   background: linear-gradient(#FFF766 50%, #FFF200 50% 50%);
 }
-.sub-menu + .sub-menu {
+.desktop-menu .sub-menu .sub-menu-item + .sub-menu-item {
   margin-top: 10px 23px;
 }
 .main-page-link-elements {
@@ -1106,10 +1107,10 @@ body {
   .header a:last-child {
     display: none;
   }
-  .mobile-button {
-    position: fixed;
-    top: 0;
-    left: 0;
+  .dropdown {
+    position: absolute;
+    top: -105;
+    left: -10;
     width: 48px;
     height: 48px;
     margin: 10px;
@@ -1121,13 +1122,13 @@ body {
     background-size: contain;
     background-image: url(/images/baseline_menu_black_48dp.png);
   }
-  .mobile-button:active {
+  .dropdown:active {
     background-color: #FFF200;
   }
   .close {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: -105;
+    left: -10;
     width: 48px;
     height: 48px;
     margin: 10px;
@@ -1142,36 +1143,29 @@ body {
   .close:active {
     background-color: #FFF200;
   }
-  .main-menus {
-    position: sticky;
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
     margin: -50px 0px 0px 0px;
     width: 320px;
-    overflow: hidden;
     background-color: #ffffff;
-    border-radius: 0;
-    box-shadow: none;
-    flex-direction: column;
     font-size: 1.2em;
-    z-index: 10;
+    text-align: left;
+    border: 1px solid #e2e2e2;
   }
-  .main-menus .main-menu {
+  .mobile-menu .main-menu {
     border: 1px solid #c7c7c7;
     background: linear-gradient(#fff 50%, #eee 50% 50%);
     position: sticky;
     top: 10;
     padding: 20px;
-    text-align: left;
-    margin: 1;
   }
-  .main-menus .main-menu:first-child,
-  .main-menus .main-menu:last-child {
-    border-radius: 0;
-  }
-  .main-menus .main-menu:hover,
-  .main-menus .main-menu:active {
-    background: none;
-  }
-  .main-menus .sub-menus {
+  .mobile-menu .sub-menu {
     position: sticky;
     top: 10;
     border: 1px solid #e2e2e2;
@@ -1180,14 +1174,21 @@ body {
     margin-top: 10px;
     z-index: 11;
   }
-  .main-menus .sub-menu {
-    border-bottom: 1px solid #e2e2e2;
-    margin: 1px;
+  .mobile-menu .sub-menu .sub-menu-item {
+    display: block;
+    padding: 20px;
     background: linear-gradient(#fff 50%, #eee 50% 50%);
+    text-decoration: none;
+    color: #000;
   }
-  .main-menus .sub-menu:first-child,
-  .main-menus .sub-menu:last-child {
-    border-radius: 0px;
+  .mobile-menu .sub-menu .sub-menu-item:hover {
+    background: linear-gradient(#fffaa1 50%, #FFF766 50% 50%);
+  }
+  .mobile-menu .sub-menu .sub-menu-item:active {
+    background: linear-gradient(#FFF766 50%, #FFF200 50% 50%);
+  }
+  .mobile-menu .sub-menu .sub-menu-item + .sub-menu-item {
+    margin-top: 10px 23px;
   }
   .main-page-link-element {
     flex-flow: column wrap;
