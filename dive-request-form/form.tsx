@@ -23,7 +23,7 @@ export interface LanguageConcern {
     language: string;
 }
 export interface SendNewRequiest {
-    about: 'send-new-requiest'
+    about: 'send-new-requiest';
     newDiveRequest: DiveRequest;
 }
 
@@ -133,12 +133,12 @@ export class Form extends React.Component<FormProps> {
                         hotel,
                         message
                     };
-                        this.props.when({
+                    this.props.when({
                         about: 'send-new-requiest',
                         newDiveRequest: diveRequest
                     });
                 }}>{localizer.useCorrectLanguage(language).form[7]}</button>
             </div>
-        </>
+        </>;
     }
 }

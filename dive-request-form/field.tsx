@@ -12,7 +12,7 @@ export interface FielderProps {
 
 export interface FielderConcern {
     about: 'field-input';
-    value: string
+    value: string;
 }
 
 export class Fielder extends React.Component<FielderProps> {
@@ -20,7 +20,7 @@ export class Fielder extends React.Component<FielderProps> {
         const { field: { isValid, value } } = this.props;
         return <input className={isValid ? '' : 'invalid'} type="text" value={value} required
             onChange={e => {
-                this.props.when({ about: 'field-input', value: e.currentTarget.value })
+                this.props.when({ about: 'field-input', value: e.currentTarget.value });
             }} />;
     }
 }

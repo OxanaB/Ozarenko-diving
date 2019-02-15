@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { MainMenu as MainMenu } from "./navigation";
-import { map } from "./utils";
+import { MainMenu as MainMenu } from './navigation';
+import { map } from './utils';
 
 export interface MainMenuChosenConcern {
     about: 'main-menu-chosen';
@@ -45,15 +45,15 @@ export function makeMenu(className: string) {
                                         map(mainMenu.subMenus, subMenu => {
                                             return <a href={subMenu.url} className="sub-menu-item" key={subMenu.url}>
                                                 {subMenu.name}
-                                            </a>
+                                            </a>;
                                         })
                                     }</div>
                                     : null
                             }
-                        </div>
+                        </div>;
                     })}
                 </div>
-            </>
+            </>;
         }
-    }
+    };
 }

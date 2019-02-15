@@ -27,7 +27,7 @@ export class Slider extends React.Component<SliderProps, State> {
     render() {
         const { index, comingClassName, currentClassName, delta } = this.state;
         const { images, className } = this.props;
-            return <div className={"slider " + className} >
+        return <div className={'slider ' + className} >
             <img className={comingClassName} src={images[siblingIndex(images, index + delta)]} />
             <img className={currentClassName} src={images[siblingIndex(images, index + 0)]} />
             <a href="" className="slider-arrow-right"
@@ -66,7 +66,7 @@ export class Slider extends React.Component<SliderProps, State> {
                     }, 500);
                 }}
             ></a>
-        </div>
+        </div>;
     }
 }
 

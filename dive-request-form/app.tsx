@@ -18,10 +18,10 @@ export class App extends React.Component<{}, FormProps> {
                         });
                         break;
                     }
-                    default: return broke(concern.name.about)
+                    default: return broke(concern.name.about);
                 }
                 break;
-            };
+            }
             case 'email': {
                 switch (concern.email.about) {
                     case 'field-input': {
@@ -35,7 +35,7 @@ export class App extends React.Component<{}, FormProps> {
                     default: return broke(concern.email.about);
                 }
                 break;
-            };
+            }
             case 'telephone': {
                 switch (concern.telephone.about) {
                     case 'field-input': {
@@ -49,7 +49,7 @@ export class App extends React.Component<{}, FormProps> {
                     default: return broke(concern.telephone.about);
                 }
                 break;
-            };
+            }
             case 'level-input': {
                 const { pickedLevels } = this.state;
                 if (pickedLevels.length === 0) {
@@ -69,7 +69,7 @@ export class App extends React.Component<{}, FormProps> {
                     });
                 }
                 break;
-            };
+            }
             case 'level-picked': {
                 const { level } = concern;
                 const { pickedLevels } = this.state;
@@ -78,13 +78,13 @@ export class App extends React.Component<{}, FormProps> {
                     pickedLevels: newPickedLevels,
                     isOptionToShow: false,
                     level: ''
-                })
+                });
                 break;
-            };
+            }
             case 'hide-options': {
                 this.setState({
                     isOptionToShow: false
-                })
+                });
                 break;
             }
             case 'picked-level-to-delete': {
@@ -96,7 +96,7 @@ export class App extends React.Component<{}, FormProps> {
                     level: ''
                 });
                 break;
-            };
+            }
             case 'new-tag-added': {
                 const { pickedLevels } = this.state;
                 const { level } = concern;
@@ -105,38 +105,38 @@ export class App extends React.Component<{}, FormProps> {
                     pickedLevels: addTagLevel
                 });
                 break;
-            };
+            }
             case 'hotel-input': {
                 this.setState({
                     hotel: concern.hotel
                 });
                 break;
-            };
+            }
             case 'message-input': {
                 this.setState({
                     message: concern.message
                 });
                 break;
-            };
+            }
             case 'show-calendar': {
                 this.setState({
                     isCalendarToShow: concern.isCalendarToShow
                 });
                 break;
-            };
+            }
             case 'date-is-picked': {
                 this.setState({
                     pickedDate: concern.pickedDate,
                     isCalendarToShow: false
                 });
                 break;
-            };
+            }
             case 'change-language': {
                 this.setState({
                     language: concern.language
                 });
                 break;
-            };
+            }
             case 'send-new-requiest': {
                 const { newDiveRequest } = concern;
                 async function upload() {
@@ -167,7 +167,7 @@ export class App extends React.Component<{}, FormProps> {
         message: '',
         when: this.when,
         newDiveRequest: undefined
-    })
+    });
     render() {
         const { state } = this;
         return <Form {...state} />;

@@ -58,7 +58,7 @@ export const mainPageLinkElements: MainPageElements[] = [
     //     ima: '/images/main-page/camping-ras-mohammed.jpg',
     //     imageAlt: 'дайвинг в шарме, дайвинг в шарм эль шейхе, заповедник рас мухаммед',
     //     buttonText: 'Узнать подробности',
-    //     buttonLink: '/diving-sharm-el-sheikh/ceny-diving-sharm.html'        
+    //     buttonLink: '/diving-sharm-el-sheikh/ceny-diving-sharm.html'
     // },
     // {
     //     title: 'Дайвинг в Шарм-эль-Шейхе',
@@ -68,6 +68,6 @@ export const mainPageLinkElements: MainPageElements[] = [
     //     ima: '/images/main-page/diving-sharm-el-sheikh.jpg',
     //     imageAlt: 'дайвинг в шарм эль шейхе, дайвинг в шарме, украинский дайвинг центр',
     //     buttonText: 'Подробнее',
-    //     buttonLink: '/diving-sharm-el-sheikh/ceny-diving-sharm.html'        
+    //     buttonLink: '/diving-sharm-el-sheikh/ceny-diving-sharm.html'
     // }
-]
+];

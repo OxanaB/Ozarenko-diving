@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 
 export class NdlCourses extends React.Component {
@@ -116,7 +116,7 @@ export class NdlCourses extends React.Component {
                     </a>
                     <p><a href="/kursy-nitrox-night-deep-dry-suit.html#DrySuit">Подробнее о курсе ---></a></p>
                 </div>
-                       
+
                 <div className="ndl-course">
                     <h2>Professional buoyancy diver 135$</h2>
                     <a href="/kursy-nitrox-night-deep-dry-suit.html#PPB">
@@ -133,7 +133,7 @@ export class NdlCourses extends React.Component {
                     </a>
                     <p><a href="/kurs-divemaster-ndl.html">Подробнее о курсе ---></a></p>
                 </div>
-            
+
             </div>
             <div className="center-page">
                 <a href="/contact-us.html" className="button center">ЗАБРОНИРОВАТЬ</a>
@@ -144,7 +144,7 @@ export class NdlCourses extends React.Component {
             <p>Обучение техническому дайвингу начинается с теоретической подготовки и отработки навыков подводного плавания. Вам нужно будет научиться идеально контролировать свое тело на малых глубинах, рассчитывать план погружений, обращаться с новым оборудованием. На первом курсе технодайвинга максимальная глубина составляет 42 метра, следующие курсы технического дайвинга открывают более манящие глубины от 50 и до более 100 метров.</p>
             <p>Подробности о курсах технодайвинга опубликованы в разделе <a href="/technical-diving.html">"Технический дайвинг"</a>.</p>
 
-        </ div >
+        </ div >;
     }
 }
 declare var window: any;

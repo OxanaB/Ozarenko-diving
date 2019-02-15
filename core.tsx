@@ -1,6 +1,6 @@
-import * as React from "react";
-import { MenuProps, makeMenu } from "./menu";
-import { mainMenu } from "./navigation";
+import * as React from 'react';
+import { MenuProps, makeMenu } from './menu';
+import { mainMenu } from './navigation';
 
 export interface CoreProps {
     menu?: MenuProps;
@@ -21,17 +21,17 @@ export class Core extends React.Component<CoreProps, CoreState> {
     state = {
         isToOpenDropDownMenu: false,
         isToSwitchToCloseButton: false
-    }
+    };
     render() {
         return <>
             <MenuForDesktop {...this.props.menu || defaultMenu} />
             {
                 !this.state.isToSwitchToCloseButton ?
                     <div className="dropdown" onClick={() => {
-                        this.setState({ isToOpenDropDownMenu: true, isToSwitchToCloseButton: true })
+                        this.setState({ isToOpenDropDownMenu: true, isToSwitchToCloseButton: true });
                     }}></div>
                     : <div className="close" onClick={() => {
-                        this.setState({ isToOpenDropDownMenu: false, isToSwitchToCloseButton: false })
+                        this.setState({ isToOpenDropDownMenu: false, isToSwitchToCloseButton: false });
                     }}></div>
             }
             {
@@ -40,6 +40,6 @@ export class Core extends React.Component<CoreProps, CoreState> {
                     : null
             }
             {this.props.children}
-        </>
+        </>;
     }
 }

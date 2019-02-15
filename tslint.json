@@ -1,10 +1,21 @@
 {
-	"rules": {
-		"curly": true,
-		"triple-equals": true,
-		"eofline": true,
-		"import-spacing": true,
-		"no-trailing-whitespace": true,
-		"no-irregular-whitespace": true
-	}
+    "rules": {
+        "semicolon": true,
+        "triple-equals": [ true, "allow-null-check" ],
+        "switch-default": true,
+        "no-switch-case-fall-through": false,
+        "no-unused-expression": false,
+        "no-use-before-declare": false,
+        "quotemark": [ true, "single", "jsx-double" ],
+        "curly": [true, "ignore-same-line"],
+        "indent": [true, "spaces"],
+        "eofline": true,
+        "no-inferrable-types": true,
+        "no-debugger": true,
+        "no-trailing-whitespace": true,
+        "one-line": [ true, "check-open-brace" ],
+        "align": [ true, "parameters", "statements" ],
+        "arrow-parens": [ true, "ban-single-arg-parens" ],
+        "no-duplicate-imports": false
+    }
 }

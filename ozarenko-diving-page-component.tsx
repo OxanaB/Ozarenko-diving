@@ -23,10 +23,10 @@ export class OzarenkoDivingPage extends React.Component {
                                 className="button"
                                 href={elements.buttonLink}>{elements.buttonText}</a>
                         </div>
-                    </div>
+                    </div>;
                 })}
             </div>
-        </>
+        </>;
 
     }
 }

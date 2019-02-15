@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export class SpecialtyNdlLinks extends React.Component {
     render() {
@@ -28,6 +28,6 @@ export class SpecialtyNdlLinks extends React.Component {
                 <img src="/images/courses/card-drysuit-diver-ndl.jpg" title="Курс Dry suit diver NDL" alt="обучение дайвингу Одесса, курсы дайвинга Одесса, обучение дайвингу, курсы дайвинга, стоимость курса diver ndl" />
             </a>
         </div>
-    </ div>
+    </ div>;
     }
 }

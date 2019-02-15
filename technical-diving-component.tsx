@@ -27,7 +27,7 @@ export class TechnicalDiving extends React.Component {
                         <h2>Технический дивизион NDL</h2></a>
                 </div>
             </div>
-            
+
                 <h2 className="center"><strong>Цены на технические погружения в Одессе</strong></h2>
                 <p>В стоимость технических погружений включены один декомпрессионый дайв в день с персональным гидом Виктором Озаренко, воздушная спарка или баллоны на сайдмаунт,
                 грузы. Ваши газы и газы гида оплачиваются дополнительно.</p>
@@ -40,9 +40,9 @@ export class TechnicalDiving extends React.Component {
                             <td className="subtitle">{priceListTechnicalDaily.subtitle}</td>
                             <td></td>
                         </tbody>
-                    </table>
+                    </table>;
                 })}
-            
+
             <h2 className="center"><strong>Аренда снаряжения</strong></h2>
             <div className="price-technical-rent">
                 {map(priceListTechnicalRent, (priceListTechnicalRent, index) => {
@@ -57,7 +57,7 @@ export class TechnicalDiving extends React.Component {
                                 <td></td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table>;
                 })}
             </div>
             <h2 className="center"><strong>Видео с наших технических погружений</strong></h2>
@@ -79,7 +79,7 @@ export class TechnicalDiving extends React.Component {
                     <iframe className="video" src="https://www.youtube.com/embed/Z2BZCj95DUU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
                 </div>
             </div>
-        </ div>
+        </ div>;
     }
 }
 

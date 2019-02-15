@@ -1,7 +1,7 @@
 export interface TechDivingPrice {
-    title: string,
-    subtitle: string,
-    price: string
+    title: string;
+    subtitle: string;
+    price: string;
 }
 
 export const priceListTechnicalDaily: TechDivingPrice[] = [
@@ -10,7 +10,7 @@ export const priceListTechnicalDaily: TechDivingPrice[] = [
         subtitle: 'одно декомпрессионное погружение в день + рекреационное погружение на остатках газа',
         price: '150 $'
     }
-]
+];
 
 export const priceListTechnicalRent: TechDivingPrice[] = [
     {
@@ -73,4 +73,4 @@ export const priceListTechnicalRent: TechDivingPrice[] = [
         subtitle: '12 литровый / 15 литровый баллон',
         price: '6 $ / 8 $'
     }
-]
+];

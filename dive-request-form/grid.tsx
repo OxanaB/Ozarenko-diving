@@ -23,7 +23,7 @@ export class Grid extends React.Component<GridProps> {
             <thead>
                 <tr>
                     {
-                        localizer.useCorrectLanguage(language).days.map((day) => {
+                        localizer.useCorrectLanguage(language).days.map(day => {
                             return <th key={day.toString()}> {day}
                             </th>;
                         })
@@ -51,7 +51,7 @@ export class Grid extends React.Component<GridProps> {
 
 
             </tbody>
-        </>
+        </>;
     }
 }
 

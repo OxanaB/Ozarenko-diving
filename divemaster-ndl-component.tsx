@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 import { Slider } from './slider-component';
 import { SpecialtyNdlLinks } from './specialty-links-ndl';
@@ -8,7 +8,7 @@ export class DivemasterNdl extends React.Component {
         return <div className="page-container">
             <h1>Первый профессиональный курс дайвинга - Divemaster NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderDivemaster} className={"vertical"} />
+                <Slider images={sliderDivemaster} className={'vertical'} />
                 <div>
 
                     <p>Курс Дайвмастер (Divemaster NDL) - это первый профессиональный уровень в дайвинге. Дайвер успешно прошедший курс Divemaster NDL получает возможность работать и зарабатывать в дайвиндустрии как дайвгид, помогать инструктору при проведении курсов, проводить пробные погружения.</p>
@@ -48,7 +48,7 @@ export class DivemasterNdl extends React.Component {
                 <a href="/diving-courses-ndl.html" className="button center">Вернуться назад к структуре курсов</a>
             </div>
 
-        </ div>
+        </ div>;
     }
 }
 const sliderDivemaster: string[] = [
@@ -56,7 +56,7 @@ const sliderDivemaster: string[] = [
     '/images/courses/divemaster-ndl-2.jpg',
     '/images/courses/divemaster-ndl-3.jpg',
     '/images/courses/divemaster-ndl-4.JPG',
-]
+];
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(DivemasterNdl);

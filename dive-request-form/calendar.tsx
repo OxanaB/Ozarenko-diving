@@ -22,7 +22,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
         anchorDate: new Date(),
         year: new Date().getFullYear().toString(),
         month: monthToString(localizer.useCorrectLanguage(this.props.language).months, new Date().getMonth())
-    }
+    };
     private when = (concern: MonthViewerConcern) => {
         const { anchorDate } = this.state;
         const { language } = this.props;
@@ -38,7 +38,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
                     anchorDate: newAnchorDate
                 });
                 break;
-            };
+            }
             case 'show-next-month': {
                 const newAnchorDate = new Date(anchorDate.getFullYear(), anchorDate.getMonth() + 1);
                 const months = localizer.useCorrectLanguage(language).months;
@@ -50,7 +50,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
                     year: newYear
                 });
                 break;
-            };
+            }
             case 'month-choise': {
                 const { month }  = concern;
                 const months = localizer.useCorrectLanguage(language).months;
@@ -63,7 +63,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
                     month: monthText,
                 });
                 break;
-            };
+            }
             case 'year-choise': {
                 const { year } = concern;
                 const { anchorDate } = this.state;
@@ -76,7 +76,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
                     year: yearText
                 });
                 break;
-            };
+            }
             default: return broke(concern);
         }
     }
@@ -91,6 +91,6 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
                     this.props.when(concern);
             }} />
             </table>
-        </div>
+        </div>;
     }
 }

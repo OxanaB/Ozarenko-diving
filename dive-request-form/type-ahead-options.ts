@@ -67,5 +67,5 @@ export const diveLevelOptions = [
     'Instructor NDL rank III',
     'Nitrox diver',
     'Deep diver'
-]
+];
 

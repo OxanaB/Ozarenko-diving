@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 import { Slider } from './slider-component';
 
@@ -7,7 +7,7 @@ export class NoviceDiverNdl extends React.Component {
         return <div className="page-container">
             <h1>Начальный курс обучения дайвингу Novice diver NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderNovice} className={"vertical"} />
+                <Slider images={sliderNovice} className={'vertical'} />
                 <div>
 
                     <p>На начальном курсе обучения студенты осваивают основы дайвинга. Квалификация Novice Diver NDL позволяет совершать погружение под наблюдением профессионала (дайвмастера или инструктора) на глубину не более 12 метров.</p>
@@ -33,7 +33,7 @@ export class NoviceDiverNdl extends React.Component {
             <a href="/diving-courses-ndl.html" className="button center">Вернуться назад к структуре курсов</a>
             </div>
 
-        </ div>
+        </ div>;
     }
 }
 const sliderNovice: string[] = [
@@ -41,7 +41,7 @@ const sliderNovice: string[] = [
     'images/courses/novice-diver-ndl-2.jpg',
     'images/courses/novice-diver-ndl-3.jpg',
     'images/courses/novice-diver-ndl-4.jpg',
-]
+];
 
 declare var window: any;
 if (typeof window !== 'undefined') {

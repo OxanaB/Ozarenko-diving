@@ -45,20 +45,21 @@ export class DiveLevel extends React.Component<DiveLevelProps> {
         return <>
             <label>
             <div>{localizer.useCorrectLanguage(language).form[3]}</div>
-                <div><input type="text" value={level} placeholder='Сертификат (если есть)'
+                <div><input type="text" value={level} placeholder="Сертификат (если есть)"
                     onChange={e => {
                         this.props.when({
                             about: 'level-input',
                             level: e.currentTarget.value
-                        })
+                        });
                     }}
                     onKeyDown={({ keyCode }) => {
                         if (keyCode === 13) {
                             this.props.when({
                                 about: 'new-tag-added',
                                 level
-                            })
-                        } if (keyCode === 27) {
+                            });
+                        }
+                        if (keyCode === 27) {
                             this.props.when({
                                 about: 'hide-options',
                                 isOptionToShow
@@ -75,7 +76,7 @@ export class DiveLevel extends React.Component<DiveLevelProps> {
                                         about: 'level-picked',
                                         level: machedOption,
                                     });
-                                }}>{machedOption}</a></div>
+                                }}>{machedOption}</a></div>;
 
                         })}</div>
                         : null
@@ -88,10 +89,10 @@ export class DiveLevel extends React.Component<DiveLevelProps> {
                             this.props.when({
                                 about: 'picked-level-to-delete',
                                 level
-                            })
-                        }}><sup>x</sup></a></div>
+                            });
+                        }}><sup>x</sup></a></div>;
                 })}
             </label>
-        </>
+        </>;
     }
 }

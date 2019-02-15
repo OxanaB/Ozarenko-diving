@@ -14,7 +14,7 @@ export function intersect(original: string[], compare: string[]): string[] {
     original.forEach(element => {
         if (compare.includes(element)) {
             matched.push(element);
-        };
+        }
     });
     return matched;
 

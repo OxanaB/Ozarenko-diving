@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { Core } from './core';
 import { mainMenu } from './navigation';
 import { broke } from './utils';
-import { MenuProps } from "./menu";
+import { MenuProps } from './menu';
 
 export function enableClient(Content: new (props: {}) => React.Component<{}, {}, any>) {
     function DynamicPage(props: MenuProps) {

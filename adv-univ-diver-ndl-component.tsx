@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 import { Slider } from './slider-component';
 import { SpecialtyNdlLinks } from './specialty-links-ndl';
@@ -8,7 +8,7 @@ export class AdvUniDiverNdl extends React.Component {
         return <div className="page-container">
             <h1>Курс Advanced Universal diver NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderAdvUni} className={"vertical"} />
+                <Slider images={sliderAdvUni} className={'vertical'} />
                 <div>
                     <p>На курсе ADVANCED UNIVERSAL DIVER NDL вы полностью изучаете 3 специализации NDL (глубоководные погружения, ночные погружения и подводное ориентирование). </p>
                     <p>Курс состоит из 1 погружения по подводной навигации, 1 глубоководного погружения до 39 метров и 2 ночных погружения.</p>
@@ -42,14 +42,14 @@ export class AdvUniDiverNdl extends React.Component {
                 <a href="/diving-courses-ndl.html" className="button center">Вернуться назад к структуре курсов</a>
             </div>
 
-        </ div>
+        </ div>;
     }
 }
 const sliderAdvUni: string[] = [
     '/images/courses/advanced-universal-diver-ndl-1.jpg',
     '/images/courses/advanced-universal-diver-ndl-2.jpg',
     '/images/courses/advanced-universal-diver-ndl-3.jpg',
-]
+];
 
 declare var window: any;
 if (typeof window !== 'undefined') {

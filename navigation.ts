@@ -6,7 +6,7 @@ export interface MainMenu {
 export interface SubMenu {
     name: string;
     url: string;
-    subMenu?: SubMenu[]
+    subMenu?: SubMenu[];
 }
 
 export const about: SubMenu[] = [
@@ -53,7 +53,7 @@ export const padiCourses: SubMenu[] = [
         name: '',
         url: '',
     }
-]
+];
 
 export const ndlCourses: SubMenu[] = [
     {
@@ -84,7 +84,7 @@ export const ndlCourses: SubMenu[] = [
         name: 'Специализированные курсы NDL',
         url: '/kursy-nitrox-night-deep-dry-suit.html',
     }
-]
+];
 
 export const courses: SubMenu[] = [
     {

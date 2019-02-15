@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { map } from './utils';
 import { rebreatherPricelistCourses, rebreatherPricelistAir, rebreatherPricelistDecoPro, rebreatherPricelistNormoxic, rebreatherPricelistHypoxic } from './rebreather-price';
 import { enableClient } from './client';
@@ -45,7 +45,7 @@ export class Rebreather extends React.Component {
                             <td></td>
                         </tr>
                     </tbody>
-                </table>
+                </table>;
             })}
 
             <h2>Цены на погружения на ребризере в Шарм-эль-Шейхе</h2>
@@ -67,7 +67,7 @@ export class Rebreather extends React.Component {
                                     <td>{rebreatherDailyAir.price}</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table>;
                     })}
                 </div>
                 <div>
@@ -80,7 +80,7 @@ export class Rebreather extends React.Component {
                                     <td>{rebreatherDailyDeco.price}</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table>;
                     })}
                 </div>
 
@@ -94,7 +94,7 @@ export class Rebreather extends React.Component {
                                     <td>{rebreatherDailyNormox.price}</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table>;
                     })}
                 </div>
                 <div>
@@ -107,11 +107,11 @@ export class Rebreather extends React.Component {
                                     <td>{rebreatherDailyHypox.price}</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table>;
                     })}
                 </div>
             </div>
-        </ div>
+        </ div>;
     }
 }
 

@@ -17,7 +17,7 @@ export class IntroDiving extends React.Component {
                     <p>Пробное погружение можно делать как с берега, так и во время морской прогулки на дайверской яхте к рифам острова Тиран или в заповедник Рас Мухаммед.</p>
                 </div>
                 <div className="images-intro">
-                    <Slider images={sliderIntroDive} className={"special-intro"} />
+                    <Slider images={sliderIntroDive} className={'special-intro'} />
                     <h5>Цены на дайвинг экскурсии и начальное обучение</h5>
                 </div>
             </div>
@@ -30,7 +30,7 @@ export class IntroDiving extends React.Component {
                 <p>Наконец, самый большой плюс второго варианта с чего начать дайвинг: стоимость программы Discover Scuba Diving будет вычтена из курса Open water diver PADI, если вы решите продолжить обучение дайвингу в нашем клубе.</p>
             </div>
             <h2>Цены на дайвинг для начинающих</h2>
-            
+
                 {map(pricelistIntro, (priceIntro, index) => {
                     return <table className="price-table-big" key={index}>
                         <tbody>
@@ -38,15 +38,15 @@ export class IntroDiving extends React.Component {
                                 <td className="title">{priceIntro.title}</td>
                                 <td className="digits">{priceIntro.price}</td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td className="subtitle">{priceIntro.subtitle}</td>
                                 <td></td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table>;
                 })}
-            
-        </div>
+
+        </div>;
     }
 }
 

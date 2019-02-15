@@ -6,7 +6,7 @@ export class DiveRequest extends React.Component {
     render() {
         return <div className="page-container">
             <App />
-        </div>
+        </div>;
     }
 }
 declare var window: any;

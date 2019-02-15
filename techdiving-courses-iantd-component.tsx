@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 
 export class TechdivingCoursesIantd extends React.Component {
@@ -143,7 +143,7 @@ export class TechdivingCoursesIantd extends React.Component {
                                 <p>Всю линйеку курсов технического дайвинга проводит инструктор-тренер с более чем 40 летним опытом подводного плавания <a href="/about-viktor-ozarenko.html">Виктор Озаренко</a>. Курсы можно проходить как в Шарм эль Шейхе, так и в Дахабе.</p>
                                 <p>Также есть возможность прохождения курсов технического дайвинга в конфигурации <a href="/sidemount.html">сайдмаунт</a>, который поможет разгрузить спину и будет легче входить и выходить из воды в сложных местах для погружений с берега в Дахабе. Если у вас еще нет сертификата сайдмаунт можно будет совместить любой технический курс с курсом сайдмаунт.</p>
                         </div>
-                </div>
+                </div>;
         }
 }
 

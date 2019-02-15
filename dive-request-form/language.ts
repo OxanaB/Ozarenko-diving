@@ -40,6 +40,6 @@ const en: Localization = {
 const languages: Languages = {
     'ru-RU': ru,
     'en-US': en
-}
+};
 
 export const localizer = new Localizer(languages, en);

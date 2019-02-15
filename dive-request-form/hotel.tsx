@@ -3,7 +3,7 @@ import { localizer } from './language';
 
 export interface HotelConcern {
     about: 'hotel-input';
-    hotel: string
+    hotel: string;
 }
 
 export interface HotelProps {
@@ -20,9 +20,9 @@ export class Hotel extends React.Component<HotelProps> {
                 <div>{localizer.useCorrectLanguage(language).form[5]}</div>
                 <div><input type="text" value={hotel}
                     onChange={e => {
-                        this.props.when({ about: 'hotel-input', hotel: e.currentTarget.value })
+                        this.props.when({ about: 'hotel-input', hotel: e.currentTarget.value });
                     }} /></div>
             </label>
-        </>
+        </>;
     }
 }

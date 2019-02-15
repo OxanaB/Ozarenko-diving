@@ -1,6 +1,6 @@
-import { MainMenu, SubMenu } from "./navigation";
-import * as React from "react";
-import { map } from "./utils";
+import { MainMenu } from './navigation';
+import * as React from 'react';
+import { map } from './utils';
 
 export interface FooterProps {
     mainMenus: MainMenu[];
@@ -25,7 +25,7 @@ export class Footer extends React.Component<FooterProps> {
                         }</div>
 
                         }
-                    </div>
+                    </div>;
                 })}
             </div>
             <div id="fb-root">
@@ -52,7 +52,7 @@ export class Footer extends React.Component<FooterProps> {
 
             </div>
             <p>© 2019 ДАЙВИНГ КЛУБ ИСКАТЕЛИ МОРСКИХ СОКРОВИЩ. Технический и рекреационный дайвинг с Виктором Озаренко. Одесса (Украина).</p>
-        </div>
+        </div>;
     }
 }
 

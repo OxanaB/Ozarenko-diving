@@ -44,25 +44,25 @@ export class MonthViewer extends React.Component<MonthViewerProps> {
                     anchorDate, month, year
                  });
             }}></a>
-            <select name="month" id="month" value={month} onChange={(e) => {
+            <select name="month" id="month" value={month} onChange={e => {
                 this.props.when({
                     about: 'month-choise',
                     anchorDate,
                     month: e.currentTarget.value
-                })
+                });
             }}><option key="emptyMonth"></option>
                 {
                     localizer.useCorrectLanguage(language).months.map(month => {
-                        return <option key={month}>{month}</option>
+                        return <option key={month}>{month}</option>;
                     })
                 }
             </select>
-            <select name="year" id="year" value={year} onChange={(e) => {
+            <select name="year" id="year" value={year} onChange={e => {
                 this.props.when({
                     about: 'year-choise',
                     anchorDate,
                     year: e.currentTarget.value
-                })
+                });
             }}>
                 <option id="2016">2016</option>
                 <option id="2017">2017</option>
@@ -80,8 +80,8 @@ export class MonthViewer extends React.Component<MonthViewerProps> {
                 this.props.when({
                     about: 'show-next-month',
                     anchorDate, month, year
-                })
+                });
             }}></a>
-        </div>
+        </div>;
     }
 }

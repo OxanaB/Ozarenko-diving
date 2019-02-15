@@ -51,7 +51,7 @@ export class NorthRoutes extends React.Component {
                 <p>День 7: Check-out. Трансфер в аэропорт или отель</p>
             </div>
 
-        </div>
+        </div>;
     }
 }
 

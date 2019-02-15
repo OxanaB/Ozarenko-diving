@@ -6,7 +6,7 @@ export class ViktorOzarenko extends React.Component {
     render() {
         return <div className="page-container">
             <div className="slider-align-left">
-                <Slider images={sliderViktor} className={"vertical"} />
+                <Slider images={sliderViktor} className={'vertical'} />
                 <div className="text">
                     <h1>Виктор Озаренко</h1>
                     <p>Командор Клуба "Искатели морских сокровищ"​, сын двух городов-героев Одессы и
@@ -48,7 +48,7 @@ export class ViktorOzarenko extends React.Component {
                 </div>
             </div>
 
-        </ div>
+        </ div>;
     }
 }
 const sliderViktor: string[] = [
@@ -60,7 +60,7 @@ const sliderViktor: string[] = [
     '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo6.jpg',
     '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo7.jpg',
     '/images/about-us/viktor-ozarenko/viktor_ozarenko_photo8.jpg',
-]
+];
 
 declare var window: any;
 if (typeof window !== 'undefined') {

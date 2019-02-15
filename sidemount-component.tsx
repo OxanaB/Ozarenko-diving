@@ -7,8 +7,8 @@ export class Sidemount extends React.Component {
         return <div className="page-container">
             <h1>Курсы обучения дайвингу в сайдмаунте</h1>
             <div className="slider-align-left">
-            <Slider images={sliderSidemount} className={"special-sidemount"}/>
-            
+            <Slider images={sliderSidemount} className={'special-sidemount'}/>
+
 
             <h2>Сайдмаунт - конфигурация с боковым расположением баллонов </h2>
 
@@ -77,7 +77,7 @@ export class Sidemount extends React.Component {
         подходит для начальных курсов, а для нормального положения баллонов в воде требует доработки в виде двух подвижных «Д»
         колец , грузовая система видимо продумывалась «на бегу», но для проката в дайвинг-центре можно не заморачиваться, так
 как используется грузовой пояс.</p>
-<p>«<a href="https://www.amazon.com/gp/product/B0064PHZB2/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=ozarenkodivin-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B0064PHZB2&amp;linkId=af405311459cdc82cc0402289feee006">Hollis-100</a>» попытка закрыть универсальностью широкий диапазон дайвинга закончилась этаким
+<p>«Hollis-100» попытка закрыть универсальностью широкий диапазон дайвинга закончилась этаким
     «дирижаблем» для открытой воды – еще туда сюда, а вот для узкостей силуэт великоват.</p>
     <p>«Dive Rite» на второй позиции, удобней «Hollis’a-50», выигрывает продуманным расположением грузовой системы, очень
     удобными подвижными «Д» кольцами. Могу отметить, что лучше «Д» колец я не встречал. Можно начинать учится и потом
@@ -87,14 +87,14 @@ export class Sidemount extends React.Component {
     готова к использованию после настройки «размера» и не требует доработки.</p>
 
 <p>Командор клуба "Искатели морских сокровищ", <a href="/about-viktor-ozarenko.html">Виктор Озаренко</a></p>
-        </ div>
+        </ div>;
     }
 }
 const sliderSidemount: string[] = [
     '/images/technical-diving/sidemount/sidemount-3.jpg',
     '/images/technical-diving/sidemount/sidemount-1.jpg',
     '/images/technical-diving/sidemount/sidemount-2.jpg',
-]
+];
 declare var window: any;
 if (typeof window !== 'undefined') {
     enableClient(Sidemount);

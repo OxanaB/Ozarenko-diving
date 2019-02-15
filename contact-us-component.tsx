@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 
 export class ContactUs extends React.Component {
@@ -16,7 +16,7 @@ export class ContactUs extends React.Component {
                     <iframe className="booking" src="https://goo.gl/forms/lyhFZT7DxAwRLBZH2" width="640" height="1158" />
                 </div>
             </div>
-        </ div>
+        </ div>;
     }
 }
 declare var window: any;

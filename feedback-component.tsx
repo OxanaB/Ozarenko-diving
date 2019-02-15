@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { map } from './utils';
-import { clientsFeedback } from './feedback_array'
+import { clientsFeedback } from './feedback_array';
 import { enableClient } from './client';
 
 export class Feedback extends React.Component {
@@ -15,9 +15,9 @@ export class Feedback extends React.Component {
                     <h5>{clientsFeedback.from}</h5>
                     <p>{clientsFeedback.text}</p>
                     </div>
-                </div>
-            })} 
-        </ div>
+                </div>;
+            })}
+        </ div>;
     }
 }
 

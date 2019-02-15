@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 import { Slider } from './slider-component';
 
@@ -8,7 +8,7 @@ export class SpecialtyDiverNDL extends React.Component {
             <h1>Специализированные курсы NDL</h1>
             <h2 id="Nitrox">Курс Nitrox diver</h2>
             <div className="ndl-course-page-description">
-                <Slider images={sliderNitrox} className={"vertical"} />
+                <Slider images={sliderNitrox} className={'vertical'} />
                 <div>
                     <p>Nitrox  – это газовая смесь, позволяющая продлить бездекомпрессионые пределы, которые необходимо соблюдать. При дыхании обогащенным воздухом во время погружения в Ваш организм поступает меньше азота и больше кислорода, чем при дыхнии обычным воздухом.</p>
                     <p>Основное преимущество обогащенного воздуха в повышении безопасности погружения при соблюдении установленных пределов.</p>
@@ -30,7 +30,7 @@ export class SpecialtyDiverNDL extends React.Component {
             </div>
             <h2 id="Deep">Курс  Deep diver</h2>
             <div className="ndl-course-page-description">
-                <Slider images={sliderDeep} className={"special"} />
+                <Slider images={sliderDeep} className={'special'} />
                 <div>
                     <p>Глубоководные погружения всегда манили людей. Чем же так манит всех этих людей глубина? Ведь там темнее и холоднее?! На большей глубине сильнее расходуется воздух, что ограничивает время пребывания под водой. С увеличением глубины уменьшаются временные пределы пребывания под водой, поскольку усиливается насыщение тканей азотом. Все это правда. Но глубина все равно привлекает своей таинственностью. Так в чем же дело? В чем причины того, что люди совершают глубоководные погружения?</p>
                     <ul>
@@ -60,7 +60,7 @@ export class SpecialtyDiverNDL extends React.Component {
 
             <h2 id="Night">Курс Night diver</h2>
             <div className="ndl-course-page-description">
-                <Slider images={sliderNight} className={"vertical"} />
+                <Slider images={sliderNight} className={'vertical'} />
                 <div>
                     <p>Ночными погружениями считаются погружения, которые проводятся с наступлением темноты. Именно в темное время суток появляется возможность созерцать многих подводных обитателей, которые прячутся от своих врагов днем, а то и просто спят в своих «домах». В тропиках практически только ночью можно увидеть лобстеров, омаров, лангустов и креветок. Только ночью при свете фонаря можно наблюдать танго «испанского танцора».</p>
                     <p>Свет фонаря не рассеивается и делает краски кораллов и рыб более яркими и насыщенными. Именно ночью некоторые рыбы подпускают к себе очень близко и это прекрасная возможность их сфотографировать, да и выглядят в свете фонаря они порой по-другому. Ночные погружения это возможность взглянуть на уже знакомые места по-другому и получить новые впечатления, которые будут просто незабываемы.</p>
@@ -72,23 +72,23 @@ export class SpecialtyDiverNDL extends React.Component {
 
             <a href="/diving-courses-ndl.html" className="button center">Вернуться назад к структуре курсов</a>
 
-        </ div>
+        </ div>;
     }
 }
 const sliderNight: string[] = [
     '/images/courses/night-diver-ndl-1.jpg',
     '/images/courses/night-diver-ndl-2.jpg',
-]
+];
 const sliderDeep: string[] = [
     '/images/courses/deep-diver-ndl-1.jpg',
     '/images/courses/deep-diver-ndl-2.jpg',
-]
+];
 const sliderNitrox: string[] = [
     '/images/courses/nitrox-diver-ndl-1.jpg',
     '/images/courses/nitrox-diver-ndl-2.jpg',
     '/images/courses/nitrox-diver-ndl-3.jpg',
     '/images/courses/nitrox-diver-ndl-4.jpg',
-]
+];
 
 declare var window: any;
 if (typeof window !== 'undefined') {

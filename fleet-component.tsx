@@ -9,7 +9,7 @@ export class Fleet extends React.Component {
             <p>Для чудесного отдыха в море очень важно правильно выбрать яхту, на которой вы будете жить и нырять в течение недели во время дайвинг сафари на Красном море.</p>
                 <h2>яхта South Moon</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderSouthMoon} className={"safariboat"} />
+                <Slider images={sliderSouthMoon} className={'safariboat'} />
                 <div className="description">
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -26,7 +26,7 @@ export class Fleet extends React.Component {
             </div>
                 <h2>яхта Brina-1</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderBrina} className={"safariboat"} />
+                <Slider images={sliderBrina} className={'safariboat'} />
                 <div className="description">
                     <p>Яхта рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -45,7 +45,7 @@ export class Fleet extends React.Component {
 
                 <h2>яхта Carlton Queen</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderCarltonQueen} className={"safariboat"} />
+                <Slider images={sliderCarltonQueen} className={'safariboat'} />
                 <div className="description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -64,7 +64,7 @@ export class Fleet extends React.Component {
             </div>
                 <h2>яхта Carlton</h2>
             <div className="wrapper-two-columns">
-                <Slider images={sliderCarltonBoat} className={"safariboat"} />
+                <Slider images={sliderCarltonBoat} className={'safariboat'} />
                 <div className="description">
                     <p>Рассчитана на 20 человек</p>
                     <p>Нижняя палуба:</p>
@@ -84,7 +84,7 @@ export class Fleet extends React.Component {
                     <p>Маршруты: Север, Северные рэки, Бразерс</p>
                 </div>
             </div>
-        </div>
+        </div>;
     }
 }
 const sliderBrina: string[] = [
@@ -98,7 +98,7 @@ const sliderBrina: string[] = [
     '/images/liveaboard/boat-brina-1-double.jpg',
     '/images/liveaboard/boat-brina-1-twin.jpg',
 
-]
+];
 
 const sliderCarltonQueen: string[] = [
     '/images/liveaboard/boat-carlton-queen.jpg',
@@ -112,7 +112,7 @@ const sliderCarltonQueen: string[] = [
     '/images/liveaboard/boat-carlton-queen-twin.jpg',
     '/images/liveaboard/boat-carlton-queen-steering-wheel.jpg',
     '/images/liveaboard/boat-carlton-queen-sundeck.jpg',
-]
+];
 
 const sliderSouthMoon: string[] = [
     '/images/liveaboard/boat-south-moon.jpg',
@@ -125,7 +125,7 @@ const sliderSouthMoon: string[] = [
     '/images/liveaboard/boat-south-moon-salon-2.jpg',
     '/images/liveaboard/boat-south-moon-twin.jpg',
     '/images/liveaboard/boat-south-moon-bunk.jpg',
-]
+];
 
 const sliderCarltonBoat: string[] = [
     '/images/liveaboard/boat-carlton.jpg',
@@ -134,7 +134,7 @@ const sliderCarltonBoat: string[] = [
     '/images/liveaboard/boat-carlton-suite.jpg',
     '/images/liveaboard/boat-carlton-upperdeckbar.jpg',
     '/images/liveaboard/boat-carlton-kitchen.jpg',
-]
+];
 
 declare var window: any;
 if (typeof window !== 'undefined') {

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { enableClient } from './client';
 import { Slider } from './slider-component';
 
@@ -7,7 +7,7 @@ export class DiverNdl extends React.Component {
         return <div className="page-container">
             <h1>Начальный курс обучения дайвингу Diver NDL</h1>
             <div className="ndl-course-page-description">
-                <Slider images={sliderDiver} className={"special"} />
+                <Slider images={sliderDiver} className={'special'} />
                 <div>
                     <p>Курс Diver NDL это основной базовый курс для начинающих аквалангистов. В процессе прохождения теоретической части этого курса Вы получите необходимые знания по теории дайвинга, планированию погружений, оборудованию, физике и физиологии дайвинга.</p>
                     <p>Во время прохождения практической части этого курса наши инструкторы научат Вас безопасному плаванию с аквалангом. Дайвинг это не экстремальное занятие, и тем не менее и здесь есть ряд правил, которые позволят Вам максимально комфортно чувствовать себя под водой и при  этом оставлять после себя окружующий подводный мир нетронутым.</p>
@@ -17,7 +17,7 @@ export class DiverNdl extends React.Component {
                     <p>В стоимость включены учебные материалы, снаряжение для дайвинга. Сертификационный взнос в NDL оплачивается дополнительно и стоит 35$.</p>
                     <p>В стоимость курса включены оборудование для дайвинга, трансфер из отеля, учебные материалы и работа инструктора. Дополнительно оплачивается сертификационный взнос 35$,.</p>
                     <p>Предложение действует при завершении всех требований курса за три дня. В случае если вы не успеваете сдать все навыки за три дня и вам требуется дополнительный четвертый день, курс оплачивается по полной стоимости 315$.</p>
-                    
+
             </div>
 
             <div className="center-align">
@@ -35,7 +35,7 @@ export class DiverNdl extends React.Component {
                 </div>
                 <a href="/diving-courses-ndl.html" className="button center">Вернуться назад к структуре курсов</a>
             </div>
-        </ div>
+        </ div>;
     }
 
 }
@@ -44,7 +44,7 @@ const sliderDiver: string[] = [
     '/images/courses/diver-ndl-2.jpg',
     '/images/courses/diver-ndl-3.jpg',
     '/images/courses/diver-ndl-4.jpg',
-]
+];
 
 declare var window: any;
 if (typeof window !== 'undefined') {

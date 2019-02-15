@@ -24,7 +24,7 @@ export const dailyDivingPrice: PriceList[] = [
     	position: 'Береговой дайв на домашнем рифе',
         price: '30€'
 	},
-	
+
     {
     	position: 'Обед и напитки на корабле',
         price: '7€'
@@ -33,7 +33,7 @@ export const dailyDivingPrice: PriceList[] = [
     	position: 'Ночной дайв с корабля',
         price: '50€'
 	},
-	
+
     {
     	position: 'Ночной дайв с берега',
         price: '40€'
@@ -58,7 +58,7 @@ export const dailyDivingPrice: PriceList[] = [
     	position: 'Индивидуальный корабль',
         price: 'от 500€'
     }
-]
+];
 
 export const dailyExtrasPrise: PriceList [] = [
 	{
@@ -81,7 +81,7 @@ export const dailyExtrasPrise: PriceList [] = [
     	position: 'Millon Hope (самый крупный wreck)',
         price: '25€'
 	}
-]
+];
 
 export const dailyRentPrice: PriceList [] = [
 	{
@@ -115,13 +115,13 @@ export const dailyRentPrice: PriceList [] = [
 	{
     	position: 'Фонарик',
         price: '8€'
-	}	
-]
+	}
+];
 
 export interface IntroDivePrice {
-    title: string,
-    subtitle: string,
-    price: string
+    title: string;
+    subtitle: string;
+    price: string;
 }
 
 export const pricelistIntro: IntroDivePrice[] = [
@@ -161,4 +161,4 @@ export const pricelistIntro: IntroDivePrice[] = [
 		price: '-50%'
 	},
 
-]
+];

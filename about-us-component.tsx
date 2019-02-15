@@ -74,7 +74,7 @@ export class Team extends React.Component {
                 </div>
             </div>
 
-        </ div>
+        </ div>;
     }
 }
 

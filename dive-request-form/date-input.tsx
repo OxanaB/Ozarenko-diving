@@ -21,7 +21,7 @@ interface State {
 export class DateInput extends React.Component<DateInputProps, State> {
     state = {
         text: this.props.pickedDate === null ? '' : this.props.pickedDate.toLocaleDateString()
-    }
+    };
     render() {
         const { text } = this.state;
         const { language } = this.props;
@@ -35,7 +35,7 @@ export class DateInput extends React.Component<DateInputProps, State> {
                             this.props.when({
                                 about: 'show-calendar',
                                 isCalendarToShow: true
-                            })
+                            });
                         }}
                         onChange={e => {
                             this.setState({ text: e.currentTarget.value });
@@ -45,7 +45,7 @@ export class DateInput extends React.Component<DateInputProps, State> {
                                 this.props.when({
                                     about: 'show-calendar',
                                     isCalendarToShow: false
-                                })
+                                });
                             }
                         }}
                     />
@@ -54,6 +54,6 @@ export class DateInput extends React.Component<DateInputProps, State> {
                         <path fill="none" d="M0 0h24v24H0z" /></svg>
                 </div>
             </label>
-        </>
+        </>;
     }
 }

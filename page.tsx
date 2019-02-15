@@ -25,7 +25,7 @@ export class Page extends React.Component<PageProps> {
                         name={x.name}
                         property={x.property}
                         content={x.content}
-                    />
+                    />;
                 })}
                 <script src="/facebook.js"></script>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133475833-1"></script>
