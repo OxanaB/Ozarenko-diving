@@ -1,0 +1,8 @@
+
+E:\projects\Ozarenko-diving>node ./node_modules/less/bin/lessc styles.less styles.css 
+
+E:\projects\Ozarenko-diving>call build-server.bat 
+
+E:\projects\Ozarenko-diving>node ./node_modules/typescript/bin/tsc -p ./server/tsconfig.json 
+
+E:\projects\Ozarenko-diving>node ./node_modules/ozarenko/server/test.js 

@@ -923,18 +923,30 @@ body {
 .dive-request-form {
   position: relative;
   width: 380px;
-  margin: 15px;
+  height: 480px;
+  padding: 10px;
   background-color: #ffffffcc;
+}
+.dive-request-form form div {
+  margin-top: 5px;
 }
 .dive-request-form input,
 .dive-request-form textarea {
-  min-width: 350px;
-  margin-bottom: 10px;
+  min-width: 330px;
+}
+.dive-request-form input::placeholder,
+.dive-request-form textarea::placeholder {
+  font-style: italic;
+}
+.dive-request-form input {
+  height: 24px;
+}
+.dive-request-form textarea {
+  height: 80px;
 }
 .dive-request-form button {
   position: absolute;
   right: 0;
-  bottom: -55px;
   padding: 10;
   font-size: 1em;
   border-radius: 5px;

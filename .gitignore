@@ -4,6 +4,7 @@ node_modules
 *.html
 !index.html
 browser
+images
 !async.js
 !react.js
 !react-dom.js

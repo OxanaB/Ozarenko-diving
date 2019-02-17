@@ -121,23 +121,23 @@ export class Form extends React.Component<FormProps> {
                     <div><Hotel {...hotelProps} /></div>
                     <div><Message {...messageProps} /></div>
                     <p>* - {localizer.useCorrectLanguage(language).form[8]}</p>
+                    <button disabled={!isValid} onClick={e => {
+                        e.preventDefault();
+                        const diveRequest: DiveRequest = {
+                            name: name.value,
+                            email: email.value,
+                            telephone: telephone.value,
+                            diveLevel: pickedLevels.join(', '),
+                            arrivalDate: pickedDate.toLocaleDateString(),
+                            hotel,
+                            message
+                        };
+                        this.props.when({
+                            about: 'send-new-requiest',
+                            newDiveRequest: diveRequest
+                        });
+                    }}>{localizer.useCorrectLanguage(language).form[7]}</button>
                 </form>
-                <button disabled={!isValid} onClick={e => {
-                    e.preventDefault();
-                    const diveRequest: DiveRequest = {
-                        name: name.value,
-                        email: email.value,
-                        telephone: telephone.value,
-                        diveLevel: pickedLevels.join(', '),
-                        arrivalDate: pickedDate.toLocaleDateString(),
-                        hotel,
-                        message
-                    };
-                    this.props.when({
-                        about: 'send-new-requiest',
-                        newDiveRequest: diveRequest
-                    });
-                }}>{localizer.useCorrectLanguage(language).form[7]}</button>
             </div>
         </>;
     }

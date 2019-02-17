@@ -1,4 +1,4 @@
-aws s3 cp /projects/ozarenko-diving/ s3://ozarenko-diving.com/ --recursive --exclude ".git/*" --exclude "node_modules/*" --exclude "browser/*" --exclude "*.tsx" --exclude "*.js.map" --exclude "*.less" --exclude "*.txt" --exclude "*.md" --exclude ".vscode/*" --exclude "server/*" --exclude "*.json" --exclude "*.ini" --exclude "*.bat" --exclude ".gitignore"
+aws s3 cp /projects/ozarenko-diving/ s3://ozarenko-diving.com/ --recursive --exclude ".git/*" --exclude "node_modules/*" --exclude "browser/*" --exclude "images/*" --exclude "*.tsx" --exclude "*.js.map" --exclude "*.less" --exclude "*.txt" --exclude "*.md" --exclude ".vscode/*" --exclude "server/*" --exclude "*.json" --exclude "*.ini" --exclude "*.bat" --exclude ".gitignore"
 rem aws s3 sync /projects/ozarenko-diving/ s3://ozarenko-diving-test/ --exclude ".git/*" --exclude ".vscode/*" --exclude "browser/*" --exclude "images/*" --exclude "./node_modules/**/*" --exclude "server/*" --exclude "*" --include "*.html" --include "*.js" --include "*.ico"
 rem aws s3 rm s3://ozarenko-diving-test/node_modules  --recursive
 rem aws s3 rm s3://ozarenko-diving-test/browser  --recursive
