@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { enableClient } from './client';
+import { App } from './dive-request-form/app';
 
 export class ContactUs extends React.Component {
     render() {
@@ -13,7 +14,7 @@ export class ContactUs extends React.Component {
                 </div>
                 <div>
                     <h1>Оставить заявку на дайвинг</h1>
-                    <iframe className="booking" src="https://goo.gl/forms/lyhFZT7DxAwRLBZH2" width="640" height="1158" />
+                    <App />
                 </div>
             </div>
         </ div>;

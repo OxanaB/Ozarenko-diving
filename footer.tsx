@@ -44,8 +44,6 @@ export class Footer extends React.Component<FooterProps> {
                     <div className="widget-2">
                         <div className="fb-like" data-share="true" data-width="450" data-show-faces="true">{'\n'}</div>
                         <div className="g-ytsubscribe" data-channelid="UC5f2ywQOvq4FC6tPhBkwcDg" data-layout="full" data-count="default">{'\n'}</div>
-                        <div><a href="http://divetop.ru?SID=1629" /><img src="http://divetop.ru/baner.php?SID=1629&t=1&c=1"
-                            height="31" width="88" alt="Дайвинг - рейтинг DIVEtop" /></div>
                     </div>
 
                 </div>

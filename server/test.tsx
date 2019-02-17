@@ -186,12 +186,7 @@ const pages: any = {
         <Page meta={Meta.metaNorthRoutes} script="north-routes-component" title={'Маршруты дайвинг сафари по северу Красного моря (Египет)'}>
             <Core><NorthRoutes /></Core>
         </Page>
-    ),
-    './test.html': ReactDom.renderToString(
-        <Page meta={Meta.metaNorthRoutes} script="dive-request-component" title={'test'}>
-            <Core><DiveRequest /></Core>
-        </Page>
-    ),
+    )
 };
 
 for (const name in pages) {
