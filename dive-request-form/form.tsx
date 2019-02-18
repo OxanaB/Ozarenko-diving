@@ -6,6 +6,7 @@ import { Message, MessageConcern, MessageProps } from './message';
 import { DiveRequest } from './dive-requests';
 import { Field, FielderConcern, Fielder } from './field';
 import { localizer } from './language';
+import { myKey } from './key';
 
 export type FormConcern =
     | { about: 'name', name: FielderConcern }
@@ -48,7 +49,7 @@ export class Form extends React.Component<FormProps> {
     render() {
         const {
             name, email, phone: telephone, pickedDate, isOptionToShow, pickedLevels,
-            isCalendarToShow, level, hotel, message, option, language
+            isCalendarToShow, level, hotel, message, option, language,
         } = this.props;
         const diveLevelProps: DiveLevelProps = {
             level, option, isOptionToShow, pickedLevels, language,
@@ -121,6 +122,9 @@ export class Form extends React.Component<FormProps> {
                     <div><Hotel {...hotelProps} /></div>
                     <div><Message {...messageProps} /></div>
                     <p>* - {localizer.useCorrectLanguage(language).form[8]}</p>
+                    <div id="g-recaptcha"
+                        data-sitekey={myKey}
+                        data-callback="iAmNotARobot" dangerouslySetInnerHTML={{__html: ''}}></div>
                     <button disabled={!isValid} onClick={e => {
                         e.preventDefault();
                         const diveRequest: DiveRequest = {

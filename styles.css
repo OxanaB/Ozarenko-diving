@@ -995,9 +995,7 @@ body {
 .dive-request-form .date-picker .calendar {
   width: 305px;
   max-height: 370px;
-  position: fixed;
-  top: 245;
-  left: 100;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -30,7 +30,7 @@ import { LastSafari } from '../last-safari-component';
 import { Fleet } from '../fleet-component';
 import { NorthRoutes } from '../north-routes-component';
 import { SouthRoutes } from '../south-routes-component';
-import { DiveRequest } from '../dive-request-component';
+import { SpecialPage } from '../special-page';
 import { writeFileSync } from 'fs';
 import { Page } from '../page';
 import * as Meta from '../meta';
@@ -58,9 +58,9 @@ const pages: any = {
         </Page>
     ),
     './contact-us.html': ReactDom.renderToString(
-        <Page meta={Meta.metaContactUsPage} script="contact-us-component" title={'Контактная информация'}>
+        <SpecialPage meta={Meta.metaContactUsPage} script="contact-us-component" title={'Контактная информация'}>
             <Core><ContactUs /></Core>
-        </Page>
+        </SpecialPage>
     ),
     './diving-courses-padi.html': ReactDom.renderToString(
         <Page meta={Meta.metaPadiCourses} script="padi-courses-component" title={'Курсы обучения дайвингу PADI в Одессе и Шарм-эль-Шейхе'}>

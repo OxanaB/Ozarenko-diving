@@ -5,6 +5,9 @@ node_modules
 !index.html
 browser
 images
+google-analitics.js
+recaptcha.js
+key.*
 !async.js
 !react.js
 !react-dom.js
