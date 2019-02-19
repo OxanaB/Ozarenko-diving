@@ -44,7 +44,7 @@ export interface FormProps {
     readonly newDiveRequest: DiveRequest | undefined;
     readonly when: (concern: FormConcern) => void;
 }
-
+declare const lastResponse: string;
 export class Form extends React.Component<FormProps> {
     render() {
         const {
@@ -147,5 +147,3 @@ export class Form extends React.Component<FormProps> {
         </>;
     }
 }
-
-declare const lastResponse: string;
