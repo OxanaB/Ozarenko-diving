@@ -6,4 +6,5 @@ export interface DiveRequest {
     arrivalDate: string;
     hotel: string;
     message: string;
+    'g-recaptcha-response': string;
 }

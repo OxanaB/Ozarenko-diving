@@ -7,7 +7,6 @@ import { DiveRequest } from './dive-requests';
 import { Field, FielderConcern, Fielder } from './field';
 import { localizer } from './language';
 import { myKey } from './key';
-import { any } from 'prop-types';
 
 export type FormConcern =
     | { about: 'name', name: FielderConcern }
@@ -46,7 +45,6 @@ export interface FormProps {
     readonly when: (concern: FormConcern) => void;
 }
 
-declare const iAmNotARobot: boolean;
 export class Form extends React.Component<FormProps> {
     render() {
         const {
@@ -79,7 +77,7 @@ export class Form extends React.Component<FormProps> {
                 this.props.when(concern);
             }
         };
-        const isValid = email.isValid && telephone.isValid && name.isValid && iAmNotARobot;
+        const isValid = email.isValid && telephone.isValid && name.isValid;
         return <>
             <div className="dive-request-form">
                 <form>
@@ -124,7 +122,7 @@ export class Form extends React.Component<FormProps> {
                     <div><Hotel {...hotelProps} /></div>
                     <div><Message {...messageProps} /></div>
                     <p>* - {localizer.useCorrectLanguage(language).form[8]}</p>
-                    <div id="g-recaptcha"
+                    <div id="recaptcha"
                         data-sitekey={myKey}
                         data-callback="iAmNotARobot" dangerouslySetInnerHTML={{__html: ''}}></div>
                     <button disabled={!isValid} onClick={e => {
@@ -136,7 +134,8 @@ export class Form extends React.Component<FormProps> {
                             diveLevel: pickedLevels.join(', '),
                             arrivalDate: pickedDate.toLocaleDateString(),
                             hotel,
-                            message
+                            message,
+                            'g-recaptcha-response': lastResponse
                         };
                         this.props.when({
                             about: 'send-new-requiest',
@@ -148,3 +147,5 @@ export class Form extends React.Component<FormProps> {
         </>;
     }
 }
+
+declare const lastResponse: string;
