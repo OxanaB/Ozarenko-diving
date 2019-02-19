@@ -7,6 +7,7 @@ import { DiveRequest } from './dive-requests';
 import { Field, FielderConcern, Fielder } from './field';
 import { localizer } from './language';
 import { myKey } from './key';
+import { any } from 'prop-types';
 
 export type FormConcern =
     | { about: 'name', name: FielderConcern }
@@ -45,6 +46,7 @@ export interface FormProps {
     readonly when: (concern: FormConcern) => void;
 }
 
+declare const iAmNotARobot: boolean;
 export class Form extends React.Component<FormProps> {
     render() {
         const {
@@ -77,7 +79,7 @@ export class Form extends React.Component<FormProps> {
                 this.props.when(concern);
             }
         };
-        const isValid = email.isValid && telephone.isValid && name.isValid;
+        const isValid = email.isValid && telephone.isValid && name.isValid && iAmNotARobot;
         return <>
             <div className="dive-request-form">
                 <form>
